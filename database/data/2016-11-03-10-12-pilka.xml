@@ -1,0 +1,97 @@
+<page>
+    <title>Роликовая пилка Scholl</title>
+
+    <description>Интернет-магазин</description>
+
+    <phone>+7 929 116 85 65</phone>
+
+    <menu></menu>
+
+    <h1>Роликовая пилка Scholl Velvet Smooth Wet & Dry</h1>
+
+    <h1-sub>Водонепроницаемая, подходит для использования в душе. Аккумулятор и зарядное устройство. Электрическая роликовая пилка для удаления огрубевшей кожи стоп.</h1-sub>
+
+    <video>https://www.youtube.com/embed/2PnrVJPxpKY</video>
+
+    <form-image>/images/scholl.jpg</form-image>
+
+    <form-title>Аккумуляторная роликовая пилка Scholl</form-title>
+
+    <form-bullets>
+        <form-bullet>Водонепроницаемая роликовая пилка.</form-bullet>
+        <form-bullet>Роликовая насадка Velvet Smooth wet & dry.</form-bullet>
+        <form-bullet>Зарядное устройство.</form-bullet>
+        <form-bullet>Инструкция.</form-bullet>
+        <form-bullet>Аккумулятор.</form-bullet>,
+    </form-bullets>
+
+    <price>3 990 р</price>
+
+    <form-name>pilka</form-name>
+
+    <gallery>
+        <image>
+            <src>../images/1.jpg</src>
+            <alt>В одних садах цветёт миндаль, в других метёт метель.</alt>
+        </image>
+        <image>
+            <src>../images/2.jpg</src>
+            <alt>В одних садах цветёт миндаль, в других метёт метель.</alt>
+        </image>
+        <image>
+            <src>../images/3.jpg</src>
+            <alt>В одних садах цветёт миндаль, в других метёт метель.</alt>
+        </image>
+    </gallery>
+
+    <properties>
+        <property>
+            <name>Размер</name>
+            <value>Высота - 104 см, длина - 105 см, глубина - 3 см.</value>
+        </property>
+        <property>
+            <name>Вес</name>
+            <value>103 кг</value>
+        </property>
+        <property>
+            <name>Комплектация</name>
+            <value>Шнур, розетка</value>
+        </property>
+        <property>
+            <name>Назначение</name>
+            <value>Электрическая роликовая пилка для удаления огрубевшей кожи стоп</value>
+        </property>
+        <property>
+            <name>Категория</name>
+            <value>Аппарат для маникюра и педикюра</value>
+        </property>
+        <property>
+            <name>Страна изготовитель</name>
+            <value>Китай</value>
+        </property>
+        <property>
+            <name>Год выпуска</name>
+            <value>2016</value>
+        </property>
+        <property>
+            <name>Вид питания</name>
+            <value>Встроенный аккумулятор</value>
+        </property>
+        <property>
+            <name>Комплектация</name>
+            <value>Водонепроницаемая роликовая пилка с аккумулятором, роликовая насадка Velvet Smooth wet & dry, кабель, инструкция</value>
+        </property>
+        <property>
+            <name>Размер упаковки (ДхШхВ)</name>
+            <value>20 см x 20 см x 6.5 см</value>
+        </property>
+        <property>
+            <name>Гарантия</name>
+            <value>1 год</value>
+        </property>
+        <property>
+            <name>Вес в упаковке</name>
+            <value>415 грамм</value>
+        </property>
+    </properties>
+</page>
