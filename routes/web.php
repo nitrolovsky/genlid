@@ -14,7 +14,7 @@
 Route::get('/', function () {
     $json = file_get_contents("../database/data/2016-11-03-10-12-pilka.json");
     $data = json_decode($json, true);
-    return view('welcome')
+    return view('subscription')
         ->with('data', $data);
 });
 

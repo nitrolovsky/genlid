@@ -49,13 +49,18 @@
                     <a href="#" class="nav-link">Оформить заказ</a>
                 </li>
                 <hr>
-                @foreach ($data['menu'] as $menu)
-                    <li class="nav-item">
-                        <a href="{{ $menu['href'] }}" class="nav-link">{{ $menu['text'] }}</a>
-                    </li>
-                @endforeach
+                @if (isset($data['menu']))
+                    @foreach ($data['menu'] as $menu)
+                        <li class="nav-item">
+                            <a href="{{ $menu['href'] }}" class="nav-link">{{ $menu['text'] }}</a>
+                        </li>
+                    @endforeach
+                @endif
             </ul>
         </div>
+        <div id="start">
+        <br>
+        <br>
         <br>
         <br>
         <div class="container">
@@ -68,6 +73,9 @@
                     <p class="lead">
                         {{ $data['h1-sub'] }}
                     </p>
+                    <div id="video"></div>
+                    <br>
+                    <br>
                     <br>
                     <br>
                     <div class="embed-responsive embed-responsive-16by9" id="video">
@@ -76,6 +84,9 @@
                 </div>
             </div>
         </div>
+
+        <br>
+        <br>
         <br>
         <br>
         <div class="container">
@@ -113,55 +124,64 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <div class="container" id="gallery">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h2 class="display-4">
-                        Фотогалерея
-                    </h2>
-                    <br>
-                    <br>
-                    <div id="lightgallery">
-                        @foreach ($data['gallery'] as $image)
-                            <a href="{{ $image['src'] }}" data-sub-html="{{ $image['alt'] }}">
-                                <img src="{{ $image['src'] }}" class="img-fluid col-xl-3 px-0 cm-gallery">
-                            </a>
-                        @endforeach
+
+        @if (isset($data['gallery']))
+            <div id="gallery"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container" id="gallery">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <h2 class="display-4">
+                            Фотогалерея
+                        </h2>
+                        <br>
+                        <br>
+                        <div id="lightgallery">
+                            @foreach ($data['gallery'] as $image)
+                                <a href="{{ $image['src'] }}" data-sub-html="{{ $image['alt'] }}">
+                                    <img src="{{ $image['src'] }}" class="img-fluid col-xl-3 px-0 cm-gallery">
+                                </a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h2 class="display-4">
-                        Характеристики
-                    </h2>
-                    <br>
-                    <br>
-                    <table class="table">
-                        <tbody>
-                            @foreach ($data['properties'] as $propertie)
-                                <tr>
-                                    <td width="30%">
-                                        {{ $propertie['name'] }}
-                                    </td>
-                                    <td width="70%">
-                                        {{ $propertie['value'] }}
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+        @endif
+        @if (isset($data['properties']))
+            <div id="properties"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <h2 class="display-4">
+                            Характеристики
+                        </h2>
+                        <br>
+                        <br>
+                        <table class="table">
+                            <tbody>
+                                @foreach ($data['properties'] as $propertie)
+                                    <tr>
+                                        <td width="30%">
+                                            {{ $propertie['name'] }}
+                                        </td>
+                                        <td width="70%">
+                                            {{ $propertie['value'] }}
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endif
         <br>
         <br>
         <br>

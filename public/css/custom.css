@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .body {
     overflow-y: scroll;
     margin-top: 60px;
-
 }
 
 .footer {
@@ -39,3 +38,4 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .cm-gallery:hover {
     opacity: 1;
 }
+body {    }
