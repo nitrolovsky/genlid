@@ -7,10 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/docs.min.css">
-        <link rel="stylesheet" href="/css/custom.css">
         <link rel="stylesheet" href="/vendor/lightGallery-master/dist/css/lightgallery.css">
-        <link rel="stylesheet" href="/vendor/lightGallery-master/dist/css/lg-transitions.css">
-        <link rel="stylesheet" href="/vendor/lightGallery-master/dist/css/lg-fb-comment-box.css">
+        <link rel="stylesheet" href="/css/custom.css">
     </head>
     <body class="body" data-spy="scroll" data-target="#navbar-example">
         <nav class="navbar navbar-fixed-top navbar-light bg-faded">
@@ -21,7 +19,7 @@
                         <div class="collapse navbar-toggleable-md" id="navbarResponsive">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Интернет-магазин <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#">{{ $data['description'] }} <span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -51,27 +49,11 @@
                     <a href="#" class="nav-link">Оформить заказ</a>
                 </li>
                 <hr>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Роликовая пилка</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#video" class="nav-link">Видео</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery" class="nav-link">Фотогалерея</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Характеристики</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#comments" class="nav-link">Комментарии</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#comments" class="nav-link">Добавить в заказ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#comments" class="nav-link">Купить в 1 клик</a>
-                </li>
+                @foreach ($data['menu'] as $menu)
+                    <li class="nav-item">
+                        <a href="{{ $menu['href'] }}" class="nav-link">{{ $menu['text'] }}</a>
+                    </li>
+                @endforeach
             </ul>
         </div>
         <br>
@@ -80,16 +62,16 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <h1 class="display-4">
-                        Роликовая пилка Scholl Velvet Smooth Wet & Dry
+                        {{ $data['h1'] }}
                     </h1>
                     <br>
                     <p class="lead">
-                        Водонепроницаемая, подходит для использования в душе. Аккумулятор и зарядное устройство. Электрическая роликовая пилка для удаления огрубевшей кожи стоп.
+                        {{ $data['h1-sub'] }}
                     </p>
                     <br>
                     <br>
                     <div class="embed-responsive embed-responsive-16by9" id="video">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2PnrVJPxpKY" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="{{ $data['video'] }}" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -101,25 +83,19 @@
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6">
-                            <img class="img-fluid" src="/images/scholl.jpg">
+                            <img class="img-fluid" src="{{ $data['form-image'] }}">
                         </div>
                         <div class="col-xl-6 col-lg-6">
                             <h5>
-                                Аккумуляторная роликовая пилка Scholl
+                                {{ $data['form-title']  }}
                             </h5>
                             <p class="lead">
-                                1. Водонепроницаемая роликовая пилка.
-                                <br>
-                                2. Роликовая насадка Velvet Smooth wet & dry.
-                                <br>
-                                3. Зарядное устройство.
-                                <br>
-                                4. Инструкция.
-                                <br>
-                                5. Аккумулятор.
+                                @foreach ($data['form-bullet'] as $formBullet)
+                                    {{ $formBullet }}<br>
+                                @endforeach
                             </p>
                             <h5>
-                                3 990 р
+                                {{ $data['price'] }}
                             </h5>
                             <br>
                             <div class="form">
@@ -148,18 +124,11 @@
                     <br>
                     <br>
                     <div id="lightgallery">
-                        <a href="../images/1.jpg" data-sub-html="В одних садах цветёт миндаль, в других метёт метель.">
-                            <img src="../images/1.jpg" class="img-fluid col-xl-3 px-0 cm-gallery">
-                        </a>
-                        <a href="../images/2.jpg">
-                            <img src="../images/2.jpg" class="img-fluid col-xl-3 px-0 cm-gallery">
-                        </a>
-                        <a href="../images/3.jpg">
-                            <img src="../images/3.jpg" class="img-fluid col-xl-3 px-0 cm-gallery">
-                        </a>
-                        <a href="../images/1.jpg">
-                            <img src="../images/1.jpg" class="img-fluid col-xl-3 px-0 cm-gallery">
-                        </a>
+                        @foreach ($data['gallery'] as $image)
+                            <a href="{{ $image['src'] }}" data-sub-html="{{ $image['alt'] }}">
+                                <img src="{{ $image['src'] }}" class="img-fluid col-xl-3 px-0 cm-gallery">
+                            </a>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -178,102 +147,16 @@
                     <br>
                     <table class="table">
                         <tbody>
-                            <tr>
-                                <td width="30%">
-                                    Размер
-                                </td>
-                                <td width="70%">
-                                    Высота - 104 см, длина - 105 см, глубина - 3 см
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Вес
-                                </td>
-                                <td>
-                                    103 кг
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Комплектация
-                                </td>
-                                <td>
-                                    Шнур, розетка
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Назначение
-                                </td>
-                                <td>
-                                    Электрическая роликовая пилка для удаления огрубевшей кожи стоп
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Категория
-                                </td>
-                                <td>
-                                    Аппарат для маникюра и педикюра
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Страна изготовитель
-                                </td>
-                                <td>
-                                    Китай
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Год выпуска
-                                </td>
-                                <td>
-                                    2016
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Вид питания
-                                </td>
-                                <td>
-                                    Встроенный аккумулятор
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Комплектация
-                                </td>
-                                <td>
-                                    Водонепроницаемая роликовая пилка с аккумулятором, роликовая насадка Velvet Smooth wet & dry, кабель, инструкция
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Размер упаковки (ДхШхВ)
-                                </td>
-                                <td>
-                                    20 см x 20 см x 6.5 см
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Гарантия
-                                </td>
-                                <td>
-                                    1 год
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Вес в упаковке
-                                </td>
-                                <td>
-                                    415 грамм
-                                </td>
-                            </tr>
+                            @foreach ($data['properties'] as $propertie)
+                                <tr>
+                                    <td width="30%">
+                                        {{ $propertie['name'] }}
+                                    </td>
+                                    <td width="70%">
+                                        {{ $propertie['value'] }}
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
