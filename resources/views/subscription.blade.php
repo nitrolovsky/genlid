@@ -9,43 +9,63 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
     </head>
-    <body class="body">
+    <body>
+        <nav class="navbar navbar-full navbar-dark bg-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="navbar-brand">
+                            <img src="/images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                            Первая школа фитнеса
+                        </div>
+                        <span class="navbar-text text-white">
+
+                        </span>
+                        <span class="navbar-text float-xl-right text-white">
+                            8 (929) 116 85 65
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <br>
-                    <p class="lead">
-                        Первая школа Фитнеса. Вживую в Москве и Онлайн по РФ и СНГ.  8 (977) 812-92-62
-                    </p>
-                    <hr>
-                    <br>
+                    <h1 class="text-xl-center">
+                        8 октября. Бесплатный Мастер-класс "Продажи фитнес тренера х2". Вживую в Москве и Онлайн по РФ и СНГ.
+                    </h1>
                 </div>
             </div>
+            <br>
+            <br>
             <div class="row">
-                <div class="col-xl-12">
-                    <h1 class="display-4">
-                        8 октября. Бесплатный Мастер-класс "Продажи фитнес тренера х2"
-                    </h1>
+                <div class="col-xl-6">
+                    <div class="embed-responsive embed-responsive-16by9" id="video">
+                        <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/vKR4mNpgpR8" allowfullscreen></iframe>
+                    </div>
                     <br>
                     <p class="lead">
                         Для тех, кто хочет стать или уже является фитнес тренером. Как заработать первые 50000 рублей за 30 дней. Как удвоить продажи. Как перестать жить в фитнес-зале.
                     </p>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-xl-6">
-                    <div class="embed-responsive embed-responsive-16by9" id="video">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vKR4mNpgpR8" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <p class="lead">
-                        Оставьте заявку на Мастер-класс и получите Топ-5 полезных видео по фитнесу в подарок
-                    </p>
-                    <div class="card">
+
+                    <div class="card sw bg-faded">
                         <div class="card-block">
                             <div class="container">
+                                <p class="lead text-xl-center">
+                                    Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу
+                                </p>
+                                <hr>
                                 <form>
                                     <div class="form-group row">
                                         <label for="name" class="col-xl-3 col-form-label">Имя</label>
@@ -76,7 +96,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="offset-xl-3 col-xl-9">
-                                            <button type="submit" class="btn btn-primary"><span class="fa fa-fw fa-paper-plane"></span>&nbsp;Отправить заявку</button>
+                                            <button type="submit" class="btn btn-primary btn-block">Отправить заявку&nbsp;<span class="fa fa-fw fa-long-arrow-right"></span></button>
                                         </div>
                                     </div>
                                 </form>
@@ -85,11 +105,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <br>
+            <br>
+            <hr>
+            <div class="row text-muted">
                 <div class="col-xl-12">
+                    © 2010-2016 Бизнес Молодость. ООО «БП» Общество с ограниченной ответственностью «База предпринимательства». Юридический адрес: 117545, г. Москва, ул. Дорожная, д.8, корп.1, офис 103. ИНН 7726338554. КПП 772601001. ОГРН 1157746406850. Адрес: г. СПб, ул. Зодчего-Росси 1/3, подъезд 5. Телефон: <a href="callto:8 (929) 116 85 65">8 (929) 116 85 65</a>. Email: <a href="mailto:fitnessschool1@yandex.ru">fitnessschool1@yandex.ru</a>.
                     <br>
-                    <hr>
-                    fitnessschool1@yandex.ru.
+                    <br>
                 </div>
             </div>
         </div>
