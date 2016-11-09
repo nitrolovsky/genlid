@@ -26,6 +26,7 @@ class CreatePagesTable extends Migration
             $table->string('call_to_action');
             $table->text('legal');
             $table->string('email');
+            $table->string('status');
         });
     }
 
