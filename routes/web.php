@@ -18,8 +18,14 @@ Route::get('/', function () {
         ->with('data', $data);
 });
 
+Route::get('users/login', 'UserController@viewLogin');
+Route::post('users/login', 'UserController@login');
+Route::resource('users', 'UserController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('pages/{id}/hide', 'PageController@hide');
+Route::get('pages/{id}/publish', 'PageController@publish');
 Route::resource('pages', 'PageController');

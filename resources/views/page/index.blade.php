@@ -22,23 +22,23 @@
                         </thead>
                         @foreach ($pages as $page)
                             <tr>
-                                <td>
+                                <td width="10%">
                                     {{ $page->id }}
                                 </td>
-                                <td>
+                                <td width="20%">
                                     {{ $page->updated_at }}
                                 </td>
-                                <td>
+                                <td width="60%">
                                     <a href="/pages/{{ $page->id }}">
                                         {{ $page->descriptor }}
                                     </a>
                                 </td>
-                                <td>
+                                <td width="10%">
                                     <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button"><span class="fa fa-fw fa-pencil"></span></a>
-                                    @if ($page->status == 'show')
+                                    @if ($page->status == 'publish')
                                         <a class="btn btn-danger btn-sm" href="/pages/{{ $page->id }}/hide" role="button"><span class="fa fa-fw fa-eye-slash"></span></a>
                                     @elseif ($page->status == 'hide')
-                                        <a class="btn btn-success btn-sm" href="/pages/{{ $page->id }}/show" role="button"><span class="fa fa-fw fa-eye"></span></a>
+                                        <a class="btn btn-success btn-sm" href="/pages/{{ $page->id }}/publish" role="button"><span class="fa fa-fw fa-eye"></span></a>
                                     @endif
                                 </td>
                             </tr>

@@ -69,7 +69,7 @@ class PageController extends Controller
             'call_to_action' => Request::get('call_to_action'),
             'legal' => Request::get('legal'),
             'email' => Request::get('email'),
-            'status' => 'show'
+            'status' => 'publish'
         ])->id;
 
         Session::flash('success', 'Страница создана.');
@@ -154,5 +154,27 @@ class PageController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function hide($id) {
+        $page = Page::find($id);
+        $page->update([
+            'status' => 'hide'
+        ]);
+
+        Session::flash('success', 'Страница скрыта.');
+
+        return Redirect::to("/pages");
+    }
+
+    public function publish($id) {
+        $page = Page::find($id);
+        $page->update([
+            'status' => 'publish'
+        ]);
+
+        Session::flash('success', 'Страница опубликована.');
+
+        return Redirect::to("/pages");
     }
 }

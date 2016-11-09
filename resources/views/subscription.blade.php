@@ -22,12 +22,13 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="navbar-brand">
-                            <img src="/images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                            Первая школа фитнеса
+                            Веб-сервис по скоростному созданию упаковки-пули
                         </div>
-                        <span class="navbar-text text-white">
-
-                        </span>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/users/login">Войти</a>
+                            </li>
+                        </ul>
                         <span class="navbar-text float-xl-right text-white">
                             8 (929) 116 85 65
                         </span>
