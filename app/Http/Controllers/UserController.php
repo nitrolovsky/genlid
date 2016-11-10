@@ -8,6 +8,8 @@ use Session;
 use View;
 use Redirect;
 
+use App\User;
+
 class UserController extends Controller
 {
     /**
@@ -39,42 +41,35 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make(Request::all(), [
-            'email' => 'required|max:255',
-            'password' => 'required|max:255'
+            'email' => 'required|unique:users|max:255',
+            'password' => 'required|max:255',
+            'confirmPassword' => 'required|max:255'
         ]);
 
         if ($validator->fails()) {
-            return Redirect::to('/users/login')
-                ->withErrors($validator)
-                ->withInput();
-        }
-
-        $email = Request::get('email');
-        $user = User::where('email', $email)
-            ->get()
-            ->first();
-
-        if (empty($user)) {
-            $validator->errors()
-                ->add('email', "Пользователя с логином: '$email'  не существует.");
-            return Redirect::to('/users/login')
+            return Redirect::to('users/login')
                 ->withErrors($validator)
                 ->withInput();
         }
 
         $password = Request::get('password');
-        $user = User::where('email', $email)
-            ->where('password', $password)
-            ->get()
-            ->first();
+        $confirmPassword = Request::get('confirmPassword');
 
-        if (empty($user)) {
+        if ($password != $confirmPassword) {
             $validator->errors()
-                ->add('password', "Неверный пароль.");
-            return Redirect::to('/users/login')
+                ->add('confirmPassword', "Подтверждение пароля не совпадает с паролем.");
+            return Redirect::to('users/login')
                 ->withErrors($validator)
                 ->withInput();
         }
+
+        $user = new User;
+        $user->create([
+            'email' => Request::get('email'),
+            'password' => Request::get('password')
+        ]);
+
+        Session::flash('info', 'Вы успешно зарегистрированы.');
 
         Session::put('id', $user->id);
         Session::put('authed', 1);

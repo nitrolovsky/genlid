@@ -9,12 +9,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-full navbar-dark bg-inverse">
@@ -22,7 +16,6 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="navbar-brand">
-                            <img src="/images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                             {{ $page->brand }}
                         </div>
                         <span class="navbar-text float-xl-right text-white">
@@ -34,6 +27,13 @@
         </nav>
         <br>
         <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    @include('layouts.alerts')
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -62,13 +62,15 @@
                                     {{ $page->form_title }}
                                 </p>
                                 <hr>
-                                <form>
+                                <form action="/proposals" method="POST">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="page_id" value="{{ $page->id }}">
                                     <div class="form-group row">
                                         <label for="name" class="col-xl-3 col-form-label">Имя</label>
                                         <div class="col-xl-9">
                                             <div class="input-group">
                                                 <div class="input-group-addon"><span class="fa fa-fw fa-user"></span></div>
-                                                <input type="text" class="form-control" id="name" placeholder="Александр Алексеевич">
+                                                <input type="text" class="form-control" id="name" placeholder="Александр Алексеевич" name="name">
                                             </div>
                                         </div>
                                     </div>
@@ -77,7 +79,7 @@
                                         <div class="col-xl-9">
                                             <div class="input-group">
                                                 <div class="input-group-addon"><span class="fa fa-fw fa-envelope-o"></span></div>
-                                                <input type="email" class="form-control" id="email" placeholder="email@gmail.com">
+                                                <input type="email" class="form-control" id="email" placeholder="email@gmail.com" name="email">
                                             </div>
                                         </div>
                                     </div>
@@ -86,7 +88,7 @@
                                         <div class="col-xl-9">
                                             <div class="input-group">
                                                 <div class="input-group-addon"><span class="fa fa-fw fa-phone"></span></div>
-                                                <input type="phone" class="form-control" id="phone" placeholder="8 929 110 65 44">
+                                                <input type="phone" class="form-control" id="phone" placeholder="8 929 110 65 44" name="phone">
                                             </div>
                                         </div>
                                     </div>

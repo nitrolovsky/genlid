@@ -8,6 +8,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/pages">Список страниц</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/users/logout">Выйти</a>
+                        </li>
                     </ul>
                 </div>
             </div>

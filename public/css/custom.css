@@ -1,6 +1,5 @@
 p, h1, h2, h3, h4, h5, h6, a, td, div {
-    /*font-family: 'Play', sans-serif !important;*/
-    font-family: 'Play', serif !important;
+    font-family: 'Play', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -14,7 +13,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .body {
     overflow-y: scroll;
-    margin-top: 60px;
+    margin-top: 75px;
 }
 
 .footer {
@@ -36,16 +35,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding-bottom: 1px !important;
     opacity: 0.9;
 }
+
 .cm-gallery:hover {
     opacity: 1;
 }
-body {    }
+
 .box-shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), inset 0px 0px 100px 30px rgba(0, 0, 0, 0.5);
 }
+
 .shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
+
 .sw {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

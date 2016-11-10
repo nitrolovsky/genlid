@@ -69,7 +69,8 @@ class PageController extends Controller
             'call_to_action' => Request::get('call_to_action'),
             'legal' => Request::get('legal'),
             'email' => Request::get('email'),
-            'status' => 'publish'
+            'status' => 'publish',
+            'user_id' => Session::get('id')
         ])->id;
 
         Session::flash('success', 'Страница создана.');

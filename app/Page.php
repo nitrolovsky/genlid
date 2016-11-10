@@ -16,6 +16,7 @@ class Page extends Model
         'call_to_action',
         'legal',
         'email',
-        'status'
+        'status',
+        'user_id'
     ];
 }

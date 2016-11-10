@@ -27,6 +27,7 @@ class CreatePagesTable extends Migration
             $table->text('legal');
             $table->string('email');
             $table->string('status');
+            $table->unsignedInteger('user_id');
         });
     }
 

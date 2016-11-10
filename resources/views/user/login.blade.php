@@ -1,8 +1,5 @@
 @extends('layouts.main')
 @section('content')
-<br>
-<br>
-<br>
     <div class="container">
         <div class="row">
             <div class="col-xl-6">
@@ -12,14 +9,14 @@
                             Вход
                         </p>
                         <hr>
-                        <form action="/users" method="POST">
+                        <form action="/users/login" method="POST">
                             {{ csrf_field() }}
                             <div class="form-group row">
                                 <label for="email" class="col-xl-3 col-form-label">
                                     Email
                                 </label>
                                 <div class="col-xl-9">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -27,7 +24,7 @@
                                     Пароль
                                 </label>
                                 <div class="col-xl-9">
-                                    <input type="password" class="form-control" id="password" placeholder="Пароль">
+                                    <input type="password" class="form-control" id="password" placeholder="Пароль" name="password">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -46,14 +43,14 @@
                             Регистрация
                         </p>
                         <hr>
-                        <form action="/users/login" method="POST">
+                        <form action="/users" method="POST">
                             {{ csrf_field() }}
                             <div class="form-group row">
                                 <label for="email" class="col-xl-3 col-form-label">
                                     Email
                                 </label>
                                 <div class="col-xl-9">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -61,7 +58,7 @@
                                     Пароль
                                 </label>
                                 <div class="col-xl-9">
-                                    <input type="password" class="form-control" id="password" placeholder="Пароль">
+                                    <input type="password" class="form-control" id="password" placeholder="Пароль" name="password">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -69,7 +66,7 @@
                                     Подтверждение пароля
                                 </label>
                                 <div class="col-xl-9">
-                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Подтверждения пароля">
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Подтверждения пароля" name="confirmPassword">
                                 </div>
                             </div>
                             <div class="form-group row">
