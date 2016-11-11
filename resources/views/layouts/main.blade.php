@@ -12,8 +12,14 @@
     </head>
     <body class="body">
         @include('layouts.navbar')
-        @include('layouts.errors')
-        @include('layouts.alerts')
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    @include('layouts.errors')
+                    @include('layouts.alerts')
+                </div>
+            </div>
+        </div>
         @include('layouts.sidebar')
         @yield('content')
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>

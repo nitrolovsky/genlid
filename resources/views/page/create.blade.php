@@ -8,7 +8,7 @@
                     Название бренда
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="brand" placeholder="Первая школа фитнеса" name="brand">
+                    <input type="text" class="form-control" id="brand" placeholder="Первая школа фитнеса" name="brand" value="{{ old('brand') }}">
                 </div>
             </div>
             <div class="form-group row">
@@ -16,7 +16,7 @@
                     Контактный телефон
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="phone" placeholder="8 (921) 116 85 65" name="phone">
+                    <input type="text" class="form-control" id="phone" placeholder="8 (921) 116 85 65" name="phone" value="{{ old('phone') }}">
                 </div>
             </div>
             <div class="form-group row">
@@ -24,7 +24,7 @@
                     Заголовок по центру
                 </label>
                 <div class="col-xl-9">
-                    <textarea class="form-control" id="descriptor" rows="3" name="descriptor" placeholder="8 октября. Бесплатный Мастер-класс Продажи фитнес тренера х2. Вживую в Москве и Онлайн по РФ и СНГ."></textarea>
+                    <textarea class="form-control" id="descriptor" rows="3" name="descriptor" placeholder="8 октября. Бесплатный Мастер-класс Продажи фитнес тренера х2. Вживую в Москве и Онлайн по РФ и СНГ.">{{ old('descriptor') }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -32,7 +32,7 @@
                     Ссылка на видео c youtube
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="video" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="video">
+                    <input type="text" class="form-control" id="video" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="video" value="{{ old('video') }}">
                 </div>
             </div>
             <div class="form-group row">
@@ -40,7 +40,7 @@
                     Текст с подробностями под видео
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="profit" rows="3" name="profit" placeholder="Для тех, кто хочет стать или уже является фитнес тренером. Как заработать первые 50000 рублей за 30 дней. Как удвоить продажи. Как перестать жить в фитнес-зале."></textarea>
+                     <textarea class="form-control" id="profit" rows="3" name="profit" placeholder="Для тех, кто хочет стать или уже является фитнес тренером. Как заработать первые 50000 рублей за 30 дней. Как удвоить продажи. Как перестать жить в фитнес-зале.">{{ old('profit') }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -48,7 +48,7 @@
                     Заголовок для формы
                 </label>
                 <div class="col-xl-9">
-                    <textarea class="form-control" id="profit" rows="3" name="form_title" placeholder="Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу"></textarea>
+                    <textarea class="form-control" id="profit" rows="3" name="form_title" placeholder="Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу">{{ old('form_title') }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -56,7 +56,7 @@
                     Кнопка призыва к действию
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="call_to_action" placeholder="Отправить заявку" name="call_to_action">
+                    <input type="text" class="form-control" id="call_to_action" placeholder="Отправить заявку" name="call_to_action" value="{{ old('call_to_action') }}">
                 </div>
             </div>
             <div class="form-group row">
@@ -64,7 +64,7 @@
                     Юридическая информация
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="legal" rows="3" name="legal" placeholder="© 2010-2016 Бизнес Молодость. ООО «БП» Общество с ограниченной ответственностью «База предпринимательства». Юридический адрес: 117545, г. Москва, ул. Дорожная, д.8, корп.1, офис 103. ИНН 7726338554. КПП 772601001. ОГРН 1157746406850. Адрес: г. СПб, ул. Зодчего-Росси 1/3, подъезд 5."></textarea>
+                     <textarea class="form-control" id="legal" rows="3" name="legal" placeholder="© 2010-2016 Бизнес Молодость. ООО «БП» Общество с ограниченной ответственностью «База предпринимательства». Юридический адрес: 117545, г. Москва, ул. Дорожная, д.8, корп.1, офис 103. ИНН 7726338554. КПП 772601001. ОГРН 1157746406850. Адрес: г. СПб, ул. Зодчего-Росси 1/3, подъезд 5.">{{ old('legal') }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -72,7 +72,7 @@
                     Email
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="email" placeholder="email@gmail.com" name="email">
+                    <input type="text" class="form-control" id="email" placeholder="email@gmail.com" name="email" value="{{ old('email') }}">
                 </div>
             </div>
             <div class="form-group row">
