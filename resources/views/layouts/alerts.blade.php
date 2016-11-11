@@ -1,15 +1,15 @@
 @if (Session::get('success'))
     <div class="alert alert-success">
-        {{ Session::get('success') }}
+        {{ session()->get('success') }}
     </div>
 @endif
 @if (Session::get('info'))
     <div class="alert alert-info">
-        {{ Session::get('info') }}
+        {{ session()->get('info') }}
     </div>
 @endif
 @if (Session::get('danger'))
     <div class="alert alert-danger">
-        {{ Session::get('danger') }}
+        {{ session()->get('danger') }}
     </div>
 @endif
