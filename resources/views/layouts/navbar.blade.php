@@ -6,7 +6,7 @@
                 <div class="collapse navbar-toggleable-md" id="navbarResponsive">
                     <ul class="nav navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages">Список страниц</a>
+                            <a class="nav-link" href="/pages">Cтраницы</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/users/logout">Выйти</a>

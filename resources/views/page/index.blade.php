@@ -9,6 +9,7 @@
             </div>
         </div>
     </div>
+    <br>
     @if (count($pages) > 0)
         <div class="container">
             <div class="row">
