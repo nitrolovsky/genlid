@@ -18,20 +18,23 @@
     </head>
     <body>
         <nav class="navbar navbar-full navbar-dark bg-inverse">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="navbar-brand">
-                            Веб-сервис по скоростному созданию упаковки-пули
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">Конструктор видео-лендингов</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/users/login">Войти</a>
+                                </li>
+                            </ul>
+                            <span class="navbar-text float-xl-right text-white">
+                                8 (929) 116 85 65
+                            </span>
                         </div>
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/users/login">Войти</a>
-                            </li>
-                        </ul>
-                        <span class="navbar-text float-xl-right text-white">
-                            8 (929) 116 85 65
-                        </span>
                     </div>
                 </div>
             </div>
@@ -59,7 +62,6 @@
                     </p>
                 </div>
                 <div class="col-xl-6">
-
                     <div class="card sw bg-faded">
                         <div class="card-block">
                             <div class="container">
@@ -106,7 +108,6 @@
                     </div>
                 </div>
             </div>
-            <br>
             <br>
             <hr>
             <div class="row text-muted">
