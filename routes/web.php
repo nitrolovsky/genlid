@@ -16,6 +16,7 @@ Route::get('/', function () {
     //$data = json_decode($json, true);
     //return view('subscription')
         //->with('data', $data);
+
     return View('subscription');
 });
 

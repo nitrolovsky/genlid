@@ -10,22 +10,26 @@
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
     </head>
-    <body>
-        <nav class="navbar navbar-full navbar-dark bg-inverse">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="navbar-brand">
-                            {{ $page->brand }}
+    <body class="body">
+        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                             <ul class="nav navbar-nav">
+                                 <li class="nav-item active">
+                                     <a class="nav-link" href="/pages/{{ $page->id }}">{{ $page->brand }}</a>
+                                 </li>
+                             </ul>
+                            <span class="navbar-text float-xl-right text-white">
+                                {{ $page->phone }}
+                            </span>
                         </div>
-                        <span class="navbar-text float-xl-right text-white">
-                            {{ $page->phone }}
-                        </span>
                     </div>
                 </div>
             </div>
         </nav>
-        <br>
         <br>
         <div class="container">
             <div class="row">
@@ -47,7 +51,7 @@
             <div class="row">
                 <div class="col-xl-6">
                     <div class="embed-responsive embed-responsive-16by9" id="video">
-                        <iframe class="embed-responsive-item " src="{{ $page->video }}" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="{{ $page->video }}" allowfullscreen></iframe>
                     </div>
                     <br>
                     <p class="lead">
@@ -104,11 +108,10 @@
                 </div>
             </div>
             <br>
-            <br>
             <hr>
             <div class="row text-muted">
                 <div class="col-xl-12">
-                    {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>.
+                    {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>. Сайт разработан <a href="/">nitrolovsky.dev</a>.
                     <br>
                     <br>
                 </div>

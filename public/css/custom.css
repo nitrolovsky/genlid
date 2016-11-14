@@ -2,10 +2,6 @@ p, h1, h2, h3, h4, h5, h6, a, td, div {
     font-family: 'Play', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 600;
-}
-
 .html {
     position: relative;
     min-height: 100%;

@@ -9,37 +9,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
     </head>
-    <body>
-        <nav class="navbar navbar-full navbar-dark bg-inverse">
-            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-            <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/">Конструктор видео-лендингов</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/users/login">Войти</a>
-                                </li>
-                            </ul>
-                            <span class="navbar-text float-xl-right text-white">
-                                8 (929) 116 85 65
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <br>
+    <body class="body">
+        @include('layouts.navbar')
         <br>
         <div class="container">
             <div class="row">
