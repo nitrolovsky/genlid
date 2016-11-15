@@ -55,7 +55,14 @@
                     </div>
                     <br>
                     <p class="lead">
-                        {{ $page->profit }}
+                        @php
+                            $bullets = explode(";", $page->profit);
+                        @endphp
+                        @foreach ($bullets as $bullet)
+                            <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;
+                            {{ $bullet }}
+                            <br>
+                        @endforeach
                     </p>
                 </div>
                 <div class="col-xl-6">

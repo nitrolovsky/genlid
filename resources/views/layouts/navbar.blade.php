@@ -1,4 +1,4 @@
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse sw">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">

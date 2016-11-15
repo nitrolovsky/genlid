@@ -30,7 +30,10 @@
                     </div>
                     <br>
                     <p class="lead">
-                        Для тех, кто хочет стать или уже является фитнес тренером. Как заработать первые 50000 рублей за 30 дней. Как удвоить продажи. Как перестать жить в фитнес-зале.
+                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Для тех, кто хочет стать или уже является фитнес тренером.<br>
+                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Как заработать первые 50000 рублей за 30 дней.<br>
+                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Как удвоить продажи.<br>
+                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Как перестать жить в фитнес-зале.<br>
                     </p>
                 </div>
                 <div class="col-xl-6">
