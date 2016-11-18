@@ -17,6 +17,7 @@ class Page extends Model
         'legal',
         'email',
         'status',
-        'user_id'
+        'user_id',
+        'bg'
     ];
 }

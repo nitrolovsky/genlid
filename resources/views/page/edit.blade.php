@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <div class="container">
-        <form action="/pages/{{ $page->id }}" method="POST">
+        <form action="/pages/{{ $page->id }}" method="POST" enctype="multipart/form-data">
             {{ method_field('PUT') }}
             {{ csrf_field() }}
             <div class="form-group row">
@@ -18,6 +18,17 @@
                 </label>
                 <div class="col-xl-9">
                     <input type="text" class="form-control" id="phone" placeholder="8 (921) 116 85 65" name="phone" value="{{ $page->phone }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="bg" class="col-xl-3 col-form-label">
+                    Фоновое изображение
+                </label>
+                <div class="col-xl-9">
+                    <label class="custom-file">
+                        <input type="file" id="file" class="custom-file-input" name="bg" value="{{ $page->bg }}">
+                            <span class="custom-file-control"></span>
+                    </label>
                 </div>
             </div>
             <div class="form-group row">
