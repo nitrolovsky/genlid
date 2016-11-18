@@ -30,22 +30,30 @@
                 </div>
             </div>
         </nav>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    @include('layouts.alerts')
+        <style>
+            .bg-image {
+                background-image: url(../upload/images/{{ $page->bg }});
+                background-position: center;
+            }
+        </style>
+        <div class="container-fluid bg-image box-shadow">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h1 class="text-xl-center text-white">
+                            {{ $page->descriptor }}
+                        </h1>
+                    </div>
                 </div>
+                <br>
+                <br>
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <h1 class="text-xl-center">
-                        {{ $page->descriptor }}
-                    </h1>
-                </div>
-            </div>
             <br>
             <br>
             <div class="row">
