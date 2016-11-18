@@ -5,24 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
+        <style>
+            .bg-image {
+                background-image: url(../images/5.jpg);
+                background-position: center;
+            }
+        </style>
     </head>
     <body class="body">
         @include('layouts.navbar')
-        <br>
-        <div class="container">
+        <div class="container-fluid bg-image box-shadow">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <h1 class="text-xl-center">
+                    <h1 class="text-xl-center text-white">
                         8 октября. Бесплатный Мастер-класс "Продажи фитнес тренера х2". Вживую в Москве и Онлайн по РФ и СНГ.
                     </h1>
                 </div>
             </div>
             <br>
             <br>
+
+
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
             <div class="row">
                 <div class="col-xl-6">
                     <div class="embed-responsive embed-responsive-16by9" id="video">
@@ -43,7 +60,7 @@
                                 <p class="lead text-xl-center">
                                     Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу
                                 </p>
-                                <hr>
+                                <br>
                                 <form>
                                     <div class="form-group row">
                                         <label for="name" class="col-xl-3 col-form-label">Имя</label>

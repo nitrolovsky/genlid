@@ -1,7 +1,3 @@
-p, h1, h2, h3, h4, h5, h6, a, td, div {
-    font-family: 'Play', sans-serif !important;
-}
-
 .html {
     position: relative;
     min-height: 100%;
@@ -9,9 +5,11 @@ p, h1, h2, h3, h4, h5, h6, a, td, div {
 
 .body {
     overflow-y: scroll;
-    margin-top: 75px;
+    margin-top: 0px;
 }
-
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
 .footer {
   position: absolute;
   bottom: 0;

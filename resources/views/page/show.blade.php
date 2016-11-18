@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
     </head>
     <body class="body">
-        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse sw">
             <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
             <div class="collapse navbar-toggleable-md" id="navbarResponsive">
                 <div class="container">
@@ -66,7 +66,7 @@
                     </p>
                 </div>
                 <div class="col-xl-6">
-                    <div class="card sw bg-faded">
+                    <div class="card bg-faded sw">
                         <div class="card-block">
                             <div class="container">
                                 <p class="lead text-xl-center">
