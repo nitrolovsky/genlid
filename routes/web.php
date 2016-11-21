@@ -25,6 +25,8 @@ Route::post('users/login', 'UserController@login');
 Route::get('users/logout', 'UserController@logout');
 Route::resource('users', 'UserController');
 
+Route::get('pages/{id}/b', 'PageController@showB');
+Route::get('pages/{id}/c', 'PageController@showC');
 Route::get('pages/{id}/hide', 'PageController@hide');
 Route::get('pages/{id}/publish', 'PageController@publish');
 Route::resource('pages', 'PageController');

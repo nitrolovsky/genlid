@@ -9,37 +9,20 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
-        <style>
-            .bg-image {
-                background-image: url(../images/5.jpg);
-                background-position: center;
-            }
-        </style>
     </head>
     <body class="body">
         @include('layouts.navbar')
-        <div class="container-fluid bg-image box-shadow">
+        <div class="container">
             <br>
-            <br>
-            <br>
-            <br>
-            <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <h1 class="text-xl-center text-white">
+                    <h1 class="text-xl-center">
                         8 октября. Бесплатный Мастер-класс "Продажи фитнес тренера х2". Вживую в Москве и Онлайн по РФ и СНГ.
                     </h1>
                 </div>
             </div>
             <br>
             <br>
-
-
-        </div>
-        </div>
-        <br>
-        <br>
-        <div class="container">
             <div class="row">
                 <div class="col-xl-6">
                     <div class="embed-responsive embed-responsive-16by9" id="video">
@@ -47,10 +30,7 @@
                     </div>
                     <br>
                     <p class="lead">
-                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Для тех, кто хочет стать или уже является фитнес тренером.<br>
-                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Как заработать первые 50000 рублей за 30 дней.<br>
-                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Как удвоить продажи.<br>
-                        <span class="fa fa-fw fa-check-circle-o"></span>&nbsp;Как перестать жить в фитнес-зале.<br>
+                        Для тех, кто хочет стать или уже является фитнес тренером. Как заработать первые 50000 рублей за 30 дней. Как удвоить продажи. Как перестать жить в фитнес-зале.
                     </p>
                 </div>
                 <div class="col-xl-6">
@@ -65,28 +45,19 @@
                                     <div class="form-group row">
                                         <label for="name" class="col-xl-3 col-form-label">Имя</label>
                                         <div class="col-xl-9">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-fw fa-user"></span></div>
-                                                <input type="text" class="form-control" id="name" placeholder="Александр Алексеевич">
-                                            </div>
+                                            <input type="text" class="form-control" id="name" placeholder="Павел Нитроловский">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="email" class="col-xl-3 col-form-label">Email</label>
                                         <div class="col-xl-9">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-fw fa-envelope-o"></span></div>
-                                                <input type="email" class="form-control" id="email" placeholder="email@gmail.com">
-                                            </div>
+                                            <input type="email" class="form-control" id="email" placeholder="nitrolovsky@gmail.com">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="phone" class="col-xl-3 col-form-label">Телефон</label>
                                         <div class="col-xl-9">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-fw fa-phone"></span></div>
-                                                <input type="phone" class="form-control" id="phone" placeholder="8 929 110 65 44">
-                                            </div>
+                                            <input type="phone" class="form-control" id="phone" placeholder="+7 929 116 85 65">
                                         </div>
                                     </div>
                                     <div class="form-group row">

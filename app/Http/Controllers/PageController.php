@@ -90,6 +90,16 @@ class PageController extends Controller
         return View('page.show')
             ->with('page', Page::find($id));
     }
+    public function showB($id)
+    {
+        return View('page.showB')
+            ->with('page', Page::find($id));
+    }
+    public function showC($id)
+    {
+        return View('page.showC')
+            ->with('page', Page::find($id));
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -131,11 +141,11 @@ class PageController extends Controller
 
         $page = Page::find($id);
 
-        $now = new DateTime();
-        $extension = Request::file('bg')->getClientOriginalExtension();
-        $uploadPath = public_path('upload\images');
-        $fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
-        Request::file('bg')->move($uploadPath, $fileName);
+        //$now = new DateTime();
+        //$extension = Request::file('bg')->getClientOriginalExtension();
+        //$uploadPath = public_path('upload\images');
+        //$fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
+        //Request::file('bg')->move($uploadPath, $fileName);
 
         $page->update([
             'brand' => Request::get('brand'),
@@ -146,11 +156,10 @@ class PageController extends Controller
             'form_title' => Request::get('form_title'),
             'call_to_action' => Request::get('call_to_action'),
             'legal' => Request::get('legal'),
-            'email' => Request::get('email'),
-            'bg' => $fileName
+            'email' => Request::get('email')
         ]);
 
-        Session::flash('danger', $uploadPath . '/' . $fileName);
+        //Session::flash('danger', $uploadPath . '/' . $fileName);
         Session::flash('success', 'Страница обновлена.');
 
         return Redirect::to("/pages/" . $id);
