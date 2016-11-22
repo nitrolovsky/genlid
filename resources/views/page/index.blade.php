@@ -9,51 +9,49 @@
             </div>
         </div>
     </div>
-    <br>
     @if (count($pages) > 0)
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <table class="table table-responsive">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Номер
-                                </th>
-                                <th>
-                                    Дата обновления
-                                </th>
-                                <th>
-                                    Дескриптор
-                                </th>
-                                <th>
-                                </th>
-                            </tr>
-                        </thead>
-                        @foreach ($pages as $page)
-                            <tr>
-                                <td width="10%">
-                                    {{ $page->id }}
-                                </td>
-                                <td width="20%">
-                                    {{ $page->updated_at }}
-                                </td>
-                                <td width="60%">
-                                    <a href="/pages/{{ $page->id }}">
-                                        {{ $page->descriptor }}
-                                    </a>
-                                </td>
-                                <td width="10%">
-                                    <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button"><span class="fa fa-fw fa-pencil"></span></a>
-                                    @if ($page->status == 'publish')
-                                        <a class="btn btn-danger btn-sm" href="/pages/{{ $page->id }}/hide" role="button"><span class="fa fa-fw fa-eye-slash"></span></a>
-                                    @elseif ($page->status == 'hide')
-                                        <a class="btn btn-success btn-sm" href="/pages/{{ $page->id }}/publish" role="button"><span class="fa fa-fw fa-eye"></span></a>
-                                    @endif
-                                </td>
-                            </tr>
-                        @endforeach
-                    </table>
+                    @foreach ($pages as $page)
+                        <br>
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-2 col-md-2">
+                                <img src="/upload/images/{{ $page->bg }}" class="img-fluid">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                № {{ $page->id }}
+                                <br>
+                                {{ $page->updated_at }}
+                                <br>
+                                {{ $page->descriptor }}
+                                <br>
+                                <strong>{{ $page->offer }}</strong>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2">
+                                <a href="/pages/{{ $page->id }}">
+                                    А - чистый
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/b">
+                                    B - баннер
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/c">
+                                    C - фото
+                                </a>
+                            </div>
+                            <script>
+                                $(function () {
+                                    $('[data-toggle="tooltip"]').tooltip();
+                                });
+                            </script>
+                            <div class="col-xl-2 col-lg-2 col-md-2">
+                                <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button" data-toggle="tooltip" data-placement="top" data-orgignal-title="Tooltip on top"><span class="fa fa-fw fa-pencil"></span>&nbsp;Редактировать</a>
+                            </div>
+                        </div>
+                        <br>
+                    @endforeach
                 </div>
             </div>
         </div>

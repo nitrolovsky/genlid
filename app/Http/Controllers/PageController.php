@@ -13,6 +13,10 @@ use App\Page;
 
 class PageController extends Controller
 {
+    public function __construct() {
+        $this->middleware('needAuth', ['only' => ['index', 'create', 'store', 'edit', 'update']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -20,8 +24,12 @@ class PageController extends Controller
      */
     public function index()
     {
+        $pages = Page::where('user_id', Session::get('id'))
+            ->orderBy('id', 'desc')
+            ->get();
+
         return View('page.index')
-            ->with('pages', $pages = Page::orderBy('id', 'desc')->get());
+            ->with('pages', $pages);
     }
 
     /**
@@ -43,15 +51,16 @@ class PageController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make(Request::all(), [
-            'brand' => 'required|max:255',
-            'phone' => 'required|max:255',
             'descriptor' => 'required|max:255',
+            'phone' => 'required|max:255',
+            'offer' => 'required|max:255',
             'video' => 'required|url',
-            'profit' => 'required',
+            'details' => 'required',
             'form_title' => 'required|max:255',
             'call_to_action' => 'required|max:255',
             'legal' => 'required',
-            'email' => 'required|email'
+            'email' => 'required|email',
+            'bg' => 'required'
         ]);
         if ($validator->fails()) {
             return Redirect::to('/pages/create')
@@ -60,23 +69,31 @@ class PageController extends Controller
         }
 
         $page = new Page;
+
+        $now = new DateTime();
+        $extension = Request::file('bg')->getClientOriginalExtension();
+        $uploadPath = public_path('upload\images');
+        $fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
+        Request::file('bg')->move($uploadPath, $fileName);
+
         $page_last_id = $page->create([
-            'brand' => Request::get('brand'),
-            'phone' => Request::get('phone'),
             'descriptor' => Request::get('descriptor'),
+            'phone' => Request::get('phone'),
+            'offer' => Request::get('offer'),
             'video' => Request::get('video'),
-            'profit' => Request::get('profit'),
+            'details' => Request::get('details'),
             'form_title' => Request::get('form_title'),
             'call_to_action' => Request::get('call_to_action'),
             'legal' => Request::get('legal'),
             'email' => Request::get('email'),
             'status' => 'publish',
-            'user_id' => Session::get('id')
+            'user_id' => Session::get('id'),
+            'bg' => $fileName
         ])->id;
 
         Session::flash('success', 'Страница создана.');
 
-        return Redirect::to("/pages/" . $page_last_id);
+        return Redirect::to("/pages/");
     }
 
     /**
@@ -87,14 +104,22 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        return View('page.show')
+        return View('page.showA')
             ->with('page', Page::find($id));
     }
+
+    public function showA($id)
+    {
+        return View('page.showA')
+            ->with('page', Page::find($id));
+    }
+
     public function showB($id)
     {
         return View('page.showB')
             ->with('page', Page::find($id));
     }
+
     public function showC($id)
     {
         return View('page.showC')
@@ -109,8 +134,13 @@ class PageController extends Controller
      */
     public function edit($id)
     {
+        $page = Page::find($id);
+        if ($page->user_id != Session::get('id')) {
+            Session::flash('danger', 'Редактировать страницу имеет право только автор.');
+            Redirect::back();
+        }
         return View('page.edit')
-            ->with('page', Page::find($id));
+            ->with('page', $page);
     }
 
     /**
@@ -122,12 +152,18 @@ class PageController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $page = Page::find($id);
+        if ($page->user_id != Session::get('id')) {
+            Session::flash('danger', 'Редактировать страницу имеет право только автор.');
+            Redirect::back();
+        }
+
         $validator = Validator::make(Request::all(), [
-            'brand' => 'required|max:255',
-            'phone' => 'required|max:255',
             'descriptor' => 'required|max:255',
+            'phone' => 'required|max:255',
+            'offer' => 'required|max:255',
             'video' => 'required|url',
-            'profit' => 'required',
+            'details' => 'required',
             'form_title' => 'required|max:255',
             'call_to_action' => 'required|max:255',
             'legal' => 'required',
@@ -141,28 +177,32 @@ class PageController extends Controller
 
         $page = Page::find($id);
 
-        //$now = new DateTime();
-        //$extension = Request::file('bg')->getClientOriginalExtension();
-        //$uploadPath = public_path('upload\images');
-        //$fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
-        //Request::file('bg')->move($uploadPath, $fileName);
+        if (Request::hasFile('bg')) {
+            $now = new DateTime();
+            $extension = Request::file('bg')->getClientOriginalExtension();
+            $uploadPath = public_path('upload\images');
+            $fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
+            Request::file('bg')->move($uploadPath, $fileName);
+            $page->update([
+                'bg' => $fileName
+            ]);
+        }
 
         $page->update([
-            'brand' => Request::get('brand'),
-            'phone' => Request::get('phone'),
             'descriptor' => Request::get('descriptor'),
+            'phone' => Request::get('phone'),
+            'offer' => Request::get('offer'),
             'video' => Request::get('video'),
-            'profit' => Request::get('profit'),
+            'details' => Request::get('details'),
             'form_title' => Request::get('form_title'),
             'call_to_action' => Request::get('call_to_action'),
             'legal' => Request::get('legal'),
-            'email' => Request::get('email')
+            'email' => Request::get('email'),
         ]);
 
-        //Session::flash('danger', $uploadPath . '/' . $fileName);
-        Session::flash('success', 'Страница обновлена.');
+        Session::flash('success', "Страница № $page->id обновлена .");
 
-        return Redirect::to("/pages/" . $id);
+        return Redirect::to("/pages");
     }
 
     /**

@@ -17,17 +17,18 @@ class CreatePagesTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->softDeletes();
-            $table->string('brand');
-            $table->string('phone');
+            $table->unsignedInteger('user_id');
+            $table->string('status');
             $table->string('descriptor');
+            $table->string('phone');
+            $table->string('bg');
+            $table->string('offer');
             $table->string('video');
-            $table->text('profit');
+            $table->text('details');
             $table->string('form_title');
             $table->string('call_to_action');
             $table->text('legal');
             $table->string('email');
-            $table->string('status');
-            $table->unsignedInteger('user_id');
         });
     }
 

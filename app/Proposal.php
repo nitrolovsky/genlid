@@ -11,6 +11,8 @@ class Proposal extends Model
         'name',
         'email',
         'phone',
-        'owner_id'
+        'owner_id',
+        'template',
+        'status'
     ];
 }

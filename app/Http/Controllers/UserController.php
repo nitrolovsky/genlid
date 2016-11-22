@@ -12,6 +12,10 @@ use App\User;
 
 class UserController extends Controller
 {
+    public function __construct() {
+        $this->middleware('needAuth', ['only' => ['logout']]);
+        $this->middleware('alreadyAuth', ['only' => ['viewLogin', 'login']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -64,7 +68,7 @@ class UserController extends Controller
         }
 
         $user = new User;
-        $user->create([
+        $user = $user->create([
             'email' => Request::get('email'),
             'password' => Request::get('password')
         ]);
@@ -85,7 +89,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::find(Session::get('id'));
+        return View::make('user.show')
+            ->with('user', $user);
     }
 
     /**
@@ -96,7 +102,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find(Session::get('id'));
+        return View::make('user.edit')
+            ->with('user', $user);
     }
 
     /**
@@ -108,7 +116,30 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        if ($id != Session::get('id')) {
+            Session::flash('danger', 'Редактировать профиль имеет право только владелец.');
+            Redirect::back();
+        }
+
+        $validator = Validator::make(Request::all(), [
+            'email' => 'required|unique:users|max:255',
+            'password' => 'required|max:255'
+        ]);
+        if ($validator->fails()) {
+            return Redirect::to('/users/edit')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $user->update([
+            'email' => Request::get('email'),
+            'password' => Request::get('password')
+        ]);
+
+        Session::flash('success', 'Профиль обновлен.');
+
+        return Redirect::to("/users/$user->id");
     }
 
     /**
@@ -173,6 +204,7 @@ class UserController extends Controller
 
     public function logout() {
         Session::flush();
+        Session::flash('success', 'Вы покинули учетную запись.');
         return Redirect::to('/');
     }
 }

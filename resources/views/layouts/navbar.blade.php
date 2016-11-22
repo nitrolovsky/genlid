@@ -13,6 +13,12 @@
                                 <a class="nav-link" href="/pages">Лендинги</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/proposals">Заявки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/users/{{ Session::get('id') }}">Профиль</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/users/logout">Выйти</a>
                             </li>
                         @else

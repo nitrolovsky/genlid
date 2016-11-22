@@ -13,6 +13,13 @@
     <body class="body">
         @include('layouts.navbar')
         <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    @include('layouts.alerts')
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <br>
             <div class="row">
                 <div class="col-xl-12">

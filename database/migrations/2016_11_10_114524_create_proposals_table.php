@@ -22,6 +22,8 @@ class CreateProposalsTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->unsignedInteger('owner_id');
+            $table->string('template');
+            $table->string('status')->nullable();
         });
     }
 

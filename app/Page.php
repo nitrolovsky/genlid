@@ -7,17 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class Page extends Model
 {
     protected $fillable = [
-        'brand',
-        'phone',
+        'user_id',
+        'status',
         'descriptor',
+        'phone',
+        'offer',
+        'bg',
         'video',
-        'profit',
+        'details',
         'form_title',
         'call_to_action',
         'legal',
-        'email',
-        'status',
-        'user_id',
-        'bg'
+        'email'
     ];
 }

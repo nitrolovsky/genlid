@@ -8,8 +8,6 @@
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
-    </head>
-    <body class="body">
         <style>
             .html {
                 background: url(/upload/images/{{ $page->bg }}) no-repeat center center fixed;
@@ -26,13 +24,22 @@
             .form-control {
                 border: 1px solid rgb(200, 202, 203);
             }
+            .a-dark {
+                color: #4da6f3 !important;
+            }
+            .a-dark:hover {
+                color: #4e89bb !important;
+                text-decoration: none;
+            }
         </style>
+    </head>
+    <body class="body">
         <div class="container">
             <br>
             <div class="row text-white">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <p class="lead">
-                        {{ $page->brand }}
+                        {{ $page->descriptor }}
                     </p>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-xl-right text-lg-right text-md-right text-sm-right pr-1">
@@ -46,7 +53,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <h1 class="display-4 text-xl-center text-lg-center text-md-center text-sm-center text-xs-center text-white">
-                        {{ $page->descriptor }}
+                        {{ $page->offer }}
                     </h1>
                 </div>
             </div>
@@ -60,7 +67,7 @@
                     </div>
                     <br>
                     <p class="lead text-white">
-                        {{ $page->profit }}
+                        {{ $page->details }}
                     </p>
                 </div>
                 <div class="col-xl-6">
@@ -109,7 +116,7 @@
                 <div class="col-xl-12">
                     <br>
                     <p class="text-white">
-                        {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>. Сайт разработан <a href="/">nitrolovsky.dev</a>.
+                        {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}" class="a-dark">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}" class="a-dark">{{ $page->email }}</a>. Дата обновления сайта: {{ date_format($page->updated_at, 'd.m.Y') }}. Сайт разработан <a href="/" class="a-dark">nitrolovsky.dev</a>.
                     </p>
                 </div>
             </div>

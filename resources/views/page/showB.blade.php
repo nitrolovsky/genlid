@@ -8,7 +8,18 @@
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
-        <link rel="stylesheet" href="/css/custom.css">
+        <style>
+            .bg-image {
+                background-image: url(/upload/images/{{ $page->bg }});
+                background-position: center;
+            }
+            .navbar {
+                background-color: rgba(0, 0, 0, 0.6) !important;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body class="body">
         <nav class="navbar navbar-fixed-top navbar-dark bg-inverse sw">
@@ -19,7 +30,7 @@
                         <div class="col-xl-12">
                              <ul class="nav navbar-nav">
                                  <li class="nav-item active">
-                                     <a class="nav-link" href="/pages/{{ $page->id }}">{{ $page->brand }}</a>
+                                     <a class="nav-link" href="/pages/{{ $page->id }}">{{ $page->descriptor }}</a>
                                  </li>
                              </ul>
                             <span class="navbar-text float-xl-right text-white">
@@ -30,15 +41,6 @@
                 </div>
             </div>
         </nav>
-        <style>
-            .bg-image {
-                background-image: url(/upload/images/{{ $page->bg }});
-                background-position: center;
-            }
-            .navbar {
-                background-color: rgba(0, 0, 0, 0.6) !important;
-            }
-        </style>
         <div class="container-fluid bg-image box-shadow">
             <br>
             <br>
@@ -47,8 +49,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <h1 class="text-xl-center text-white">
-                            {{ $page->descriptor }}
+                        <h1 class="display-4 text-xl-center text-lg-center text-md-center text-sm-center text-xs-center text-white">
+                            {{ $page->offer }}
                         </h1>
                     </div>
                 </div>
@@ -66,45 +68,37 @@
                     </div>
                     <br>
                     <p class="lead">
-                        {{ $page->profit }}
+                        {{ $page->details }}
                     </p>
                 </div>
                 <div class="col-xl-6">
                     <div class="card bg-faded sw">
                         <div class="card-block">
                             <div class="container">
-                                <p class="lead text-xl-center">
+                                <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
                                     {{ $page->form_title }}
                                 </p>
-                                <hr>
+                                <br>
                                 <form action="/proposals" method="POST">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="page_id" value="{{ $page->id }}">
+                                    <input type="hidden" name="template" value="b">
                                     <div class="form-group row">
                                         <label for="name" class="col-xl-3 col-form-label">Имя</label>
                                         <div class="col-xl-9">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-fw fa-user"></span></div>
-                                                <input type="text" class="form-control" id="name" placeholder="Александр Алексеевич" name="name">
-                                            </div>
+                                            <input type="text" class="form-control" id="name" placeholder="Павел Нитроловский" name="name">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="email" class="col-xl-3 col-form-label">Email</label>
                                         <div class="col-xl-9">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-fw fa-envelope-o"></span></div>
-                                                <input type="email" class="form-control" id="email" placeholder="email@gmail.com" name="email">
-                                            </div>
+                                            <input type="email" class="form-control" id="email" placeholder="nitrolovsky@gmail.com" name="email">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="phone" class="col-xl-3 col-form-label">Телефон</label>
                                         <div class="col-xl-9">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-fw fa-phone"></span></div>
-                                                <input type="phone" class="form-control" id="phone" placeholder="8 929 110 65 44" name="phone">
-                                            </div>
+                                            <input type="phone" class="form-control" id="phone" placeholder="+7 929 116 85 65" name="phone">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -122,7 +116,7 @@
             <hr>
             <div class="row text-muted">
                 <div class="col-xl-12">
-                    {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>. Сайт разработан <a href="/">nitrolovsky.dev</a>.
+                    {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>. Дата обновления сайта: {{ date_format($page->updated_at, 'd.m.Y') }}. Сайт разработан <a href="/">nitrolovsky.dev</a>.
                     <br>
                     <br>
                 </div>

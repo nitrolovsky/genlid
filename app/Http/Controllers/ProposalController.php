@@ -9,9 +9,13 @@ use Session;
 use Redirect;
 
 use App\Proposal;
+use App\Page;
 
 class ProposalController extends Controller
 {
+    public function __construct() {
+        $this->middleware('needAuth', ['only' => ['index', 'update']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -19,8 +23,10 @@ class ProposalController extends Controller
      */
     public function index()
     {
+        $proposals = Proposal::where('owner_id', Session::get('id'))
+            ->orderBy('id', 'desc')
+            ->get();
 
-        $proposals = Proposal::
         return View('proposal.index')
             ->with('proposals', $proposals);
     }
@@ -47,7 +53,8 @@ class ProposalController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|max:255',
             'phone' => 'required|max:255',
-            'page_id' => 'required|max:255'
+            'page_id' => 'required|max:255',
+            'template' => 'required|max:255'
         ]);
         if ($validator->fails()) {
             return Redirect::to('/pages/' . Request::get('page_id'))
@@ -63,7 +70,8 @@ class ProposalController extends Controller
             'email' => Request::get('email'),
             'phone' => Request::get('phone'),
             'page_id' => Request::get('page_id'),
-            'owner_id' =>
+            'owner_id' => $owner_id,
+            'template' => Request::get('template')
         ]);
 
         Session::flash('success', 'Спасибо. Данные формы успешно отправлены.');
@@ -102,7 +110,29 @@ class ProposalController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $proposal = Proposal::find($id);
+        if ($proposal->owner_id != Session::get('id')) {
+            Session::flash('danger', 'Редактировать заявку имеет право только владелец.');
+            Redirect::back();
+        }
+
+        $validator = Validator::make(Request::all(), [
+            'status' => 'max:255'
+        ]);
+        if ($validator->fails()) {
+            return Redirect::to('/proposals/')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $proposal = Proposal::find($id);
+        $proposal->update([
+            'status' => Request::get('status')
+        ]);
+
+        Session::flash('success', 'Статус заявки обновлен.');
+
+        return Redirect::to("/proposals/");
     }
 
     /**
