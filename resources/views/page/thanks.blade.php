@@ -77,60 +77,6 @@
                 </div>
             </div>
             <br>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="embed-responsive embed-responsive-16by9" id="video">
-                        <iframe class="embed-responsive-item" src="{{ $page->video }}" allowfullscreen></iframe>
-                    </div>
-                    <br>
-                    <p class="lead text-white">
-                        {{ $page->details }}
-                    </p>
-                </div>
-                <div class="col-xl-6">
-                    <div class=" text-white">
-                        <div class="">
-                            <div class="container">
-                                <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
-                                    {{ $page->form_title }}
-                                </p>
-                                <br>
-                                <form action="/proposals" method="POST">
-                                    {{ csrf_field() }}
-                                    <input type="hidden" name="page_id" value="{{ $page->id }}">
-                                    <input type="hidden" name="template" value="c">
-                                    <div class="form-group row">
-                                        <label for="name" class="col-xl-3 col-form-label">Имя</label>
-                                        <div class="col-xl-9">
-                                            <input type="text" class="form-control" id="name" placeholder="Павел Нитроловски" name="name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="email" class="col-xl-3 col-form-label">Email</label>
-                                        <div class="col-xl-9">
-                                            <input type="email" class="form-control" id="email" placeholder="nitrolovsky@gmail.com" name="email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="phone" class="col-xl-3 col-form-label">Телефон</label>
-                                        <div class="col-xl-9">
-                                            <input type="phone" class="form-control" id="phone" placeholder="+ 7 929 116 85 65" name="phone">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="offset-xl-3 col-xl-9">
-                                            <button type="submit" class="btn btn-primary btn-block">{{ $page->call_to_action }}&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
             <div class="row">
                 <div class="col-xl-12">
                     <br>

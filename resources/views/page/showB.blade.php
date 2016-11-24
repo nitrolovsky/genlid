@@ -78,6 +78,14 @@
             </div>
         </div>
         <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    @include('layouts.errors')
+                    @include('layouts.alerts')
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <br>
             <br>
             <div class="row">
