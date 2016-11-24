@@ -9,6 +9,25 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <style>
+            @font-face {
+                font-family: 'SegoeUI';
+                src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot');
+                src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?iefix') format('eot'),
+                    url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff') format('woff'),
+                    url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'SegoeUI';
+                src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot');
+                src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot?iefix') format('eot'),
+                    url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+                    url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.ttf') format('truetype');
+                font-weight: bold;
+                font-style: normal;
+            }
             .bg-image {
                 background-image: url(/upload/images/{{ $page->bg }});
                 background-position: center;
@@ -103,7 +122,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="offset-xl-3 col-xl-9">
-                                            <button type="submit" class="btn btn-primary btn-block">{{ $page->call_to_action }}&nbsp;<span class="fa fa-fw fa-long-arrow-right"></span></button>
+                                            <button type="submit" class="btn btn-primary btn-block">{{ $page->call_to_action }}&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
                                         </div>
                                     </div>
                                 </form>

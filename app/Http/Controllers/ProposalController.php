@@ -7,6 +7,7 @@ use View;
 use Validator;
 use Session;
 use Redirect;
+use URL;
 
 use App\Proposal;
 use App\Page;
@@ -74,9 +75,9 @@ class ProposalController extends Controller
             'template' => Request::get('template')
         ]);
 
-        Session::flash('success', 'Спасибо. Данные формы успешно отправлены.');
+        Session::flash('success', 'Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.');
 
-        return Redirect::to("/pages/" . Request::get('page_id'));
+        return Redirect::to(URL::previous());
     }
 
     /**

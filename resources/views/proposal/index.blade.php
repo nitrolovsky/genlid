@@ -31,7 +31,7 @@
                                             {{ csrf_field() }}
                                             <input class="form-control form-control-sm" type="text" name="status" placeholder="Ожидает звонка" value="{{ $proposal->status }}">
                                             <button type="submit" class="btn btn-primary btn-sm">Ok</button>
-                                        </for>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
