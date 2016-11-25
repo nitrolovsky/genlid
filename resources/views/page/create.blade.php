@@ -88,7 +88,7 @@
             </div>
             <div class="form-group row">
                 <div class="offset-xl-3 col-xl-9">
-                    <button type="submit" class="btn btn-primary">Создать и перейти на страницу</button>
+                    <button type="submit" class="btn btn-primary">Создать страницу</button>
                 </div>
             </div>
         </form>

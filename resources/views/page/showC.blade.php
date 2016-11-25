@@ -135,7 +135,7 @@
                 <div class="col-xl-12">
                     <br>
                     <p class="text-white">
-                        {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}" class="a-dark">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}" class="a-dark">{{ $page->email }}</a>. Дата обновления сайта: {{ date_format($page->updated_at, 'd.m.Y') }}. Сайт разработан <a href="/" class="a-dark">nitrolovsky.dev</a>.
+                        {{ $page->legal }} Телефон: <a href="callto:{{ $page->phone }}" class="a-dark">{{ $page->phone }}</a>. Email: <a href="mailto:{{ $page->email }}" class="a-dark">{{ $page->email }}</a>. Дата обновления сайта: {{ date_format($page->updated_at, 'd.m.Y') }}. Сайт разработан <a href="/" class="a-dark">nitrolovsky.com</a>.
                     </p>
                 </div>
             </div>
