@@ -50,32 +50,62 @@
                 color: #4e89bb !important;
                 text-decoration: none;
             }
-            .wrapperMiddle {
-    position: relative;
-
+            
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
             }
-            .middle {
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
 
-                    margin: 30% 0%;
+            .parent {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: auto;
             }
+
+            .tableC {
+                width: 100%;
+                height: 100%;
+                display: table;
+            }
+
+            .cell {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .block {
+                display: inline-block;
+            }
+
+            .in-center {
+                display: block;
+                border: none;
+            }
+
         </style>
     </head>
     <body class="body">
-        <div class="container">
-            <div class="wrapperMiddle">
-                <div class="middle">
-                    <h1 class="display-4 text-xl-center text-lg-center text-md-center text-sm-center text-xs-center text-white">
-                        Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.
-                    </h1>
+        <div class="parent">
+            <div class="tableC">
+                <div class="cell">
+                    <div class="block">
+                        <div class="container">
+                            <h1 class="display-4 text-white in-center">
+                                Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.
+                            </h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>

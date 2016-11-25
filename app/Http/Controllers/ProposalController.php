@@ -77,7 +77,7 @@ class ProposalController extends Controller
 
         Session::flash('success', 'Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.');
 
-        return Redirect::to(URL::previous());
+        return Redirect::to("/pages/" . Request::get('page_id') . "/thanks");
     }
 
     /**

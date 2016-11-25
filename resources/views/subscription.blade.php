@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="offset-xl-3 col-xl-9">
-                                            <button type="submit" class="btn btn-primary btn-block">Отправить заявку&nbsp;<span class="fa fa-fw fa-long-arrow-right"></span></button>
+                                            <button type="submit" class="btn btn-primary btn-block">Отправить заявку&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
                                         </div>
                                     </div>
                                 </form>
