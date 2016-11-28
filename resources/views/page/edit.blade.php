@@ -33,7 +33,7 @@
                             </label>
                         </div>
                         <div class="col-xl-3 col-lg-3 text-xl-right text-lg-right">
-                            <img src="../upload/images/{{ $page->bg }}" class="img-fluid ">
+                            <img src="/upload/images/{{ $page->bg }}" class="img-fluid ">
                         </div>
                     </div>
                     <div class="form-group row">
