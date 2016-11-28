@@ -17,7 +17,7 @@
                         <br>
                         <div class="row">
                             <div class="col-xl-2 col-lg-2 col-md-2">
-                                <img src="/upload/images/{{ $page->bg }}" class="img-fluid">
+                                <img src="..\upload\images\{{ $page->bg }}" class="img-fluid">
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 № {{ $page->id }}
