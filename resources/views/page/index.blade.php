@@ -17,7 +17,7 @@
                         <br>
                         <div class="row">
                             <div class="col-xl-2 col-lg-2 col-md-2">
-                                <img src="..\upload\images\{{ $page->bg }}" class="img-fluid">
+                                <img src="../upload/images/{{ $page->bg }}" class="img-fluid">
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 № {{ $page->id }}
@@ -41,13 +41,8 @@
                                     C - фото
                                 </a>
                             </div>
-                            <script>
-                                $(function () {
-                                    $('[data-toggle="tooltip"]').tooltip();
-                                });
-                            </script>
                             <div class="col-xl-2 col-lg-2 col-md-2">
-                                <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button" data-toggle="tooltip" data-placement="top" data-orgignal-title="Tooltip on top"><span class="fa fa-fw fa-pencil"></span>&nbsp;Редактировать</a>
+                                <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button"><span class="fa fa-fw fa-pencil"></span>&nbsp;Редактировать</a>
                             </div>
                         </div>
                         <br>
