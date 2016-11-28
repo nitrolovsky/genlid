@@ -72,8 +72,8 @@ class PageController extends Controller
 
         $now = new DateTime();
         $extension = Request::file('bg')->getClientOriginalExtension();
-        $uploadPath = public_path('upload\images');
-        $fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
+        $uploadPath = public_path('upload/images');
+        $fileName = $now->format('Y-m-d-H-i-s') . '-' . Session::get('id') . '.' . $extension;
         Request::file('bg')->move($uploadPath, $fileName);
 
         $page_last_id = $page->create([
@@ -184,9 +184,11 @@ class PageController extends Controller
         $page = Page::find($id);
 
         if (Request::hasFile('bg')) {
+
+
             $now = new DateTime();
             $extension = Request::file('bg')->getClientOriginalExtension();
-            $uploadPath = public_path('upload\images');
+            $uploadPath = public_path('upload/images');
             $fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
             Request::file('bg')->move($uploadPath, $fileName);
             $page->update([
