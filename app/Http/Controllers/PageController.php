@@ -184,13 +184,12 @@ class PageController extends Controller
         $page = Page::find($id);
 
         if (Request::hasFile('bg')) {
-
-
             $now = new DateTime();
             $extension = Request::file('bg')->getClientOriginalExtension();
             $uploadPath = public_path('upload/images');
             $fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
             Request::file('bg')->move($uploadPath, $fileName);
+
             $page->update([
                 'bg' => $fileName
             ]);
