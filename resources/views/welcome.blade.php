@@ -77,7 +77,7 @@
                     <br>
                     <br>
                     <br>
-                    
+
                     <div class="embed-responsive embed-responsive-16by9" id="video">
                         <iframe class="embed-responsive-item" src="{{ $data['video'] }}" allowfullscreen></iframe>
                     </div>

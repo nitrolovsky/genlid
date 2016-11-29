@@ -28,6 +28,17 @@
                 font-weight: bold;
                 font-style: normal;
             }
+
+            @font-face {
+                font-family: 'SegoeUI';
+                src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot');
+                src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?iefix') format('eot'),
+                    url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.woff') format('woff'),
+                    url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf') format('truetype');
+                font-weight: 300;
+                font-style: normal;
+            }
+
             .html {
                 background: url(/upload/images/{{ $page->bg }}) no-repeat center center fixed;
                 -webkit-background-size: cover;
@@ -49,6 +60,9 @@
             .a-dark:hover {
                 color: #4e89bb !important;
                 text-decoration: none;
+            }
+            .lead {
+                font-weight: 400;
             }
         </style>
     </head>

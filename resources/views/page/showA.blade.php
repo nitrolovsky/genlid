@@ -28,11 +28,25 @@
                 font-weight: bold;
                 font-style: normal;
             }
+
+            @font-face {
+                font-family: 'SegoeUI';
+                src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot');
+                src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?iefix') format('eot'),
+                    url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.woff') format('woff'),
+                    url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf') format('truetype');
+                font-weight: 300;
+                font-style: normal;
+            }
+
             .body {
                 margin-top: 70px;
             }
             a:hover {
                 text-decoration: none;
+            }
+            .lead {
+                font-weight: 400;
             }
         </style>
     </head>
