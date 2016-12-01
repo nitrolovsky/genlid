@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <h1 class="text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
-                        8 октября. Бесплатный Мастер-класс "Продажи фитнес тренера х2". Вживую в Москве и Онлайн по РФ и СНГ.
+                        Сгенерируйте видео-лендинг в 3 вариантах дизайна за 5 минут.
                     </h1>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     </div>
                     <br>
                     <p class="lead">
-                        Для тех, кто хочет стать или уже является фитнес тренером. Как заработать первые 50000 рублей за 30 дней. Как удвоить продажи. Как перестать жить в фитнес-зале.
+                        Отразите суть вашего бизнеса в 1 экран с высокой конверсией.
                     </p>
                 </div>
                 <div class="col-xl-6">
@@ -45,7 +45,7 @@
                         <div class="card-block">
                             <div class="container">
                                 <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
-                                    Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу
+                                    Заполните форму и вы получите доступ к бесплатному тестовому периоду сервиса по генерации видео-лендингов
                                 </p>
                                 <br>
                                 <form>
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="offset-xl-3 col-xl-9 offset-lg-3 col-lg-9 offset-md-3 col-md-9">
-                                            <button type="submit" class="btn btn-primary btn-block">Отправить заявку&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
+                                            <button type="submit" class="btn btn-primary btn-block">Получить приглашение&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
                                         </div>
                                     </div>
                                 </form>
@@ -82,7 +82,7 @@
             <hr>
             <div class="row text-muted">
                 <div class="col-xl-12">
-                    © 2010-2016 Бизнес Молодость. ООО «БП» Общество с ограниченной ответственностью «База предпринимательства». Юридический адрес: 117545, г. Москва, ул. Дорожная, д.8, корп.1, офис 103. ИНН 7726338554. КПП 772601001. ОГРН 1157746406850. Адрес: г. СПб, ул. Зодчего-Росси 1/3, подъезд 5. Телефон: <a href="callto:8 (929) 116 85 65">8 (929) 116 85 65</a>. Email: <a href="mailto:fitnessschool1@yandex.ru">fitnessschool1@yandex.ru</a>.
+                    © 2016 Павел Нитроловский. г. Санкт-Петербург. Телефон: <a href="callto:8 (929) 116 85 65">8 (929) 116 85 65</a>. Email: <a href="mailto:nitrolovsky@gmail.com">nitrolovsky@gmail.com</a>.
                     <br>
                     <br>
                 </div>
