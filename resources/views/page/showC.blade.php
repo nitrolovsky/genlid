@@ -116,25 +116,25 @@
                                     <input type="hidden" name="page_id" value="{{ $page->id }}">
                                     <input type="hidden" name="template" value="c">
                                     <div class="form-group row">
-                                        <label for="name" class="col-xl-3 col-form-label">Имя</label>
-                                        <div class="col-xl-9">
+                                        <label for="name" class="col-xl-3 col-lg-3 col-md-3 col-form-label">Имя</label>
+                                        <div class="col-xl-9 col-lg-9 col-md-9">
                                             <input type="text" class="form-control" id="name" placeholder="Павел Нитроловски" name="name">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="email" class="col-xl-3 col-form-label">Email</label>
-                                        <div class="col-xl-9">
+                                        <label for="email" class="col-xl-3 col-lg-3 col-md-3 col-form-label">Email</label>
+                                        <div class="col-xl-9 col-lg-9 col-md-9">
                                             <input type="email" class="form-control" id="email" placeholder="nitrolovsky@gmail.com" name="email">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="phone" class="col-xl-3 col-form-label">Телефон</label>
-                                        <div class="col-xl-9">
+                                        <label for="phone" class="col-xl-3 col-lg-3 col-md-3 col-form-label">Телефон</label>
+                                        <div class="col-xl-9 col-lg-9 col-md-9">
                                             <input type="phone" class="form-control" id="phone" placeholder="+ 7 929 116 85 65" name="phone">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="offset-xl-3 col-xl-9">
+                                        <div class="offset-xl-3 col-xl-9 offset-lg-3 col-lg-9 offset-md-3 col-md-9">
                                             <button type="submit" class="btn btn-primary btn-block">{{ $page->call_to_action }}&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
                                         </div>
                                     </div>

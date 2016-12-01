@@ -27,7 +27,7 @@
                             </li>
                         @endif
                     </ul>
-                    <span class="navbar-text float-xl-right text-white">
+                    <span class="navbar-text float-xl-right float-lg-right text-white">
                         8 (929) 116 85 65
                     </span>
                 </div>

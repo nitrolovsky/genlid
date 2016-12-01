@@ -23,7 +23,7 @@
             <br>
             <div class="row">
                 <div class="col-xl-12">
-                    <h1 class="text-xl-center">
+                    <h1 class="text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
                         8 октября. Бесплатный Мастер-класс "Продажи фитнес тренера х2". Вживую в Москве и Онлайн по РФ и СНГ.
                     </h1>
                 </div>
@@ -44,31 +44,31 @@
                     <div class="card sw bg-faded">
                         <div class="card-block">
                             <div class="container">
-                                <p class="lead text-xl-center">
+                                <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
                                     Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу
                                 </p>
                                 <br>
                                 <form>
                                     <div class="form-group row">
-                                        <label for="name" class="col-xl-3 col-form-label">Имя</label>
-                                        <div class="col-xl-9">
+                                        <label for="name" class="col-xl-3 col-lg-3 col-md-3 col-form-label">Имя</label>
+                                        <div class="col-xl-9 col-lg-9 col-md-9">
                                             <input type="text" class="form-control" id="name" placeholder="Павел Нитроловский">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="email" class="col-xl-3 col-form-label">Email</label>
-                                        <div class="col-xl-9">
+                                        <label for="email" class="col-xl-3 col-lg-3 col-md-3 col-form-label">Email</label>
+                                        <div class="col-xl-9 col-lg-9 col-md-9">
                                             <input type="email" class="form-control" id="email" placeholder="nitrolovsky@gmail.com">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="phone" class="col-xl-3 col-form-label">Телефон</label>
-                                        <div class="col-xl-9">
+                                        <label for="phone" class="col-xl-3 col-lg-3 col-md-3 col-form-label">Телефон</label>
+                                        <div class="col-xl-9 col-lg-9 col-md-9">
                                             <input type="phone" class="form-control" id="phone" placeholder="+7 929 116 85 65">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="offset-xl-3 col-xl-9">
+                                        <div class="offset-xl-3 col-xl-9 offset-lg-3 col-lg-9 offset-md-3 col-md-9">
                                             <button type="submit" class="btn btn-primary btn-block">Отправить заявку&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
                                         </div>
                                     </div>
