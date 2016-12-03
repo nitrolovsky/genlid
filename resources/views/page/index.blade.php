@@ -29,7 +29,7 @@
                                 <strong>{{ $page->offer }}</strong>
                             </div>
                             <div class="col-xl-2 col-lg-2 col-md-2">
-                                <a href="/pages/{{ $page->id }}">
+                                <a href="/pages/{{ $page->id }}/a">
                                     А - чистый
                                 </a>
                                 <br>
