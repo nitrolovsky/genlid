@@ -1,13 +1,9 @@
 @extends('layouts.main')
 @section('content')
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <a class="btn btn-primary" href="/pages/create" role="button">
-                    Создать страницу
-                </a>
-            </div>
-        </div>
+        <a class="btn btn-primary" href="/pages/create" role="button">
+            Создать страницу
+        </a>
     </div>
     @if (count($pages) > 0)
         <div class="container">
