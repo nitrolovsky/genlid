@@ -58,8 +58,8 @@ class ProposalController extends Controller
             'template' => 'required|max:255'
         ]);
         if ($validator->fails()) {
-            return Redirect::to('/pages/' . Request::get('page_id'))
-                ->withErrors($validator)
+            return Redirect::to('/pages/' . Request::get('page_id') . '/' . Request::get('template'))
+                ->withErrors($validator, 'proposal')
                 ->withInput();
         }
 

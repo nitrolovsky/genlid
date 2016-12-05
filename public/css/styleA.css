@@ -28,11 +28,11 @@
     font-style: normal;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -51,32 +51,14 @@ footer {
    flex: 0 0 auto;
 }
 
-.cm-top {
-    top: 70px !important;
-}
-
-.cm-gallery {
-    padding-right: 1px !important;
-    padding-bottom: 1px !important;
-    opacity: 0.9;
-}
-
-.cm-gallery:hover {
-    opacity: 1;
-}
-
-.box-shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35), inset 0px 0px 100px 30px rgba(0, 0, 0, 0.5);
-}
-
-.shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
-}
-
-.sw {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+a:hover {
+    text-decoration: none;
 }
 
 .lead {
     font-weight: 400;
+}
+
+.sw {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
