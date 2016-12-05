@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/custom.css">
         <link rel="image_src" href="/images/screenshot-nitrolovsky.com-2016-12-05-17-41-45.png">
+        <meta property="og:image" content="/images/screenshot-nitrolovsky.com-2016-12-05-17-41-45.png">
     </head>
     <body>
         @include('layouts.navbar')
