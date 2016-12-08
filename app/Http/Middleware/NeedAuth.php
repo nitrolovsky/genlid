@@ -19,7 +19,7 @@ class NeedAuth
     {
         if (!Session::get('id')) {
             Session::flash('danger', 'Требуется пройти аутентификацию.');
-            return Redirect::to('user/login');
+            return Redirect::to('users/login');
         }
         return $next($request);
     }

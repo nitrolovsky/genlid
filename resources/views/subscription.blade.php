@@ -22,15 +22,15 @@
                 <div class="row">
                     <div class="col-xl-6">
                         <div class="embed-responsive embed-responsive-16by9" id="video">
-                            <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/vKR4mNpgpR8" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/FSi-aLnKxds" allowfullscreen></iframe>
                         </div>
                         <br>
                         <p class="lead">
-                            Отразите суть вашего бизнеса в 1 экран с высокой конверсией.
+                            Тестирование 5 ниш за 1 вечер - это реально. Конверсия выше, чем у лендингов заказанных в веб-студии. Только самая суть вашего бизнеса, красиво оформленный лендинг в 3 вариантах дизайна. Без игр со шрифтами, цветами, тенями, расположением блоков. Просто, быстро, эффективно.
                         </p>
                     </div>
                     <div class="col-xl-6">
-                        <div class="card bg-faded sw">
+                        <div class="card bg-faded">
                             <div class="card-block">
                                 <div class="container">
                                     <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
@@ -58,7 +58,7 @@
                                         </div>
                                         <div class="form-group row">
                                             <div class="offset-xl-3 col-xl-9 offset-lg-3 col-lg-9 offset-md-3 col-md-9">
-                                                <button type="submit" class="btn btn-primary btn-block">Получить приглашение&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
+                                                <button type="submit" class="btn btn-primary btn-block">Получить доступ&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
                                             </div>
                                         </div>
                                     </form>
@@ -71,7 +71,7 @@
         </section>
         <footer>
             <br>
-            <div class="container-fluid bg-faded text-muted">
+                <div class="container-fluid bg-faded text-muted">
                 <div class="container py-1">
                     © 2016 Павел Нитроловский. г. Санкт-Петербург. Телефон: <a href="callto:8 (929) 116 85 65">8 (929) 116 85 65</a>. Email: <a href="mailto:nitrolovsky@gmail.com">nitrolovsky@gmail.com</a>.
                 </div>

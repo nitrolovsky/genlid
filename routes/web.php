@@ -31,6 +31,8 @@ Route::get('pages/{id}/c', 'PageController@showC');
 
 Route::get('pages/{id}/thanks', 'PageController@showThanks');
 
+Route::get('pages/all', 'PageController@showAll');
+
 Route::resource('pages', 'PageController');
 
 Route::resource('proposals', 'ProposalController');

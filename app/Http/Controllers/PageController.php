@@ -32,6 +32,15 @@ class PageController extends Controller
             ->with('pages', $pages);
     }
 
+    public function showAll()
+    {
+        $pages = Page::orderBy('id', 'desc')
+            ->get();
+
+        return View('page.showAll')
+            ->with('pages', $pages);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -125,7 +134,6 @@ class PageController extends Controller
         return View('page.showC')
             ->with('page', Page::find($id));
     }
-
 
     public function showThanks($id)
     {
