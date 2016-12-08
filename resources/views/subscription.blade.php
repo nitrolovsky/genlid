@@ -22,7 +22,7 @@
                 <div class="row">
                     <div class="col-xl-6">
                         <div class="embed-responsive embed-responsive-16by9" id="video">
-                            <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/FSi-aLnKxds" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/y-74q-HEswI" allowfullscreen></iframe>
                         </div>
                         <br>
                         <p class="lead">
@@ -37,7 +37,10 @@
                                         Заполните форму и вы получите доступ к бесплатному тестовому периоду сервиса по генерации видео-лендингов
                                     </p>
                                     <br>
-                                    <form>
+                                    <form action="/proposals" method="POST">
+                                        {{ csrf_field() }}
+                                        <input type="hidden" name="page_id" value="1">
+                                        <input type="hidden" name="template" value="a">
                                         <div class="form-group row {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
                                             <label for="name" class="col-xl-3 col-lg-3 col-md-3 col-form-label form-control-label">Имя</label>
                                             <div class="col-xl-9 col-lg-9 col-md-9">
