@@ -39,6 +39,9 @@
                                             <a class="nav-link" href="/users/login">Войти</a>
                                         </li>
                                     @endif
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/pages/all">Все лендинги</a>
+                                    </li>
                                 </ul>
                                 <span class="navbar-text float-xl-right float-lg-right text-white">
                                     8 (929) 116 85 65
