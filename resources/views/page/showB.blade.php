@@ -17,6 +17,9 @@
                 background-color: rgba(0, 0, 0, 0.6) !important;
             }
         </style>
+        <title>
+            {{ $page->descriptor }}
+        </title>
     </head>
     <body>
         <nav class="navbar navbar-fixed-top navbar-dark bg-inverse hidden-sm-down">

@@ -19,6 +19,9 @@
                 background-blend-mode: multiply;
             }
         </style>
+        <title>
+            {{ $page->descriptor }}
+        </title>
     </head>
     <body>
         <section class="main-content">

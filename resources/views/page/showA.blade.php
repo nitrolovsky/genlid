@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="/css/docs.min.css">
         <link rel="stylesheet" href="/css/styleA.css">
+        <title>
+            {{ $page->descriptor }}
+        </title>
     </head>
     <body>
         <header>
