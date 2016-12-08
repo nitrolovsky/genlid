@@ -50,7 +50,7 @@
                         </p>
                     </div>
                     <div class="col-xl-6">
-                        <div class="card bg-inverse sw">
+                        <div class="card bg-faded sw">
                             <div class="card-block">
                                 <div class="container">
                                     <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
