@@ -39,6 +39,10 @@
                                 <a href="/pages/{{ $page->id }}/e">
                                     E - C+ лучше видео
                                 </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/f">
+                                    F - A+ лучше видео
+                                </a>
                             </div>
                         </div>
                         <br>
