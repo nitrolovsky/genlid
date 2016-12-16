@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="/css/docs.min.css">
-        <link rel="stylesheet" href="/css/styleA.css">
+        <link rel="stylesheet" href="/css/styleF.css">
         <title>
             {{ $page->descriptor }}
         </title>
@@ -28,14 +28,16 @@
             </nav>
             <nav class="hidden-md-up text-sm-center text-xs-center">
                 <p class="lead">
-                     <a class="nav-link" href="/pages/{{ $page->id }}/a">{{ $page->descriptor }}</a>
-                     <br>
-                     <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>
+                    <br>
+                    <a class="nav-link" href="/pages/{{ $page->id }}/f">{{ $page->descriptor }}</a>
+                    <br>
+                    <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>
                 </p>
             </nav>
         </header>
         <section class="main-content">
             <div class="container">
+                <br>
                 <br>
                 <h1 class="display-4 text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
                     {{ $page->offer }}
