@@ -36,6 +36,14 @@
                                 <a href="/pages/{{ $page->id }}/c">
                                     C - фото
                                 </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/d">
+                                    D - белое фото
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/e">
+                                    E - C+ лучше видео
+                                </a>
                             </div>
                             <div class="col-xl-2 col-lg-2 col-md-2">
                                 <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button"><span class="fa fa-fw fa-pencil"></span>&nbsp;Редактировать</a>

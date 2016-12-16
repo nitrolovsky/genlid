@@ -31,6 +31,14 @@
                                 <a href="/pages/{{ $page->id }}/c">
                                     C - фото
                                 </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/d">
+                                    D - белое фото
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/e">
+                                    E - C+ лучше видео
+                                </a>
                             </div>
                         </div>
                         <br>

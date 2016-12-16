@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot');
+    src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot');
+    src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot');
+    src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+   flex: 0 0 auto;
+}
+
+.main-content {
+   flex: 1 0 auto;
+}
+
+footer {
+   flex: 0 0 auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.sw {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: 1px solid rgb(200, 202, 203);
+}
+
+.a-dark {
+    color: #4da6f3 !important;
+}
+
+.a-dark:hover {
+    color: #4e89bb !important;
+    text-decoration: none;
+}
+
+.tsw {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
