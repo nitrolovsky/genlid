@@ -14,7 +14,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-fixed-top navbar-dark bg-inverse hidden-sm-down">
+            <nav class="navbar navbar-full navbar-dark bg-inverse hidden-sm-down">
                 <div class="container">
                      <ul class="nav navbar-nav">
                          <li class="nav-item active">
