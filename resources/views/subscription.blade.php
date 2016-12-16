@@ -20,7 +20,7 @@
                 <br>
                 <br>
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-8">
                         <div class="embed-responsive embed-responsive-16by9" id="video">
                             <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/y-74q-HEswI" allowfullscreen></iframe>
                         </div>
@@ -29,38 +29,35 @@
                             Тестирование 5 ниш за 1 вечер - это реально. Конверсия выше, чем у лендингов заказанных в веб-студии. Только самая суть вашего бизнеса, красиво оформленный лендинг в 3 вариантах дизайна. Без игр со шрифтами, цветами, тенями, расположением блоков. Просто, быстро, эффективно.
                         </p>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-4">
                         <div class="card bg-faded">
                             <div class="card-block">
                                 <div class="container">
                                     <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
-                                        Заполните форму и вы получите доступ к бесплатному тестовому периоду сервиса по генерации видео-лендингов
+                                        Заполните форму для доступа к бесплатному тестовому периоду 
                                     </p>
                                     <br>
                                     <form action="/proposals" method="POST">
                                         {{ csrf_field() }}
                                         <input type="hidden" name="page_id" value="1">
                                         <input type="hidden" name="template" value="a">
-                                        <div class="form-group row {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
-                                            <label for="name" class="col-xl-3 col-lg-3 col-md-3 col-form-label form-control-label">Имя</label>
-                                            <div class="col-xl-9 col-lg-9 col-md-9">
-                                                <input type="text" class="form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Павел Нитроловский" name="name" value="{{ old('name') }}">
+                                        <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
+                                            <div class="">
+                                                <input type="text" class="form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя : Павел Нитроловский" name="name" value="{{ old('name') }}">
                                             </div>
                                         </div>
-                                        <div class="form-group row {{ !empty($errors->proposal->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
-                                            <label for="email" class="col-xl-3 col-lg-3 col-md-3 col-form-label form-control-label">Email</label>
-                                            <div class="col-xl-9 col-lg-9 col-md-9">
-                                                <input type="email" class="form-control {{ !empty($errors->proposal->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="nitrolovsky@gmail.com" name="email" value="{{ old('email') }}">
+                                        <div class="form-group {{ !empty($errors->proposal->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
+                                            <div class="">
+                                                <input type="email" class="form-control {{ !empty($errors->proposal->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email : nitrolovsky@gmail.com" name="email" value="{{ old('email') }}">
                                             </div>
                                         </div>
-                                        <div class="form-group row {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                                            <label for="phone" class="col-xl-3 col-lg-3 col-md-3 col-form-label form-control-label">Телефон</label>
-                                            <div class="col-xl-9 col-lg-9 col-md-9">
-                                                <input type="phone" class="form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="+ 7 929 116 85 65" name="phone" value="{{ old('phone') }}">
+                                        <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
+                                            <div class="">
+                                                <input type="phone" class="form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон : + 7 929 116 85 65" name="phone" value="{{ old('phone') }}">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="offset-xl-3 col-xl-9 offset-lg-3 col-lg-9 offset-md-3 col-md-9">
+                                        <div class="form-group">
+                                            <div class="">
                                                 <button type="submit" class="btn btn-primary btn-block">Получить доступ&nbsp;<span class="fa fa-fw fa-paper-plane"></span></button>
                                             </div>
                                         </div>
