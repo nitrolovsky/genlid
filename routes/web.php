@@ -28,6 +28,7 @@ Route::resource('users', 'UserController');
 Route::get('pages/{id}/a', 'PageController@showA');
 Route::get('pages/{id}/b', 'PageController@showB');
 Route::get('pages/{id}/c', 'PageController@showC');
+Route::get('pages/{id}/d', 'PageController@showD');
 
 Route::get('pages/{id}/thanks', 'PageController@showThanks');
 

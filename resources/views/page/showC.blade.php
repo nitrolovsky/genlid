@@ -16,7 +16,7 @@
                 -o-background-size: cover;
                 background-size: cover;
                 background-color: rgba(0, 0, 0, 0.5);
-                background-blend-mode: multiply;
+                background-blend-mode: overlay;
             }
         </style>
         <title>
