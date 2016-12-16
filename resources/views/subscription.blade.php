@@ -15,7 +15,7 @@
             <div class="container">
                 <br>
                 <h1 class="display-4 text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
-                    Сгенерируйте видео-лендинг в 3 вариантах дизайна за 5 минут.
+                    Создавайте видео-лендинги для тестирования ниши за 5 минут
                 </h1>
                 <br>
                 <br>
@@ -34,7 +34,7 @@
                             <div class="card-block">
                                 <div class="container">
                                     <p class="lead text-xl-center text-lg-center text-md-center text-sm-center text-xs-center">
-                                        Заполните форму для доступа к бесплатному тестовому периоду 
+                                        Заполните форму для доступа к бесплатному тестовому периоду
                                     </p>
                                     <br>
                                     <form action="/proposals" method="POST">
