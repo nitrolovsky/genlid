@@ -113,7 +113,7 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        return View('page.showA')
+        return View('page.showF')
             ->with('page', Page::find($id));
     }
 

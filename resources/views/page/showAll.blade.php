@@ -7,42 +7,20 @@
                     @foreach ($pages as $page)
                         <br>
                         <div class="row">
-                            <div class="col-xl-2 col-lg-2 col-md-2">
-                                <img src="/upload/images/{{ $page->bg }}" class="img-fluid">
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="embed-responsive embed-responsive-16by9" id="video">
+                                    <iframe class="embed-responsive-item" src="{{ $page->video }}" allowfullscreen></iframe>
+                                </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                № {{ $page->id }}
+                            <div class="col-xl-8 col-lg-8 col-md-8">
+                                <b>{{ $page->descriptor }}</b>
                                 <br>
-                                {{ $page->updated_at }}
+                                {{ $page->updated_at }} # {{ $page->id }}
                                 <br>
-                                {{ $page->descriptor }}
                                 <br>
-                                <strong>{{ $page->offer }}</strong>
-                            </div>
-                            <div class="col-xl-2 col-lg-2 col-md-2">
-                                <a href="/pages/{{ $page->id }}/a">
-                                    А - чистый
-                                </a>
+                                <a href="/pages/{{ $page->id }}">{{ $page->offer }}</a>
                                 <br>
-                                <a href="/pages/{{ $page->id }}/b">
-                                    B - баннер
-                                </a>
-                                <br>
-                                <a href="/pages/{{ $page->id }}/c">
-                                    C - фото
-                                </a>
-                                <br>
-                                <a href="/pages/{{ $page->id }}/d">
-                                    D - белое фото
-                                </a>
-                                <br>
-                                <a href="/pages/{{ $page->id }}/e">
-                                    E - C+ лучше видео
-                                </a>
-                                <br>
-                                <a href="/pages/{{ $page->id }}/f">
-                                    F - A+ лучше видео
-                                </a>
+                                {{ $page->details }}
                             </div>
                         </div>
                         <br>
