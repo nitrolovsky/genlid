@@ -22,7 +22,7 @@
                          </li>
                      </ul>
                     <span class="navbar-text float-xl-right float-lg-right float-md-right text-white">
-                        {{ $page->phone }}
+                        +7 929 116 85 65
                     </span>
                 </div>
             </nav>
