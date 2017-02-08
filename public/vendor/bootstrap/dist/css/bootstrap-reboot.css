@@ -247,16 +247,16 @@ html {
 }
 
 html {
-  font-size: 16px;
+  font-size: 17px;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SegoeUI", "Play", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #000;
+  color: #373a3c;
   background-color: #fff;
 }
 
@@ -318,7 +318,12 @@ a {
   text-decoration: none;
 }
 
-a:focus, a:hover {
+a:focus {
+  color: #014c8c;
+  text-decoration: underline;
+}
+
+a:hover {
   color: #014c8c;
   text-decoration: underline;
 }
@@ -333,7 +338,12 @@ a:not([href]):not([tabindex]) {
   text-decoration: none;
 }
 
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover {
   color: inherit;
   text-decoration: none;
 }

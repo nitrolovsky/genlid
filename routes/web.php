@@ -39,3 +39,8 @@ Route::get('pages/all', 'PageController@showAll');
 Route::resource('pages', 'PageController');
 
 Route::resource('proposals', 'ProposalController');
+
+Route::get("articles/{name}", function($name) {
+    return View("article.$name");
+});
+Route::resource("articles", "ArticleController");
