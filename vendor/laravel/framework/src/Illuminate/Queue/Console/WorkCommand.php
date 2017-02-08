@@ -5,8 +5,8 @@ namespace Illuminate\Queue\Console;
 use Carbon\Carbon;
 use Illuminate\Queue\Worker;
 use Illuminate\Console\Command;
-use Illuminate\Queue\WorkerOptions;
 use Illuminate\Contracts\Queue\Job;
+use Illuminate\Queue\WorkerOptions;
 use Illuminate\Queue\Events\JobFailed;
 use Illuminate\Queue\Events\JobProcessed;
 
@@ -80,7 +80,7 @@ class WorkCommand extends Command
         // connection being run for the queue operation currently being executed.
         $queue = $this->getQueue($connection);
 
-        $response = $this->runWorker(
+        $this->runWorker(
             $connection, $queue
         );
     }
@@ -111,7 +111,7 @@ class WorkCommand extends Command
         return new WorkerOptions(
             $this->option('delay'), $this->option('memory'),
             $this->option('timeout'), $this->option('sleep'),
-            $this->option('tries')
+            $this->option('tries'), $this->option('force')
         );
     }
 

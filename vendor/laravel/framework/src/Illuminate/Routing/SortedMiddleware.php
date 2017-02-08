@@ -10,7 +10,7 @@ class SortedMiddleware extends Collection
      * Create a new Sorted Middleware container.
      *
      * @param  array  $priorityMap
-     * @param  array  $middlewares
+     * @param  array|Collection  $middlewares
      * @return void
      */
     public function __construct(array $priorityMap, $middlewares)
@@ -65,7 +65,7 @@ class SortedMiddleware extends Collection
             }
         }
 
-        return $middlewares;
+        return array_values(array_unique($middlewares, SORT_REGULAR));
     }
 
     /**

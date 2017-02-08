@@ -36,19 +36,49 @@ class ModelMakeCommand extends GeneratorCommand
      */
     public function fire()
     {
-        if (parent::fire() !== false) {
-            if ($this->option('migration')) {
-                $table = Str::plural(Str::snake(class_basename($this->argument('name'))));
-
-                $this->call('make:migration', ['name' => "create_{$table}_table", '--create' => $table]);
-            }
-
-            if ($this->option('controller')) {
-                $controller = Str::camel(class_basename($this->argument('name')));
-
-                $this->call('make:controller', ['name' => "{$controller}Controller", '--resource' => true]);
-            }
+        if (parent::fire() === false) {
+            return;
         }
+
+        if ($this->option('migration')) {
+            $this->createMigration();
+        }
+
+        if ($this->option('controller')) {
+            $this->createController();
+        }
+    }
+
+    /**
+     * Create a migration file for the model.
+     *
+     * @return void
+     */
+    protected function createMigration()
+    {
+        $table = Str::plural(Str::snake(class_basename($this->argument('name'))));
+
+        $this->call('make:migration', [
+            'name' => "create_{$table}_table",
+            '--create' => $table,
+        ]);
+    }
+
+    /**
+     * Create a controller for the model.
+     *
+     * @return void
+     */
+    protected function createController()
+    {
+        $controller = Str::studly(class_basename($this->argument('name')));
+
+        $modelName = $this->qualifyClass($this->getNameInput());
+
+        $this->call('make:controller', [
+            'name' => "{$controller}Controller",
+            '--model' => $this->option('resource') ? $modelName : null,
+        ]);
     }
 
     /**
@@ -82,7 +112,9 @@ class ModelMakeCommand extends GeneratorCommand
         return [
             ['migration', 'm', InputOption::VALUE_NONE, 'Create a new migration file for the model.'],
 
-            ['controller', 'c', InputOption::VALUE_NONE, 'Create a new resource controller for the model.'],
+            ['controller', 'c', InputOption::VALUE_NONE, 'Create a new controller for the model.'],
+
+            ['resource', 'r', InputOption::VALUE_NONE, 'Indicates if the generated controller should be a resource controller'],
         ];
     }
 }

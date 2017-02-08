@@ -1,16 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| This file is where you may define all of the routes that are handled
-| by your application. Just tell Laravel the URIs it should respond
-| to using a Closure or controller method. Build something great!
-|
-*/
-
 Route::get('/', function () {
     //$json = file_get_contents("../database/data/2016-11-03-10-12-pilka.json");
     //$data = json_decode($json, true);
@@ -41,6 +30,16 @@ Route::resource('pages', 'PageController');
 Route::resource('proposals', 'ProposalController');
 
 Route::get("articles/{name}", function($name) {
+    if (file_exists("../database/seeds/$name.json") == true) {
+        $product_json = file_get_contents("../database/seeds/$name.json");
+        $product = json_decode($product_json, true);
+
+        return View("article.$name")
+            ->with("product", $product);
+    }
+
     return View("article.$name");
 });
 Route::resource("articles", "ArticleController");
+Route::get("orders/thanks", "OrderController@showThanks");
+Route::resource("orders", "OrderController");

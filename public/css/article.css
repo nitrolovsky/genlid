@@ -1,0 +1,39 @@
+body {
+    overflow-y: scroll;
+}
+
+a, a:hover, a:active, a:visited {
+    text-decoration:none !important;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+.cm-gallery {
+    opacity: 0.8;
+}
+
+.cm-gallery:hover {
+    opacity: 1;
+}
+
+.sw {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.russo {
+    font-family: 'Russo One', sans-serif !important;
+}
+
+.pt {
+      font-family: 'Verdana', sans-serif;
+}
+
+input, button, textarea {
+      font-family: 'Verdana', sans-serif !important;
+}
+
+input, textarea {
+    color: black !important;
+}
