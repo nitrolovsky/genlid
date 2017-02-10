@@ -1,51 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/article.css">
-        <title>
-            Газификация частного дома в Санкт-Петербурге и Ленинградской области
-        </title>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-89666787-1', 'auto');
-          ga('require', 'displayfeatures');
-          ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
-        <div class="container-fluid px-0 bg-inverse text-white sw">
-            <div class="container py-3">
-                <div class="row small">
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        GENLID
-                        <br>
-                        Газификация частных домов
-                    </div>
-                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <div class="hidden-md-up">
-                            <br>
-                        </div>
-                        Бесплатная выезд на участок. Получим технические условия за вас. Согласуем проект в государственных учреждениях.
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right">
-                        <div class="hidden-md-up">
-                            <br>
-                        </div>
-                        8 929 116 85 65
-                    </div>
-                </div>
-            </div>
-        </div>
+@component("components.head")
+    @slot("title")
+        Газификация частного дома в Санкт-Петербурге и Ленинградской области
+    @endslot
+@endcomponent
+
+        @component("components.header")
+            @slot("domen")
+                GENLID
+            @endslot
+            @slot("descriptor")
+                Газификация частных домов
+            @endslot
+            @slot("benefits")
+                Бесплатная выезд на участок. Получим технические условия за вас. Согласуем проект в государственных учреждениях.
+            @endslot
+            @slot("phone")
+                8 929 116 85 65
+            @endslot
+        @endcomponent
 
         @component("components.first")
             @slot("heading")
@@ -63,6 +35,9 @@
         @endcomponent
 
         @component("components.slide")
+            @slot("bg")
+                bg-faded
+            @endslot
             @slot("heading")
                 Получение технических условий (ТУ) - первый шаг к газификации вашего дома
             @endslot
@@ -109,6 +84,9 @@
         @endcomponent
 
         @component("components.slide")
+            @slot("bg")
+                bg-faded
+            @endslot
             @slot("heading")
                 Согласование проекта
             @endslot
@@ -145,6 +123,9 @@
         @endcomponent
 
         @component("components.slide")
+            @slot("bg")
+                bg-faded
+            @endslot
             @slot("heading")
                 Строительно-монтажные работы
             @endslot
@@ -189,6 +170,9 @@
         @endcomponent
 
         @component("components.slide")
+            @slot("bg")
+                bg-faded
+            @endslot
             @slot("heading")
                 Сдача объекта
             @endslot
@@ -224,92 +208,39 @@
             @endslot
         @endcomponent
 
-        <div class="container py-5" id="request">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 offset-xl-3 offset-lg-3 offset-md-2">
+        @component("components.form")
+            @slot("title")
+                Оставьте заявку на бесплатный выезд и расчет сметы инженером
+            @endslot
+            @slot("source")
+                gazifikaciya1
+            @endslot
+            @slot("explanations")
+                Инженер позвонит в течении 15 минут после отправки заявки. Email потребуется для получения сметы и сопроводительных документов.
+            @endslot
+        @endcomponent
 
-                    <div class="card card-block bg-faded sw mb-0">
-                        <h4 class="pb-3 russo">
-                            Оставьте заявку на бесплатный выезд и расчет сметы инженером
-                        </h4>
-                        <form action="/orders" method="POST">
-                            {{ csrf_field() }}
-                            <input type="hidden" name="product_url" value="gazifikaciya">
-                            <input type="hidden" name="type" value="Order from article">
-                            <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
-                                <input type="email" class="form-control {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
-                            </div>
-                            <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                                <input type="phone" class="form-control {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
-                            </div>
-                            <div class="form-group">
-                                <textarea type="text" class="form-control" id="comment" placeholder="Комментарий (по желанию)" name="comment" value="{{ old('comment') }}" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;"><span class="fa fa-fw fa-paper-plane" aria-hidden="true"></span>&nbsp;Отправить</button>
-                        </form>
-                        <div class="small pt-3">
-                            Инженер позвонит в течении 15 минут после отправки заявки. Email потребуется для получения сметы и сопроводительных документов.
-                        </div>
-                    </div>
+        @component("components.comments")
+        @endcomponent
 
-                </div>
-            </div>
-        </div>
+        @component("components.footer")
+            @slot("jurist")
+                © GENLID 2017 Все права защищены
+                <br>
+                <a href="/files/politika-confidencialnosti.pdf" target="_blank">Политика конфиденциальности</a>
+                <br>
+                Юридический адрес 117545, Санкт-Петербург, Невский проспект, д. 1, офис 103 ИНН 7726338554 КПП 772601001 ОГРН 1157746406850
+            @endslot
+            @slot("developer")
+                Дата обновления сайта 08.02.2017
+                <br>
+                Сайт разработал <a href="https://vk.com/id327409638">Pavel Nitrolovsky</a>
+            @endslot
+            @slot("contacts")
+                Телефон <a href="callto:8 929 116 85 65">8 929 116 85 65</a><br>
+                Email <a href="mailto:nitrolovsky@gmail.com">nitrolovsky@gmail.com</a><br>
+            @endslot
+        @endcomponent
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                    <div class="pt-3" id="mc-container"></div>
-                    <script type="text/javascript">
-                        cackle_widget = window.cackle_widget || [];
-                        cackle_widget.push({widget: 'Comment', id: 49982});
-                        (function() {
-                            var mc = document.createElement('script');
-                            mc.type = 'text/javascript';
-                            mc.async = true;
-                            mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
-                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-                        })();
-                    </script>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <hr>
-            <div class="row small">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    © GENLID 2017 Все права защищены
-                    <br>
-                    <a href="/files/politika-confidencialnosti.pdf" target="_blank">Политика конфиденциальности</a>
-                    <br>
-                    Юридический адрес 117545, Санкт-Петербург, Невский проспект, д. 1, офис 103
-                    ИНН 7726338554
-                    КПП 772601001
-                    ОГРН 1157746406850
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="hidden-md-up">
-                        <br>
-                    </div>
-                    Дата обновления сайта 08.02.2017
-                    <br>
-                    Сайт разработал <a href="https://vk.com/id327409638">Pavel Nitrolovsky</a>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="hidden-md-up">
-                        <br>
-                    </div>
-                    Телефон <a href="callto:8 929 116 85 65">8 929 116 85 65</a><br>
-                    Email <a href="mailto:nitrolovsky@gmail.com">nitrolovsky@gmail.com</a><br>
-                </div>
-            </div>
-            <br>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-        <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="/js/app.js"></script>
-        <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42033909 = new Ya.Metrika({ id:42033909, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"dataLayer" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42033909" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-    </body>
-</html>
+@component("components.js")
+@endcomponent

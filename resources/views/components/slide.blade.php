@@ -8,6 +8,7 @@
             </div>
         </div>
     </div>
+    <div class="container hidden-sm-up px-0 pt-5">
         <img src="/images/{{ $image }}" class="img-fluid mx-auto d-block">
         <div class="text-center">
             {{ $description }}
