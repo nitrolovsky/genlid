@@ -37,3 +37,8 @@ input, button, textarea {
 input, textarea {
     color: black !important;
 }
+
+.f {
+    font-family: 'Georgia' !important;
+
+}

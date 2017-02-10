@@ -17,7 +17,15 @@ class ArticleController extends Controller
      */
     public function index()
     {
+        if (file_exists("../database/seeds/articles.json") == true) {
+            $articles_json = file_get_contents("../database/seeds/articles.json");
+            $articles = json_decode($articles_json, true);
 
+            return View("article.index")
+                ->with("articles", $articles);
+        } else {
+            echo "Страницы не существует";
+        }
     }
 
     /**
@@ -49,7 +57,7 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        
+
     }
 
     /**
