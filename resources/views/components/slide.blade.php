@@ -1,7 +1,7 @@
 <div class="container pt-5">
     <div class="row">
-        <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-1">
-            <h2 class="russo">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+            <h2 class="russo text-center text-uppercase">
                 {{ $heading }}
             </h2>
         </div>
@@ -9,15 +9,15 @@
 </div>
 <div class="container hidden-sm-up px-0 pt-4">
     <img src="/images/{{ $image }}" class="img-fluid mx-auto d-block">
-    <div class="text-xl-center text-lg-center text-md-center text-sm-center text-center">
+    <div class="text-center">
         {{ $description }}
     </div>
 </div>
 <div class="container hidden-xs-down pt-4">
     <div class="row">
-        <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 offset-xl-2 offset-lg-1">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
             <img src="/images/{{ $image }}" class="img-fluid mx-auto d-block">
-            <div class="text-xl-center text-lg-center text-md-center text-sm-center text-center">
+            <div class="text-center">
                 {{ $description }}
             </div>
         </div>
@@ -25,7 +25,7 @@
 </div>
 <div class="container pb-5">
     <div class="row">
-        <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-1">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
             <h5 class="russo pt-4">
                 {{ $subheading }}
             </h5>

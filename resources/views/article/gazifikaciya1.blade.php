@@ -47,19 +47,20 @@
             </div>
         </div>
 
-        @component("components.h1")
-            Газификация частного дома в Санкт-Петербурге и Ленинградской области
+        @component("components.first")
+            @slot("heading")
+                Газификация частного дома в Санкт-Петербурге и Ленинградской области
+            @endslot
+            @slot("video")
+                https://www.youtube.com/embed/MYSvtLuyVzs
+            @endslot
+            @slot("description")
+                Подключаем частные дома к газовой трубе. Проектируем и монтируем под ключ. Помогаем оформить необходимые документы на всех этапах подключения дома к газу. От технических условий до пуска газа. Есть необходимые допуски и аттестации в области проектирования, строительства, монтажа, ремонта и обслуживания систем теплоснабжения и газоснабжения, газового оборудования и автоматики.
+            @endslot
+            @slot("calltoaction")
+                Получите бесплатный выезд инженера и расчет сметы
+            @endslot
         @endcomponent
-
-        @component("components.video")
-            https://www.youtube.com/embed/MYSvtLuyVzs
-        @endcomponent
-
-        @component("components.description")
-            <b>Подключаем частные дома к газовой трубе.</b> Проектируем и монтируем под ключ. Помогаем оформить необходимые документы на всех этапах подключения дома к газу. От технических условий до пуска газа. Есть необходимые допуски и аттестации в области проектирования, строительства, монтажа, ремонта и обслуживания систем теплоснабжения и газоснабжения, газового оборудования и автоматики.
-        @endcomponent
-
-
 
         @component("components.slide")
             @slot("heading")
@@ -223,11 +224,14 @@
             @endslot
         @endcomponent
 
-        <div class="container" id="request">
+        <div class="container py-5" id="request">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 offset-xl-3 offset-lg-3 offset-md-2">
-                    <h4 class="pb-3 russo">Оставьте заявку на бесплатную консультацию и выезд инженера</h4>
+
                     <div class="card card-block bg-faded sw mb-0">
+                        <h4 class="pb-3 russo">
+                            Оставьте заявку на бесплатный выезд и расчет сметы инженером
+                        </h4>
                         <form action="/orders" method="POST">
                             {{ csrf_field() }}
                             <input type="hidden" name="product_url" value="gazifikaciya">
@@ -243,10 +247,11 @@
                             </div>
                             <button type="submit" class="btn btn-primary btn-block" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;"><span class="fa fa-fw fa-paper-plane" aria-hidden="true"></span>&nbsp;Отправить</button>
                         </form>
+                        <div class="small pt-3">
+                            Инженер позвонит в течении 15 минут после отправки заявки. Email потребуется для получения сметы и сопроводительных документов.
+                        </div>
                     </div>
-                    <div class="small p-3">
-                        Email и телефон для общения и обмена документами. Время обработки заявки 15 минут.
-                    </div>
+
                 </div>
             </div>
         </div>
