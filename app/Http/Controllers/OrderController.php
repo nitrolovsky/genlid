@@ -176,11 +176,7 @@ class OrderController extends Controller
     public function showThanks() {
         $order = Order::find(Session::get("order_id"));
 
-        $product_json = file_get_contents("../database/seeds/$order->product_url.json");
-        $product = json_decode($product_json, true);
-
         return View::make("order.thanks")
-            ->with("order", $order)
-            ->with("product", $product);
+            ->with("order", $order);
     }
 }
