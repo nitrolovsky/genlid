@@ -88,7 +88,7 @@ class OrderController extends Controller
         if (Request::get("type") == "Order from article") {
             $validator = Validator::make(Request::all(), [
                 "email" => "email|max:255",
-                "phone" => "max:255"
+                "phone" => "required|max:255"
             ]);
             if ($validator->fails()) {
                 Session::flash("danger", "Заполните форму.");
