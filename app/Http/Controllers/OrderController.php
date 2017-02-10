@@ -102,7 +102,8 @@ class OrderController extends Controller
                 "email" => Request::get("email"),
                 "phone" => Request::get("phone"),
                 "comment" => Request::get("comment"),
-                "product_url" => Request::get("product_url")
+                "product_url" => Request::get("product_url"),
+                "status" => "Order by article"
             ])->id;
 
             Session::flash("success", "Заявка отправлена.");
