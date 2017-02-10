@@ -1,7 +1,7 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-            <h1 class="russo text-center text-uppercase">
+            <h1 class="h2 russo text-center text-uppercase">
                 {{ $heading }}
             </h1>
         </div>

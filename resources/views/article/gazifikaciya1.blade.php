@@ -241,6 +241,6 @@
                 Email <a href="mailto:nitrolovsky@gmail.com">nitrolovsky@gmail.com</a><br>
             @endslot
         @endcomponent
-
+        
 @component("components.js")
 @endcomponent
