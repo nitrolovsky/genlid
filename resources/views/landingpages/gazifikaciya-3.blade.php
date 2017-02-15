@@ -275,120 +275,128 @@
         </div>
         <div class="row">
             <form class="col-xl-10 offset-xl-1">
-                <div class="bgimage-form-1 p-4">
-                    <div class="form-check mb-0">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">
-                            Требуется разработка проекта наружного газопровода
-                        </label>
-                    </div>
-                </div>
-                <br>
-                <div class="bgimage-form-2 p-4">
-                    <div class="form-check mb-0">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">
-                            Требуется разработка проекта внутреннего газопровода
-                        </label>
-                    </div>
-                </div>
-                <br>
-                <div class="bgimage-form-3 p-4">
-                    <div class="form-group mb-0">
-                        <label for="formGroupExampleInput">
-                            Длина от основной магистрали до места подключения в метрах
-                        </label>
-                        <input type="number" class="form-control btn-circle col-xl-4" id="formGroupExampleInput" placeholder="1" value="1" min="0">
-                    </div>
-                </div>
-                <br>
-                <div class="bgimage-form-4 p-4">
-                    <fieldset class="form-group mb-0">
-                        <legend class="col-form-legend">
-                            Количество и удаленность потребителей газа
-                        </legend>
-                        <div class="form-check">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="form-check mb-0 bgimage-form-1 p-4">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                Один потребитель
+                                <input class="form-check-input" type="checkbox" value="">
+                                Требуется разработка проекта наружного газопровода
                             </label>
                         </div>
-                        <div class="form-check">
+                    </div>
+                    <br>
+                    <div class="col-xl-6">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                Два потребителя через стену друг от друга меньше 2 метров
+                                <input class="form-check-input" type="checkbox" value="">
+                                Требуется разработка проекта внутреннего газопровода
                             </label>
                         </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                Три потребителя
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label mb-0">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                Два потребителя на удалении больше 2 метров
-                            </label>
-                        </div>
-                    </fieldset>
-                </div>
-                <br>
-                <div class="bgimage-form-5 p-4">
-                    <div class="form-check mb-0">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">
-                            Требуется получить исполнительно-техническую документацию наружного газоснабжения
-                        </label>
                     </div>
                 </div>
                 <br>
-                <div class="bgimage-form-6 p-4">
-                    <div class="form-check mb-0">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">
-                            Требуется получить исполнительно-техническую документацию внутреннего газоснабжения
-                        </label>
-                    </div>
-                </div>
-                <br>
-                <div class="bgimage-form-7 p-4">
-                    <fieldset class="form-group mb-0">
-                        <legend class="col-form-legend">
-                            Давление в системе газоснабжения
-                        </legend>
-                        <div class="form-check">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="form-check mb-0 bgimage-form-5 p-4">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                Низкое
+                                <input class="form-check-input" type="checkbox" value="">
+                                Требуется получить исполнительно-техническую документацию наружного газоснабжения
                             </label>
                         </div>
-                        <div class="form-check mb-0">
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-check mb-0 bgimage-form-6 p-4">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                Среднее
+                                <input class="form-check-input" type="checkbox" value="">
+                                Требуется получить исполнительно-техническую документацию внутреннего газоснабжения
                             </label>
                         </div>
-                    </fieldset>
-                </div>
-                <br>
-                <div class="bgimage-form-1 p-4">
-                    <div class="form-check mb-0">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">
-                            Требуется получить акт обследования дымоходов
-                        </label>
                     </div>
                 </div>
                 <br>
-                <div class="bgimage-form-2 p-4">
-                    <div class="form-check mb-0">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">
-                            Требуется заключить договор на сервисное обслуживание котла
-                        </label>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Требуется получить акт обследования дымоходов
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Требуется заключить договор на сервисное обслуживание котла
+                            </label>
+                        </div>
                     </div>
                 </div>
+                <br>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <fieldset class="form-group mb-0 bgimage-form-4 p-4">
+                            <label>
+                                Количество и удаленность потребителей газа
+                            </label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="checked">
+                                    Один потребитель
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    Два потребителя через стену друг от друга меньше 2 метров
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    Три потребителя
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label mb-0">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    Два потребителя на удалении больше 2 метров
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <fieldset class="form-group bgimage-form-7 p-4">
+                            <label class="">
+                                Давление в системе газоснабжения
+                            </label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="checked">
+                                    Низкое
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    Среднее
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-group mb-0 bgimage-form-3 p-4">
+                            <label for="formGroupExampleInput">
+                                Длина от основной магистрали до места подключения в метрах
+                            </label>
+                            <input type="number" class="form-control btn-circle" id="formGroupExampleInput" placeholder="1" value="1" min="0">
+                        </div>
+                    </div>
+                </div>
+
                 <h4 class="russo pt-5" id="request">
                     Расчет прийдет в письме на email и смс на телефон
                 </h4>
