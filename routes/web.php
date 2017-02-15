@@ -20,11 +20,8 @@ Route::get('pages/{id}/c', 'PageController@showC');
 Route::get('pages/{id}/d', 'PageController@showD');
 Route::get('pages/{id}/e', 'PageController@showE');
 Route::get('pages/{id}/f', 'PageController@showF');
-
 Route::get('pages/{id}/thanks', 'PageController@showThanks');
-
 Route::get('pages/all', 'PageController@showAll');
-
 Route::resource('pages', 'PageController');
 
 Route::resource('proposals', 'ProposalController');
@@ -41,5 +38,14 @@ Route::get("articles/{name}", function($name) {
     return View("article.$name");
 });
 Route::resource("articles", "ArticleController");
+
+Route::get("lp/{name}", function($name) {
+    if (file_exists("../resources/views/landingpages/$name.blade.php") == true) {
+        return View("landingpages.$name");
+    } else {
+        return Redirect::to("/");
+    }
+});
+
 Route::get("orders/thanks", "OrderController@showThanks");
 Route::resource("orders", "OrderController");

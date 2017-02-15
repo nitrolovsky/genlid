@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot');
+    src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot');
+    src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot');
+    src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 body {
     overflow-y: scroll;
 }
@@ -23,7 +53,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .russo {
-    font-family: 'Russo One', sans-serif !important;
+    font-family: "Roboto Slab", sans-serif !important;
 }
 
 .pt {
