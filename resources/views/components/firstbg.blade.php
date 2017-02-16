@@ -15,8 +15,15 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                    {{ $domen }}<br>
-                    {{ $descriptor }}
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="/images/gazifikaciya-3/gazifikaciya-logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                            {{ $domen }}<br>
+                            {{ $descriptor }}
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
                     <div class="hidden-md-up">
