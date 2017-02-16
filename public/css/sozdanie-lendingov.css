@@ -1,0 +1,23 @@
+.sw {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.russo {
+    font-family: "Play", sans-serif !important;
+}
+
+input, button, textarea {
+      font-family: 'Verdana', sans-serif !important;
+}
+
+input, textarea {
+    color: black !important;
+}
+
+.bg-img-1 {
+    background: url("/images/sozdanie-lendingov/sozdanie-lendingov-2.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+}
