@@ -75,7 +75,7 @@
         bgimage-kredit
     @endslot
     @slot("image")
-        "/images/gazifikaciya-3/gazifikaciya-fotografiya-9.jpg"
+        "/images/gazifikaciya-3/gazifikaciya-fotografiya-1.jpg"
     @endslot
     @slot("caption")
         <h2 class="russo text-center py-5 my-0">
@@ -178,7 +178,7 @@
         bgimage-stoimost
     @endslot
     @slot("image")
-        "/images/gazifikaciya2/gazifikaciya-fotografiya-5.jpg"
+        "/images/gazifikaciya-3/gazifikaciya-fotografiya-9.jpg"
     @endslot
     @slot("caption")
         <h2 class="russo text-center py-5 my-0">
