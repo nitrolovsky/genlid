@@ -107,7 +107,7 @@
                     </ul>
                     <br>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary">Заказать выезд инженера</a>
+                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                         <li>Прокладка газопровода через лес и передача газопровода на баланс филиалу ОАО "Газпром"
                     </ul>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary">Заказать выезд инженера</a>
+                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                         <li>Мощность газовых генераторов 250 кВт
                     </ul>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary">Заказать выезд инженера</a>
+                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                     </ul>
                     <br>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary">Заказать выезд инженера</a>
+                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
