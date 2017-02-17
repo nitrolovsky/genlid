@@ -416,6 +416,152 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h2 class="russo text-center py-5">
+                            Газгольдер
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <fieldset class="form-group mb-0 bgimage-form-4 p-4">
+                            <label>
+                                Объем газгольдера
+                            </label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="checked">
+                                    2 400 л
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    4 300 л
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    6 200 л
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label mb-0">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    8 100 л
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label mb-0">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    10 000 л
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Анодно-катодная <br>защита
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Конденсатосборник<br>10 л
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Молниеотвод трубчатый <br>4 м
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Cпецотвод изолированный
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Установка сигнализатора загазованности
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Земельные работы с техникой
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Ввод газопровода <br>в дом
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Подведение внутреннего газопровода
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Газгольдер с высокой горловиной
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Первичная заправка ёмкости
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
                 <h4 class="russo pt-5 text-center" id="request">
                     Расчет прийдет в письме на email и смс на телефон
                 </h4>
