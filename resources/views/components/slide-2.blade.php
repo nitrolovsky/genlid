@@ -10,13 +10,13 @@
     </div>
     <div class="container-fluid hidden-sm-up px-0">
         <img src="/images/{{ $image }}" class="img-fluid mx-auto d-block" alt="{{ $description }}">
-        <div class="text-center">
+        <div class="container text-center">
             {{ $description }}
         </div>
     </div>
     <div class="container-fluid hidden-xs-down px-0">
         <img src="/images/{{ $image }}" class="img-fluid mx-auto d-block" alt="{{ $description }}">
-        <div class="text-center">
+        <div class="container text-center">
             {{ $description }}
         </div>
     </div>

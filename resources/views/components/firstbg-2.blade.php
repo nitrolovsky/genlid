@@ -15,7 +15,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                    {{ $domen }}<br>
+                    <h5 class="russo py-0 my-0">{{ $domen }}</h5>
                     {{ $descriptor }}
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
