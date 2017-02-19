@@ -1,0 +1,19 @@
+.sw {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.russo {
+    font-family: "Play", sans-serif !important;
+}
+
+input, button, textarea {
+      font-family: 'Verdana', sans-serif !important;
+}
+
+input, textarea {
+    color: black !important;
+}
+
+.btn-circle {
+    border-radius: 2rem !important;
+}
