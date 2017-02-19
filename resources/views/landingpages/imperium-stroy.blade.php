@@ -192,11 +192,12 @@
         <br>
         <a href="/files/politika-confidencialnosti.pdf" target="_blank">Политика конфиденциальности</a>
         <br>
-        Юридический адрес 117545, Санкт-Петербург, Невский проспект, д. 1, офис 103 ИНН 7726338554 КПП 772601001 ОГРН 1157746406850
+        Санкт-Петербург, Невский проспект дом 1 офис 103<br>
+        ИНН 7726338554 КПП 772601001 ОГРН 1157746406850
     @endslot
     @slot("contacts")
-        Телефон <a href="callto:8 951 666 41 46">8 951 666 41 46</a><br>
-        Email <a href="mailto:imperium.stroy@mail.ru">imperium.stroy@mail.ru</a><br>
+        Телефон <a href="callto:8 929 116 85 65">8 929 116 85 65</a><br>
+        Email <a href="mailto:nitrolovsky@mail.ru">nitrolovsky@mail.ru</a><br>
         Дата обновления сайта 19.02.2017<br>
         Сайт разработал <a href="https://vk.com/id327409638">Pavel Nitrolovsky</a>
     @endslot
