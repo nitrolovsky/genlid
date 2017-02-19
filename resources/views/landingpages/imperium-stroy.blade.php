@@ -14,7 +14,7 @@
         /images/imperium-stroy/remont-otdelka-kvartir-spb-fotografiya-13.jpg
     @endslot
     @slot("domen")
-        ИмпериумСтрой
+        Империум Строй
     @endslot
     @slot("descriptor")
         Ремонт и отделка квартир в Санкт-Петербурге
@@ -23,7 +23,7 @@
         8 929 116 85 65
     @endslot
     @slot("heading")
-        Ремонт и отделка квартир в Санкт-Петербурге
+        Ремонт и отделка квартир под ключ в Санкт-Петербурге <br>за 750 рублей / кв. м.
     @endslot
     @slot("calltoaction")
         Бесплатный расчет сметы

@@ -42,7 +42,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 {{ $jurist }}
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-left">
                 <div class="hidden-md-up">
                     <br>
                 </div>
