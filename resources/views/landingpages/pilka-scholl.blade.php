@@ -11,22 +11,22 @@
         bgimage-first
     @endslot
     @slot("image")
-        /images/imperium-stroy/remont-otdelka-kvartir-spb-fotografiya-13.jpg
+        /images/pilka-scholl/pilka-scholl-velvet-smooth-wet-dry-2.jpg
     @endslot
     @slot("domen")
-        Империум Строй
+        Genlid.com
     @endslot
     @slot("descriptor")
-        Ремонт и отделка квартир в Санкт-Петербурге
+        Интернет-магазин товаров почтой
     @endslot
     @slot("phone")
         8 929 116 85 65
     @endslot
     @slot("heading")
-        Ремонт и отделка квартир под ключ в Санкт-Петербурге за 750 рублей / кв. м.
+        Электрическая роликовая пилка Scholl для удаления огрубевшей кожи стоп
     @endslot
     @slot("calltoaction")
-        Бесплатный расчет сметы
+        Купить 3550 ₽
     @endslot
 @endcomponent
 
