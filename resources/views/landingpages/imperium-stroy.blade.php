@@ -165,7 +165,16 @@
     @endslot
 @endcomponent
 
-@component("components.form")
+@component("components.comments")
+@endcomponent
+
+@component("components.form-2")
+    @slot("bgimageid")
+        bg-img-form
+    @endslot
+    @slot("image")
+        /images/imperium-stroy/remont-otdelka-kvartir-spb-fotografiya-14.jpg
+    @endslot
     @slot("title")
         Оставьте заявку на бесплатный выезд и расчет сметы инженером
     @endslot
@@ -178,12 +187,6 @@
     @slot("calltoaction")
         Бесплатная консультация
     @endslot
-@endcomponent
-
-@component("components.comments")
-@endcomponent
-
-@component("components.footer")
     @slot("jurist")
         © ImperiumStroy 2017 Все права защищены
         <br>
@@ -191,14 +194,11 @@
         <br>
         Юридический адрес 117545, Санкт-Петербург, Невский проспект, д. 1, офис 103 ИНН 7726338554 КПП 772601001 ОГРН 1157746406850
     @endslot
-    @slot("developer")
-        Дата обновления сайта 19.02.2017
-        <br>
-        Сайт разработал <a href="https://vk.com/id327409638">Pavel Nitrolovsky</a>
-    @endslot
     @slot("contacts")
         Телефон <a href="callto:8 951 666 41 46">8 951 666 41 46</a><br>
         Email <a href="mailto:imperium.stroy@mail.ru">imperium.stroy@mail.ru</a><br>
+        Дата обновления сайта 19.02.2017<br>
+        Сайт разработал <a href="https://vk.com/id327409638">Pavel Nitrolovsky</a>
     @endslot
 @endcomponent
 
