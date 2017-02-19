@@ -104,7 +104,7 @@
         Качественный ремонт квартир без посредников
     @endslot
     @slot("image")
-        imperium-stroy/remont-otdelka-kvartir-spb-fotografiya-11.jpg
+        imperium-stroy/remont-otdelka-kvartir-spb-fotografiya-14.jpg
     @endslot
     @slot("description")
         Ремонт квартиры у метро Горьковская
