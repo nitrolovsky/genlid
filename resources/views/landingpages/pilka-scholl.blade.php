@@ -1,6 +1,6 @@
 @component("components.head")
     @slot("title")
-        Ремонт и отделка квартир в Санкт-Петербурге
+        Электрическая роликовая пилка Scholl Velvet Smooth & Dry genlid.com Интернет-магазин
     @endslot
 @endcomponent
 
