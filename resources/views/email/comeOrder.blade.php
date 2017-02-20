@@ -1,9 +1,13 @@
 <body>
-    {{ $email or ""}}
+    Имя - {{ $name or "" }}
     <br>
-    {{ $phone or ""}}
+    Email - {{ $email or ""}}
     <br>
-    {{ $product_url or ""}}
+    Телефон - {{ $phone or ""}}
     <br>
-    {{ $comment or "" }}
+    Адрес доставки - {{ $address or ""}}
+    <br>
+    Комментарий - {{ $comment or "" }}
+    <br>
+    Продукт - {{ $product_url or ""}}
 </body>

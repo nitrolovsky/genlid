@@ -126,6 +126,53 @@ class OrderController extends Controller
 
             return Redirect::action("OrderController@showThanks");
         }
+
+        if (Request::get("type") == "Order from lp") {
+            $validator = Validator::make(Request::all(), [
+                "email" => "email|max:255",
+                "phone" => "required|max:255"
+            ]);
+            if ($validator->fails()) {
+                Session::flash("danger", "Заполните форму.");
+                return Redirect::to("/lp/" . Request::get("product_url") . "#request")
+                    ->withErrors($validator, "orders")
+                    ->withInput();
+            }
+
+            $order = new Order;
+            $orderLastId = $order->create([
+                "name" => Request::get("address"),
+                "email" => Request::get("email"),
+                "phone" => Request::get("phone"),
+                "address" => Request::get("address"),
+                "comment" => Request::get("comment"),
+                "product_url" => Request::get("product_url"),
+                "status" => "Order by lp"
+            ])->id;
+            
+            Session::flash("success", "Заявка отправлена.");
+
+            $data = array(
+                "name" => Request::get("name"),
+                "email" => Request::get("email"),
+                "phone" => Request::get("phone"),
+                "address" => Request::get("address"),
+                "comment" => Request::get("comment"),
+                "product_url" => Request::get("product_url"),
+                "order_id" => $orderLastId,
+                "status" => "Order by lp"
+            );
+
+            Mail::send("email.comeOrder", $data, function ($message) {
+                $message->from("shop.genlid@gmail.com", "shop.genlid.com");
+                $message->to("nitrolovsky@gmail.com");
+                $message->subject("Order № " . date ("Y.m.d H:m:s"));
+            });
+
+            Session::put("order_id", $orderLastId);
+
+            return Redirect::action("OrderController@showThanksShop");
+        }
     }
 
     /**
@@ -177,6 +224,13 @@ class OrderController extends Controller
         $order = Order::find(Session::get("order_id"));
 
         return View::make("order.thanks")
+            ->with("order", $order);
+    }
+
+    public function showThanksShop() {
+        $order = Order::find(Session::get("order_id"));
+
+        return View::make("order.thanksShop")
             ->with("order", $order);
     }
 }
