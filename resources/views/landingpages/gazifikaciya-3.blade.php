@@ -296,10 +296,10 @@
             <div class="col-xl-12">
                 <ul class="nav nav-pills justify-content-center" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#truba" role="tab">Подключение к трубопроводу</a>
+                        <a class="nav-link active" data-toggle="pill" href="#truboprovod" role="tab">Трубопровод</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#gazgolder" role="tab">Установка газгольдера</a>
+                        <a class="nav-link" data-toggle="pill" href="#gazgolder" role="tab">Газгольдер</a>
                     </li>
                 </ul>
             </div>
@@ -308,7 +308,7 @@
         <div class="row">
             <form class="col-xl-10 offset-xl-1">
                 <div class="tab-content">
-                    <div class="tab-pane active" id="truba" role="tabpanel">
+                    <div class="tab-pane active" id="truboprovod" role="tabpanel">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="form-check mb-0 bgimage-form-1 p-4">
