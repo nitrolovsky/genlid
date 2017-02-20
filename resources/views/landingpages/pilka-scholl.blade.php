@@ -77,7 +77,7 @@
 
 @component("components.slide-2")
     @slot("heading")
-        Водонепроницаемость и новые возможности
+        Защита от воды и новые возможности
     @endslot
     @slot("image")
         pilka-scholl/pilka-scholl-velvet-smooth-wet-dry-15.jpg
