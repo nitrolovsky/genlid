@@ -39,33 +39,45 @@
 
 <div class="container pb-5">
     <div class="row">
-        <div class="col-xl-12">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h2 class="russo text-center py-5">
                 Объекты на которых мы работаем
             </h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya2/dom-2.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 Частные дома
             </h3>
+            <div class="hidden-lg-up">
+                <br>
+                <br>
+            </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya2/mnogokvartirnie-doma.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 Многоквартирные дома
             </h3>
+            <div class="hidden-lg-up">
+                <br>
+                <br>
+            </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya2/predpriyatie-2.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 Предприятия
             </h3>
+            <div class="hidden-lg-up">
+                <br>
+                <br>
+            </div>
         </div>
     </div>
 </div>
@@ -86,16 +98,16 @@
 
 <div class="container pb-5">
     <div class="row">
-        <div class="col-xl-12">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h2 class="russo text-center py-5">
                 Примеры выполненных работ
             </h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/primer-1.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-14.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
                         Монтаж встроенной газовой котельной частного дома в поселке Лисий Нос.
@@ -107,14 +119,17 @@
                     </ul>
                     <br>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="hidden-xl-up">
+                <br>
+            </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/primer-2.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-16.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
                         Газификация коттеджного поселка в Ленинградской области
@@ -125,7 +140,7 @@
                         <li>Прокладка газопровода через лес и передача газопровода на баланс филиалу ОАО "Газпром"
                     </ul>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -133,9 +148,9 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/primer-3.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-15.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
                         Газификация производственно-складского комплекса со встроенной котельной
@@ -146,14 +161,17 @@
                         <li>Мощность газовых генераторов 250 кВт
                     </ul>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="hidden-xl-up">
+                <br>
+            </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/primer-4.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-17.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
                         Комплексная газификация зданий и сооружений складского назначения
@@ -165,7 +183,7 @@
                     </ul>
                     <br>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -198,26 +216,38 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya2/ets.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 ООО СК "ЭТС"
             </h3>
+            <div class="hidden-xl-up">
+                <br>
+                <br>
+            </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya2/polar.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 ЗАО "Полар"
             </h3>
+            <div class="hidden-xl-up">
+                <br>
+                <br>
+            </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya2/prommonolit.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 АО "ПРОММОНОЛИТ"
             </h3>
+            <div class="hidden-xl-up">
+                <br>
+                <br>
+            </div>
         </div>
     </div>
 </div>
@@ -240,14 +270,14 @@
 
 <div class="container pb-5">
     <div class="row">
-        <div class="col-xl-12">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h2 class="russo text-center py-5">
                 У нас есть техника для любых земельных условий
             </h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-1.jpg" alt="Card image cap">
                 <div class="card-block">
@@ -255,7 +285,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="hidden-lg-up">
+                <br>
+            </div>
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-2.jpg" alt="Card image cap">
                 <div class="card-block">
@@ -263,7 +296,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="hidden-lg-up">
+                <br>
+            </div>
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-3.jpg" alt="Card image cap">
                 <div class="card-block">
@@ -271,7 +307,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="hidden-lg-up">
+                <br>
+            </div>
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-4.jpg" alt="Card image cap">
                 <div class="card-block">
@@ -286,14 +325,14 @@
 <div class="container-fluid bg-faded pb-5">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <h2 class="russo text-center py-5">
                     Расчитайте стоимость газификации
                 </h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <ul class="nav nav-pills justify-content-center" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-toggle="pill" href="#truboprovod" role="tab">Трубопровод</a>
@@ -306,11 +345,11 @@
         </div>
         <br>
         <div class="row">
-            <form class="col-xl-10 offset-xl-1">
+            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="tab-content">
                     <div class="tab-pane active" id="truboprovod" role="tabpanel">
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="form-check mb-0 bgimage-form-1 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
@@ -318,8 +357,10 @@
                                     </label>
                                 </div>
                             </div>
-                            <br>
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hidden-md-up">
+                                    <br>
+                                </div>
                                 <div class="form-check mb-0 bgimage-form-2 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
@@ -330,16 +371,19 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-6">
-                                <div class="form-check mb-0 bgimage-form-5 p-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-check mb-0 bgimage-form-4 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Требуется получить исполнительно-техническую документацию наружного газоснабжения
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
-                                <div class="form-check mb-0 bgimage-form-6 p-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hidden-md-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-5 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Требуется получить исполнительно-техническую документацию внутреннего газоснабжения
@@ -349,16 +393,19 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-6">
-                                <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-check mb-0 bgimage-form-6 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Требуется получить акт обследования дымоходов
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
-                                <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hidden-md-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-7 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Требуется заключить договор на сервисное обслуживание котла
@@ -368,8 +415,8 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-12">
-                                <fieldset class="form-group mb-0 bgimage-form-4 p-4">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <fieldset class="form-group mb-0 bgimage-form-8 p-4">
                                     <label>
                                         Количество и удаленность потребителей газа
                                     </label>
@@ -402,8 +449,8 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-6">
-                                <fieldset class="form-group bgimage-form-7 p-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <fieldset class="form-group bgimage-form-9 p-4">
                                     <label class="">
                                         Давление в системе газоснабжения
                                     </label>
@@ -421,8 +468,8 @@
                                     </div>
                                 </fieldset>
                             </div>
-                            <div class="col-xl-6">
-                                <div class="form-group mb-0 bgimage-form-3 p-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group mb-0 bgimage-form-10 p-4">
                                     <label for="formGroupExampleInput">
                                         Длина от основной магистрали до места подключения в метрах
                                     </label>
@@ -433,8 +480,8 @@
                     </div>
                     <div class="tab-pane" id="gazgolder" role="tabpanel">
                         <div class="row">
-                            <div class="col-xl-12">
-                                <fieldset class="form-group mb-0 bgimage-form-4 p-4">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <fieldset class="form-group mb-0 bgimage-form-1 p-4">
                                     <label>
                                         Объем газгольдера
                                     </label>
@@ -473,8 +520,8 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="form-check mb-0 bgimage-form-2 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Анодно-катодная <br>защита
@@ -482,8 +529,11 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-3 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Конденсатосборник<br>10 л
@@ -491,8 +541,11 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-4 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Молниеотвод трубчатый <br>4 м
@@ -502,8 +555,8 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="form-check mb-0 bgimage-form-5 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Cпецотвод изолированный
@@ -511,8 +564,11 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-6 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Установка сигнализатора загазованности
@@ -520,8 +576,11 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-7 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Земельные работы с техникой
@@ -531,8 +590,8 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="form-check mb-0 bgimage-form-8 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Ввод газопровода <br>в дом
@@ -540,8 +599,11 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-9 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Подведение внутреннего газопровода
@@ -549,8 +611,11 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-2 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-10 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Газгольдер с высокой горловиной
@@ -560,8 +625,11 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-4">
-                                <div class="form-check mb-0 bgimage-form-1 p-4">
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <div class="form-check mb-0 bgimage-form-11 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" value="">
                                         Первичная заправка ёмкости
@@ -583,17 +651,23 @@
                     {{ csrf_field() }}
                     <input type="hidden" name="product_url" value="gazifikaciya2">
                     <input type="hidden" name="type" value="Order from landing page">
-                    <div class="col-xl-4 ">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
-                            <input type="email" class="form-control btn-circle {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
+                            <input type="email" class="form-control col-12 btn-circle {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
                         </div>
                     </div>
-                    <div class="col-xl-4">
-                        <div class="form-group  {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                            <input type="phone" class="form-control btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="hidden-lg-up">
+                            <br>
+                        </div>
+                        <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
+                            <input type="phone" class="form-control col-12 btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="hidden-lg-up">
+                            <br>
+                        </div>
                         <button type="submit" class="btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>&nbsp;Получить расчет</button>
                     </div>
                 </div>

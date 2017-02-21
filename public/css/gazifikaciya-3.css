@@ -1,5 +1,5 @@
 .bgimage-form-1 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-1.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-18.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -8,7 +8,7 @@
 }
 
 .bgimage-form-2 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-2.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-19.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -17,7 +17,7 @@
 }
 
 .bgimage-form-3 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-3.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-20.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -26,7 +26,7 @@
 }
 
 .bgimage-form-4 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-4.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-21.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -35,7 +35,7 @@
 }
 
 .bgimage-form-5 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-5.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-22.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -44,7 +44,7 @@
 }
 
 .bgimage-form-6 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-6.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-23.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -53,7 +53,7 @@
 }
 
 .bgimage-form-7 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-7.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-24.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -62,7 +62,7 @@
 }
 
 .bgimage-form-8 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-8.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-25.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
@@ -71,7 +71,25 @@
 }
 
 .bgimage-form-9 {
-    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-9.jpg") no-repeat center center;
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-26.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    color: white;
+    filter: grayscale(100%);
+}
+
+.bgimage-form-10 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-27.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    color: white;
+    filter: grayscale(100%);
+}
+
+.bgimage-form-11 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-28.jpg") no-repeat center center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
