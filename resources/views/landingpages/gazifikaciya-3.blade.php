@@ -445,8 +445,19 @@
     @endslot
     @slot("caption")
         <h2 class="russo text-center py-5 my-0">
-            Возможно оформление в кредит или рассрочку<br> 3 банка-партнера
+            Возможна помощь от банков партнеров в предоставлении рассрочки<br>
         </h2>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                <img src="/images/gazifikaciya-3/bank-1.png" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                <img src="/images/gazifikaciya-3/bank-6.png" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                <img src="/images/gazifikaciya-3/bank-3.png" class="img-fluid">
+            </div>
+        </div>
     @endslot
 @endcomponent
 
