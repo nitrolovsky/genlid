@@ -21,6 +21,37 @@
                                 <a href="/pages/{{ $page->id }}">{{ $page->offer }}</a>
                                 <br>
                                 {{ $page->details }}
+                                <br>
+                                <br>
+                                
+                                <a href="/pages/{{ $page->id }}/a">
+                                    А - чистый
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/b">
+                                    B - баннер
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/c">
+                                    C - фото
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/d">
+                                    D - белое фото
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/e">
+                                    E - C+ лучше видео
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/f">
+                                    F - A+ лучше видео
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/g">
+                                    G - F+
+                                </a>
+
                             </div>
                         </div>
                         <br>
