@@ -188,17 +188,17 @@
         Отправить
     @endslot
     @slot("jurist")
-        © Genlid 2017 Все права защищены
+        © ООО "Курьер" 2017 Все права защищены
         <br>
         <a href="/files/politika-confidencialnosti.pdf" target="_blank">Политика конфиденциальности</a>
         <br>
-        Санкт-Петербург, проспект Кима 6 <br>
-        ИНН 7726338554 КПП 772601001 ОГРН 1157746406850
+        Юридический адрес 115280, город Москва, улица Автозаводская, дом 17, корпус 3, офис 11<br>
+        ОГРН 1137746208049 ИНН 7725785302 КПП 772501001
     @endslot
     @slot("contacts")
         Телефон <a href="callto:8 929 116 85 65">8 929 116 85 65</a><br>
         Email <a href="mailto:nitrolovsky@mail.ru">nitrolovsky@mail.ru</a><br>
-        Дата обновления сайта 20.02.2017<br>
+        Дата обновления сайта 24.02.2017<br>
         Сайт разработал <a href="https://vk.com/id327409638">Pavel Nitrolovsky</a>
     @endslot
 @endcomponent
