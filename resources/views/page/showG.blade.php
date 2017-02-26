@@ -71,7 +71,7 @@ a:hover {
             </div>
             <div class="col-xl-4 col-lg-4">
                 <div class="container">
-                    <div class="russo">
+                    <div class="russo px-3">
                         {{ $page->form_title }}
                     </div>
                     <br>
@@ -100,7 +100,7 @@ a:hover {
                             </div>
                         </div>
                     </form>
-                    <div class="  small">
+                    <div class="px-3  small">
 
                             <div class="">
                             {{ $page->legal }}<br>
