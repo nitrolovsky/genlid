@@ -19,6 +19,12 @@
 .btn-circle {
     border-radius: 2rem !important;
 }
+a {
+    color: #ccd4ff !important;
+}
+a:hover {
+    color: #546fff !important;
+}
 </style>
 <div class="container-fluid p-0">
     <div class="container-fluid px-0">
