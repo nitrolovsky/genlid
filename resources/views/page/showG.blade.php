@@ -22,7 +22,7 @@
 a {
     color: #ccd4ff !important;
 }
-a:hover {
+a:hover, a:active, a:visited {
     color: #546fff !important;
 }
 .sw {
@@ -31,7 +31,7 @@ a:hover {
 </style>
 <div class="container-fluid p-0">
     <div class="container-fluid px-0">
-        <div class="container pt-3 pb-5">
+        <div class="container pt-4 pb-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
                     <h5 class="russo py-0 my-0">Genlid.com</h5>
@@ -77,9 +77,9 @@ a:hover {
                     <div class="hidden-xl-up">
                         <br>
                     </div>
-                    <div class="russo px-3 pb-3">
+                    <h5 class="russo px-3 pb-3">
                         {{ $page->form_title }}
-                    </div>
+                    </h5>
                     <form action="/proposals" method="POST">
                         {{ csrf_field() }}
                         <input type="hidden" name="page_id" value="{{ $page->id }}">
@@ -112,21 +112,15 @@ a:hover {
             </div>
         </div>
     </div>
-    <div class="container py-3">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+    <div class="container py-4 small">
+
                 {{ $page->legal }}
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 text-xl-right text-lg-right text-md-right text-sm-right text-left">
-                <div class="hidden-sm-up">
-                    <br>
-                </div>
-                Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a><br>
-                Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a><br>
-                Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}<br>
-                Сайт разработал <a href="http://genlid.com">genlid.com</a>
-            </div>
-        </div>
+
+                Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>.
+                Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>.
+                Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}.
+                Сайт разработал <a href="http://genlid.com">genlid.com</a>.
+
     </div>
 </div>
 
