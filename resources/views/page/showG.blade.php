@@ -74,10 +74,9 @@ a:hover {
                     <div class="hidden-xl-up">
                         <br>
                     </div>
-                    <div class="russo px-3">
+                    <div class="russo px-3 pb-3">
                         {{ $page->form_title }}
                     </div>
-                    <br>
                     <form action="/proposals" method="POST">
                         {{ csrf_field() }}
                         <input type="hidden" name="page_id" value="{{ $page->id }}">
@@ -103,27 +102,30 @@ a:hover {
                             </div>
                         </div>
                     </form>
-
-                    <div class="px-3  small">
-
-                            <div class="">
-                            {{ $page->legal }}<br>
-                             Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a><br>
-                             Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a><br>
-                             Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}<br>
-                                Сайт разработал <a href="http://genlid.com">genlid.com</a>
-                            </div>
-
+                    <div class="px-3 small">
+                        Ваша персональная информация защищена в соблюдение политики конфиденциальности
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                {{ $page->legal }}
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 text-xl-right text-lg-right text-md-right text-sm-right text-left">
+                <div class="hidden-sm-up">
+                    <br>
+                </div>
+                Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a><br>
+                Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a><br>
+                Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}<br>
+                Сайт разработал <a href="http://genlid.com">genlid.com</a>
+            </div>
+        </div>
+    </div>
 </div>
-
-
 
 @component("components.js")
 @endcomponent
