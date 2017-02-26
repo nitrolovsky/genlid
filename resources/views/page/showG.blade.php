@@ -1,4 +1,4 @@
-@component("components.head")
+@component("components.head-2")
     @slot("title")
         {{ $page->descriptor }}
     @endslot
@@ -13,12 +13,14 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
     color: white;
+    height: 100%;
+    min-height: 100%;
 }
 .btn-circle {
     border-radius: 2rem !important;
 }
 </style>
-<div class="container-fluid p-0 bgimg-1">
+<div class="container-fluid p-0">
     <div class="container-fluid px-0">
         <div class="container pt-3 pb-5">
             <div class="row">
