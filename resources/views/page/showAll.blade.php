@@ -18,12 +18,12 @@
                                 {{ $page->updated_at }} # {{ $page->id }}
                                 <br>
                                 <br>
-                                <a href="/pages/{{ $page->id }}">{{ $page->offer }}</a>
+                                <a href="/pages/{{ $page->id }}/g">{{ $page->offer }}</a>
                                 <br>
                                 {{ $page->details }}
                                 <br>
                                 <br>
-                                
+
                                 <a href="/pages/{{ $page->id }}/a">
                                     А - чистый
                                 </a>
