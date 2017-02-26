@@ -1,12 +1,16 @@
 <?php
 
 Route::get('/', function () {
+    $name Request::server("SERVER_NAME");
+    if (file_exists("../resources/views/landingpages/$name.blade.php") == true) {
+        return View("landingpages.$name");
+    } else {
+        return View('subscription');
+    }
     //$json = file_get_contents("../database/data/2016-11-03-10-12-pilka.json");
     //$data = json_decode($json, true);
     //return view('welcome1')
         //->with('data', $data);
-
-    return View('subscription');
 });
 
 Route::get('users/login', 'UserController@viewLogin');
