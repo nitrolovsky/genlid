@@ -25,8 +25,8 @@ a {
 a:hover {
     color: #546fff !important;
 }
-.borderwhite {
-    border: 1px solid white;
+.sw {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 </style>
 <div class="container-fluid p-0">
@@ -68,7 +68,7 @@ a:hover {
     <div class="container">
         <div class="row">
             <div class="col-xl-8 col-lg-8">
-                <div class="embed-responsive embed-responsive-16by9 borderwhite" id="video">
+                <div class="embed-responsive embed-responsive-16by9 sw " id="video">
                     <iframe class="embed-responsive-item" src="{{ $page->video }}" allowfullscreen></iframe>
                 </div>
             </div>
