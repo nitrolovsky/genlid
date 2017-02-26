@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    $name Request::server("SERVER_NAME");
+    $name = Request::server("SERVER_NAME");
     if (file_exists("../resources/views/landingpages/$name.blade.php") == true) {
         return View("landingpages.$name");
     } else {
