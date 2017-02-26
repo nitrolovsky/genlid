@@ -222,7 +222,7 @@ class PageController extends Controller
             $fileName = $now->format('Y-m-d-H-i-s') . '-' . $page->user_id . '.' . $extension;
             Request::file('bg')->move($uploadPath, $fileName);
 
-            unlink(public_path('upload/images/') . $page->bg);
+            //unlink(public_path('upload/images/') . $page->bg);
 
             $page->update([
                 'bg' => $fileName
