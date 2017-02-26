@@ -2,9 +2,9 @@
 
 Route::get('/', function () {
     $name = Request::server("HTTP_HOST");
-    echo $name;
-    if (file_exists("../resources/views/landingpages/$name.blade.php") == true) {
-        return View("landingpages.$name");
+    $file = str_replace(".", "-", $file);
+    if (file_exists("../resources/views/landingpages/$file.blade.php") == true) {
+        return View("landingpages.$file");
     } else {
         return View('subscription');
     }
