@@ -59,8 +59,15 @@ a:hover, a:active, a:visited {
     <div class="container pb-5">
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+                @php
+                    $bullets = explode(";", $page->details);
+                @endphp
                 <div class="h5 russo">
-                    {{ $page->details }}
+                    <ul>
+                        @foreach($bullets as $bullet)
+                            <li>{{ $bullet }}</li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
         </div>
