@@ -63,7 +63,7 @@ a:hover, a:active, a:visited {
                     $bullets = explode(";", $page->details);
                 @endphp
                 <div class="h5 russo">
-                    <ul>
+                    <ul class="">
                         @foreach($bullets as $bullet)
                             <li>{{ $bullet }}</li>
                         @endforeach
