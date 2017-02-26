@@ -81,7 +81,7 @@ a:hover {
                     <form action="/proposals" method="POST">
                         {{ csrf_field() }}
                         <input type="hidden" name="page_id" value="{{ $page->id }}">
-                        <input type="hidden" name="template" value="f">
+                        <input type="hidden" name="template" value="g">
                         <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
                             <div class="">
                                 <input type="text" class="btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
