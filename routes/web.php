@@ -2,7 +2,7 @@
 
 Route::get('/', function () {
     $name = Request::server("HTTP_HOST");
-    $file = str_replace(".", "-", $file);
+    $file = str_replace(".", "-", $name);
     if (file_exists("../resources/views/landingpages/$file.blade.php") == true) {
         return View("landingpages.$file");
     } else {
