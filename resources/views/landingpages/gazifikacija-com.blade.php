@@ -690,7 +690,7 @@
 <div class="container-fluid bg-faded pb-5">
     <div class="container">
         <div class="row">
-            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
+            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/orders" method="POST">
                 <h4 class="russo pt-5 pb-4 text-center" id="request2">
                     Оставьте заявку на бесплатный выезд инженера <br>и помощь в расчете сметы
                 </h4>
