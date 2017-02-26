@@ -71,6 +71,9 @@ a:hover {
             </div>
             <div class="col-xl-4 col-lg-4">
                 <div class="container">
+                    <div class="hidden-xl-up">
+                        <br>
+                    </div>
                     <div class="russo px-3">
                         {{ $page->form_title }}
                     </div>
@@ -100,6 +103,7 @@ a:hover {
                             </div>
                         </div>
                     </form>
+
                     <div class="px-3  small">
 
                             <div class="">
