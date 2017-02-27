@@ -18,6 +18,7 @@ class Page extends Model
         'form_title',
         'call_to_action',
         'legal',
-        'email'
+        'email',
+        "company"
     ];
 }

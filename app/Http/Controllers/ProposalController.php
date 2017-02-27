@@ -8,9 +8,11 @@ use Validator;
 use Session;
 use Redirect;
 use URL;
+use Mail;
 
 use App\Proposal;
 use App\Page;
+use App\User;
 
 class ProposalController extends Controller
 {
@@ -64,6 +66,7 @@ class ProposalController extends Controller
         }
 
         $owner_id = Page::find(Request::get('page_id'))->user_id;
+        $user = User::find($owner_id);
 
         $proposal = new Proposal;
         $proposal->create([
@@ -74,6 +77,19 @@ class ProposalController extends Controller
             'owner_id' => $owner_id,
             'template' => Request::get('template')
         ]);
+
+        $data = array(
+            'name' => Request::get('name'),
+            'email' => Request::get('email'),
+            'phone' => Request::get('phone'),
+            'template' => Request::server("HTTP_REFERER")
+        );
+
+        Mail::send("email.proposal", $data, function ($message) use ($user) {
+            $message->from("genlid.proposal@gmail.com", "genlid.com");
+            $message->to($user->email);
+            $message->subject("Заявка");
+        });
 
         Session::flash('success', 'Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.');
 

@@ -1,40 +1,29 @@
-@component("components.head-2")
+@component("components.head-3")
     @slot("title")
         {{ $page->descriptor }}
     @endslot
 @endcomponent
 
-<link rel="stylesheet" href="/css/imperium-stroy.css">
-
 <style>
-.bgimg-1 {
-    background: url("/upload/images/{{ $page->bg }}") no-repeat center center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    color: white;
-    height: 100%;
-    min-height: 100%;
-}
-.btn-circle {
-    border-radius: 2rem !important;
-}
-a, a:visited, a:active {
-    color: #ccd4ff !important;
-}
-a:hover {
-    color: #546fff !important;
-}
-.sw {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-}
+    .bgimg-1 {
+        background: url("/upload/images/{{ $page->bg }}") no-repeat center center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: overlay;
+        color: white;
+        height: 100%;
+        min-height: 100%;
+    }
 </style>
+
 <div class="container-fluid p-0">
     <div class="container-fluid px-0">
         <div class="container pt-4 pb-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                    <h5 class="russo py-0 my-0">Genlid.com</h5>
+                    <h5 class="russo py-0 my-0">
+                        {{ $page->company or "" }}
+                    </h5>
                     {{ $page->descriptor }}
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">

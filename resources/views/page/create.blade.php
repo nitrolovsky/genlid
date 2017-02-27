@@ -4,6 +4,14 @@
         <form method="POST" action="/pages" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group row">
+                <label for="company" class="col-xl-3 col-form-label">
+                    Имя компании
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="company" placeholder="Первая-школа.рф" name="company" value="{{ old('company') }}">
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="descriptor" class="col-xl-3 col-form-label">
                     Описание (сверху слева)
                 </label>

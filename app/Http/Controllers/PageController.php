@@ -60,6 +60,7 @@ class PageController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make(Request::all(), [
+            "company" => "required|max:255",
             'descriptor' => 'required|max:255',
             'phone' => 'required|max:255',
             'offer' => 'required|max:255',
@@ -86,6 +87,7 @@ class PageController extends Controller
         Request::file('bg')->move($uploadPath, $fileName);
 
         $page_last_id = $page->create([
+            'company' => Request::get('company'),
             'descriptor' => Request::get('descriptor'),
             'phone' => Request::get('phone'),
             'offer' => Request::get('offer'),
@@ -197,6 +199,7 @@ class PageController extends Controller
         }
 
         $validator = Validator::make(Request::all(), [
+            'company' => 'required|max:255',
             'descriptor' => 'required|max:255',
             'phone' => 'required|max:255',
             'offer' => 'required|max:255',
@@ -230,6 +233,7 @@ class PageController extends Controller
         }
 
         $page->update([
+            'company' => Request::get('company'),
             'descriptor' => Request::get('descriptor'),
             'phone' => Request::get('phone'),
             'offer' => Request::get('offer'),
