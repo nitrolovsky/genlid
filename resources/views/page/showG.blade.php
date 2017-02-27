@@ -19,10 +19,10 @@
 .btn-circle {
     border-radius: 2rem !important;
 }
-a {
+a, a:visited, a:active {
     color: #ccd4ff !important;
 }
-a:hover, a:active, a:visited {
+a:hover {
     color: #546fff !important;
 }
 .sw {
