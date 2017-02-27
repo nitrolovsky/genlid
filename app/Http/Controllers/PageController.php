@@ -211,7 +211,7 @@ class PageController extends Controller
             'email' => 'required|email'
         ]);
         if ($validator->fails()) {
-            return Redirect::to('/page/' . $id . '/edit')
+            return Redirect::to('/pages/' . $id . '/edit')
                 ->withErrors($validator)
                 ->withInput();
         }
