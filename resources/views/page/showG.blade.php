@@ -113,21 +113,18 @@ a:hover {
                         </div>
                     </form>
                     <div class="px-3 small">
-                        Ваша персональная информация защищена в соблюдение политики конфиденциальности
+                        Обработка персональных данных защищена политикой конфиденциальности
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container py-4 small">
-
-                {{ $page->legal }}
-
-                Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>.
-                Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>.
-                Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}.
-                Сайт разработал <a href="http://genlid.com">genlid.com</a>.
-
+        {{ $page->legal }}
+        Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>.
+        Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>.
+        Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}.
+        Сайт разработал <a href="http://genlid.com">genlid.com</a>.
     </div>
 </div>
 
