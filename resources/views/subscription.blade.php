@@ -14,9 +14,9 @@
         </title>
     </head>
     <body>
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse sw">
             <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="/">genlid</a>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
+        <div class="container padding-top">
             <div class="row">
                 <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
                     <h1 class="h2 russo text-center py-5">
