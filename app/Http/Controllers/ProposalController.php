@@ -67,6 +67,7 @@ class ProposalController extends Controller
 
         $owner_id = Page::find(Request::get('page_id'))->user_id;
         $user = User::find($owner_id);
+        $page = Page::find(Request::get("page_id"));
 
         $proposal = new Proposal;
         $proposal->create([
@@ -85,9 +86,9 @@ class ProposalController extends Controller
             'template' => Request::server("HTTP_REFERER")
         );
 
-        Mail::send("email.proposal", $data, function ($message) use ($user) {
+        Mail::send("email.proposal", $data, function ($message) use ($page) {
             $message->from("genlid.proposal@gmail.com", "genlid.com");
-            $message->to($user->email);
+            $message->to($page->email);
             $message->subject("Заявка");
         });
 

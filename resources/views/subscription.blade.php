@@ -233,7 +233,7 @@
                     <a href="http://genlid.com/pages/10/g" target="_blank">
                         <img src="/images/portfolio/genlid-primeri-rabot-10.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
-                            Лучший способ приучить ребёнка пить воду, в игровой форме
+                            Сэкономьте 46250 рублей, купив бытовку напрямую от производителя
                         </div>
                     </a>
                 </div>
@@ -245,7 +245,7 @@
                     <a href="http://genlid.com/pages/9/g" target="_blank">
                         <img src="/images/portfolio/genlid-primeri-rabot-9.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
-                            Хотите стать мастером татуажа?
+                            Лучший способ приучить ребёнка пить воду, в игровой форме
                         </div>
                     </a>
                 </div>
