@@ -57,7 +57,7 @@
             <div class="row pb-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/25/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-25.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-25.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Высоковакуумная эталонная установка для поверки вакуумметров
                         </div>
@@ -69,7 +69,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/24/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-24.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-24.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Взыскание задолжности с юридических лиц
                         </div>
@@ -81,7 +81,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/23/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-23.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-23.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Видеоролики для бизнеса увеличивающие продажи в 2 раза
                         </div>
@@ -91,7 +91,7 @@
             <div class="row py-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/22/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-22.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-22.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Эконатуральный торт на заказ по вашим пожеланиям за 1500 рублей 1 килограмм
                         </div>
@@ -103,7 +103,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/21/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-21.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-21.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             28 февраля в 19:00 вебинар "Как составить документы на победу в тендере".
                         </div>
@@ -115,7 +115,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/20/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-20.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-20.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Создай свою сеть кофеен по франшизе Baggins coffee
                         </div>
@@ -125,7 +125,7 @@
             <div class="row py-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/19/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-19.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-19.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Поставка пленок БОПП и СПП для фасовки и упаковки по всей России
                         </div>
@@ -137,7 +137,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/18/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-18.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-18.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Реставрация обуви - удаление потертостей, мелких царапин, пятен, срывов красителя 590 рублей
                         </div>
@@ -149,7 +149,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/17/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-17.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-17.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Программа комплексного развития бизнеса, для увеличения прибыли до 10 раз
                         </div>
@@ -159,7 +159,7 @@
             <div class="row py-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/16/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-16.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-16.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Увеличьте продажи с видео-лендингом в 2 раза за 5000 рублей
                         </div>
@@ -171,7 +171,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/15/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-15.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-15.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Займитесь фитнесом вместе с известными инструкторами г. Чебоксары в "Цитрусе" ЮЗР и СЗР
                         </div>
@@ -183,7 +183,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/14/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-14.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-14.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Вебинар "Подготовка к ЕГЭ. Русский язык" Урок 1
                         </div>
@@ -193,7 +193,7 @@
             <div class="row py-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/13/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-13.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-13.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Трикотажная ткань оптом
                         </div>
@@ -205,7 +205,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/12/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-12.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-12.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Геодезия и картография в Калининграде
                         </div>
@@ -217,7 +217,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/11/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-11.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-11.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Оптовые продажи орехов, сухофруктов и сладостей!
                         </div>
@@ -227,7 +227,7 @@
             <div class="row py-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/10/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-10.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-10.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Лучший способ приучить ребёнка пить воду, в игровой форме
                         </div>
@@ -239,7 +239,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/9/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-9.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-9.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Хотите стать мастером татуажа?
                         </div>
@@ -251,7 +251,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/8/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-8.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-8.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Купи здорового чихуахуа в Санкт-Петербурге напрямую у проверенного заводчика
                         </div>
@@ -261,7 +261,7 @@
             <div class="row py-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/7/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-7.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-7.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Корм для домашних животных из Франции по России
                         </div>
@@ -273,7 +273,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/6/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-6.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-6.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             Хотите стать мастером татуажа?
                         </div>
@@ -285,7 +285,7 @@
                         <br>
                     </div>
                     <a href="http://genlid.com/pages/5/g" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-5.png" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
+                        <img src="/images/portfolio/genlid-primeri-rabot-5.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
                         <div class="py-4">
                             8 октября. Бесплатный Мастер-класс "Продажи фитнес тренера х2"
                         </div>
