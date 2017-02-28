@@ -51,9 +51,13 @@
             </div>
         </nav>
         <div class="container">
-            <h1 class="h2 russo text-center py-5">
-                Продающие сайты презентуют бизнес и собирают контакты потенциальных клиентов
-            </h1>
+            <div class="row">
+                <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
+                    <h1 class="h2 russo text-center py-5">
+                        Продающие сайты презентуют товар / услугу и собирают контакты потенциальных клиентов
+                    </h1>
+                </div>
+            </div>
             <div class="row pb-3">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <a href="http://genlid.com/pages/25/g" target="_blank">
