@@ -57,11 +57,12 @@
                         Делаю одностраничные сайты (Landing pages) за 5 000 ₽.
                     </h1>
                     <ul class="h5 russo pt-3 pb-5">
-                        <li>Адаптивная верстка Bootstrap 4 для мобильных устройств</li>
-                        <li>Легкая CRM с уведомлениями о заявках на ваш email</li>
-                        <li>Подключены Яндекс Метрика и Google Analytics</li>
-                        <li>Работает на PHP Framework Laravel 5.4 и инфраструктуре Forge</li>
-                        <li>Пишу текст в информационном стиле</li>
+                        <li class="py-1">Гарантирую рентабельную конверсию или верну деньги</li>
+                        <li class="py-1">Адаптивная верстка Bootstrap 4 для мобильных устройств</li>
+                        <li class="py-1">Легкая CRM с уведомлениями о заявках на ваш email</li>
+                        <li class="py-1">Подключены Яндекс Метрика и Google Analytics</li>
+                        <li class="py-1">Разработка на PHP Framework Laravel 5.4 и инфраструктуре Forge</li>
+                        <li class="py-1">Пишу текст в информационном стиле</li>
                     </ul>
                 </div>
             </div>
