@@ -53,9 +53,16 @@
         <div class="container padding-top">
             <div class="row">
                 <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
-                    <h1 class="h2 russo text-center py-5">
-                        Сделаю лендинг и контекстную рекламу на результат, если нет верну деньги
+                    <h1 class="h2 russo pt-5">
+                        Делаю одностраничные сайты (Landing pages) за 5 000 ₽.
                     </h1>
+                    <ol class="h5 russo pt-3 pb-5">
+                        <li>Адаптивная верстка Bootstrap 4 для мобильных устройств</li>
+                        <li>Легкая CRM с уведомлениями о заявках на ваш email</li>
+                        <li>Подключены Яндекс Метрика и Google Analytics</li>
+                        <li>Работает на PHP Framework Laravel 5.4 и инфраструктуре Forge</li>
+                        <li>Пишу текст в информационном стиле</li>
+                    </ol>
                 </div>
             </div>
             <div class="row pb-3">
