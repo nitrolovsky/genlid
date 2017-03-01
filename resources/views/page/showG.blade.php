@@ -54,7 +54,7 @@
                 <div class="h5 russo">
                     <ul class="">
                         @foreach($bullets as $bullet)
-                            <li>{{ $bullet }}</li>
+                            <li class="py-1">{{ $bullet }}</li>
                         @endforeach
                     </ul>
                 </div>
