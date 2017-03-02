@@ -54,15 +54,14 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
                     <h1 class="h2 russo pt-5">
-                        Делаю одностраничные сайты (Landing pages) за 5 000 ₽.
+                        Делаю одностраничные сайты (Landing pages) от 3 000 ₽
                     </h1>
                     <ul class="h5 russo pt-3 pb-5">
-                        <li class="py-1">Гарантирую рентабельную конверсию или верну деньги</li>
-                        <li class="py-1">Адаптивная верстка Bootstrap 4 для мобильных устройств</li>
-                        <li class="py-1">Легкая CRM с уведомлениями о заявках на ваш email</li>
+                        <li class="py-1">Гарантирую пользу или верну деньги</li>
+                        <li class="py-1">Хорошо отображается на мобильных устройствах</li>
+                        <li class="py-1">CRM с уведомлениями о заявках на ваш email</li>
                         <li class="py-1">Подключены Яндекс Метрика и Google Analytics</li>
-                        <li class="py-1">Разработка на PHP Framework Laravel 5.4 и инфраструктуре Forge</li>
-                        <li class="py-1">Пишу текст в информационном стиле</li>
+                        <li class="py-1">Дескриптор, оффер, буллеты в информационном стиле</li>
                     </ul>
                 </div>
             </div>
