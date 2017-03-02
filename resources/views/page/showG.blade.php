@@ -97,7 +97,7 @@
                         </div>
                         <div class="form-group">
                             <div class="">
-                                <button type="submit" class="btn-circle btn btn-primary btn-block">{{ $page->call_to_action }}</button>
+                                <button type="submit" class="btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;">{{ $page->call_to_action }}</button>
                             </div>
                         </div>
                     </form>
