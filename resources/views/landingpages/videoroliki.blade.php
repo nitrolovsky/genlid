@@ -1,6 +1,6 @@
 @component("components.head")
     @slot("title")
-        Газификация частного дома в Санкт-Петербурге и Ленинградской области
+        Видеоролики
     @endslot
 @endcomponent
 
@@ -47,7 +47,7 @@
         <div class="row">
             <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
                 <h1 class="h2 russo pb-5 text-center">
-                    Производство презентующих видеороликов для бизнеса за 14 дней
+                    Производство красивых видеороликов с видеопродакшеном за 14 дней
                 </h1>
                 <ul class="h5 russo">
                     <li class="pb-1">От 45 000 рублей</li>
@@ -70,17 +70,11 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="hidden-lg-up">
-                            <br>
-                        </div>
                         <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
                             <input type="phone" class="sw form-control col-12 btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="hidden-lg-up">
-                            <br>
-                        </div>
                         <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;">
                             Оставить заявку
                         </button>
@@ -133,7 +127,7 @@
         </div>
     </div>
 </div>
-
+<br>
 <div class="container">
     <div class="row pb-3">
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -170,7 +164,7 @@
         </div>
     </div>
 </div>
-
+<br>
 <div class="container">
     <div class="row pb-3">
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
