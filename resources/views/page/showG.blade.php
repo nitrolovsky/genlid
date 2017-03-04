@@ -73,9 +73,9 @@
                     <div class="hidden-xl-up">
                         <br>
                     </div>
-                    <h5 class="russo px-3 pb-3">
+                    <h6 class="russo px-3 pb-3">
                         {{ $page->form_title }}
-                    </h5>
+                    </h6>
                     <form action="/proposals" method="POST">
                         {{ csrf_field() }}
                         <input type="hidden" name="page_id" value="{{ $page->id }}">
