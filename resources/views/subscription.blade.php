@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
                     <h1 class="h2 russo pt-5">
-                        Разработка landing pages с рентабельной конверсией от 35 000 рублей
+                        Разработка landing pages с рентабельной конверсией от 15 000 рублей
                     </h1>
                     <ul class="h5 russo pt-3 pb-5">
                         <li class="py-1">Гарантирую заявки в течении 2 недель с запуска рекламы</li>
