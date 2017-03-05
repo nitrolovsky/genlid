@@ -111,7 +111,7 @@
             <div class="container-fluid px-0">
                 <img src="/images/fotopled/fotopled-10.jpg" class="img-fluid mx-auto d-block" alt="/images/imperium-stroy/remont-otdelka-kvartir-spb-fotografiya-8.jpg">
                 <div class="container text-center">
-                    Фотопечать семейной фотографии
+                    Фотопечать коллажа из фотографий путешествия по Тенерифу в 2016 году
                 </div>
             </div>
             <div class="container pb-5">
