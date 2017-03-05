@@ -1,0 +1,32 @@
+a, a:hover, a:active, a:visited {
+    text-decoration:none !important;
+}
+
+.sw {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.russo {
+    font-family: "Play", sans-serif !important;
+    font-weight: 700;
+}
+
+input, button, textarea {
+      font-family: 'Verdana', sans-serif !important;
+}
+
+input, textarea {
+    color: black !important;
+}
+
+.btn-circle {
+    border-radius: 2rem !important;
+}
+
+.a-f, .a-f:visited, .a-f:active {
+    color: #ccd4ff !important;
+}
+
+.a-f:hover {
+    color: #546fff !important;
+}
