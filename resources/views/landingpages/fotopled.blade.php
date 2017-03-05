@@ -23,7 +23,7 @@
         </script>
         <style>
         .bgimage-first {
-            background: url(/images/fotopled/fotopled-7.jpg) no-repeat center center;
+            background: url(/images/fotopled/fotopled-7.jpg) no-repeat bottom center;
             background-size: cover;
             background-attachment: fixed;
             background-color: rgba(0, 0, 0, 0.5);
