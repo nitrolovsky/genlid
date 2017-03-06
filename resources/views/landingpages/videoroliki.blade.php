@@ -93,7 +93,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Qt_rma1ZMw4" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                AM.Masterskaya: имидж видео.
+                Имидж видео.
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -105,7 +105,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/98iEqKihK4c" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                 Irish legend: Видео снималось для проекта свадебных организаторов.
+                 Видео снималось для проекта свадебных организаторов.
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -129,7 +129,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9GHzbaxl9lg" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                История большой любви: Видео про любовь и стиль.
+                Видео про любовь и стиль.
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -141,7 +141,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I-QiWOdqXLI" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                Listva: видео снималось для декораторов.
+                Видео снималось для декораторов.
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -153,7 +153,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UFFc46DRs28" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                2burowedding: Видео снималось для проекта свадебных организаторов.
+                Видео снималось для проекта свадебных организаторов.
             </div>
         </div>
     </div>
@@ -165,7 +165,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_EIBrRzCWOo" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                Get back: Имидж видео. Демонстрация товара и стиля.
+                Имидж видео. Демонстрация товара и стиля.
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -177,7 +177,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ef0jWaU0Bk" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                Redhead & forest: fashion video.
+                Fashion video.
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
@@ -189,7 +189,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ehrImAacM3s" allowfullscreen></iframe>
             </div>
             <div class="pt-2 text-center">
-                Gripstars: демонстрация товара.
+                Демонстрация товара.
             </div>
         </div>
     </div>
