@@ -149,7 +149,7 @@ class OrderController extends Controller
                 "product_url" => Request::get("product_url"),
                 "status" => "Order by lp"
             ])->id;
-            
+
             Session::flash("success", "Заявка отправлена.");
 
             $data = array(
@@ -173,6 +173,54 @@ class OrderController extends Controller
 
             return Redirect::action("OrderController@showThanksShop");
         }
+
+        if (Request::get("type") == "Order from landingpages") {
+            $validator = Validator::make(Request::all(), [
+                "email" => "email|max:255",
+                "phone" => "max:255"
+            ]);
+            if ($validator->fails()) {
+                Session::flash("danger", "Заполните форму.");
+                return Redirect::to("/lp/" . Request::get("product_url") . "#request")
+                    ->withErrors($validator, "orders")
+                    ->withInput();
+            }
+
+            $order = new Order;
+            $orderLastId = $order->create([
+                "email" => Request::get("email"),
+                "phone" => Request::get("phone"),
+                "product_url" => Request::get("product_url"),
+                "status" => "Order by landingpages"
+            ])->id;
+
+            Session::flash("success", "Заявка отправлена.");
+
+            $data = array(
+                "email" => Request::get("email"),
+                "phone" => Request::get("phone"),
+                "product_url" => Request::get("product_url"),
+                "order_id" => $orderLastId,
+                "status" => "Order by landingpages"
+            );
+
+            Mail::send("email.order", $data, function ($message) {
+                $message->from("genlid.proposals@gmail.com", "genlid.proposals");
+                $message->to("nitrolovsky@gmail.com");
+                $message->subject("Заявка № " . date ("Y.m.d H:m:s"));
+            });
+
+            Mail::send("email.order", $data, function ($message) {
+                $message->from("genlid.proposals@gmail.com", "genlid.proposals");
+                $message->to("raketastudia@gmail.com");
+                $message->subject("Заявка № " . date ("Y.m.d H:m:s"));
+            });
+
+            Session::put("order_id", $orderLastId);
+
+            return Redirect::action("OrderController@showThanksShop");
+        }
+
     }
 
     /**

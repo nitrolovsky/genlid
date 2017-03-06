@@ -54,7 +54,7 @@
     </div>
     <div class="container py-5">
         <div class="row">
-            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/order" method="POST">
+            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/orders" method="POST">
                 <div class="form-inline">
                     {{ csrf_field() }}
                     <input type="hidden" name="product_url" value="videoroliki">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;">
+                        <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('Proposal'); return true;">
                             Отправить
                         </button>
                     </div>
@@ -222,7 +222,7 @@
                         <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
                             <input type="phone" class="sw form-control btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
                         </div>
-                        <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;">Отправить</button>
+                        <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('Proposal'); return true;">Отправить</button>
                     </form>
                     <div class="small pt-3">
                         Ваши персональные данные защищены политикой конфиденциальности. На электронную почту отправляются письма с согласия пользователя. Телефон для технической поддержки и помощи менеджером.
@@ -245,7 +245,7 @@
                     <br>
                 </div>
                 Телефон <a href="callto:+79118384996" class="a-f">+7 911 838 49 96</a><br>
-                Email <a href="raketastudia@gmail.com " class="a-f">raketastudia@gmail.com </a><br>
+                Email <a href="raketastudia@gmail.com " class="a-f">raketastudia@gmail.com</a><br>
                 Дата обновления сайта 06.03.2017<br>
                 Сайт разработал <a href="https://vk.com/id327409638" class="a-f" target="_blank">Pavel Nitrolovsky</a>
             </div>
