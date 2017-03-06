@@ -58,7 +58,7 @@
                 <div class="form-inline">
                     {{ csrf_field() }}
                     <input type="hidden" name="product_url" value="videoroliki">
-                    <input type="hidden" name="type" value="Order from article">
+                    <input type="hidden" name="type" value="Order from landingpages">
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
                             <input type="email" class="sw form-control col-12 btn-circle {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
@@ -215,7 +215,7 @@
                     <form action="/orders" method="POST">
                         {{ csrf_field() }}
                         <input type="hidden" name="product_url" value="videoroliki">
-                        <input type="hidden" name="type" value="Order from article">
+                        <input type="hidden" name="type" value="Order from landingpages">
                         <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
                             <input type="email" class="sw form-control btn-circle {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
                         </div>
