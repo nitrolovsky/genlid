@@ -54,7 +54,7 @@
     </div>
     <div class="container py-5">
         <div class="row">
-            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/proposals" method="POST">
+            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/order" method="POST">
                 <div class="form-inline">
                     {{ csrf_field() }}
                     <input type="hidden" name="product_url" value="videoroliki">
