@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
                         <h1 class="h2 russo text-center pb-5 m-0">
-                            Фотопечать на пледе фотографий, картинок, логотипов и иллюстраций от 1 995 рублей
+                            Фотопечать на пледе фотографий, картинок, логотипов и иллюстраций от 1995 рублей
                         </h1>
                         <ul class="h5 russo">
                             <li class="pb-1">Доставляем по всей России с 2009 года</li>
