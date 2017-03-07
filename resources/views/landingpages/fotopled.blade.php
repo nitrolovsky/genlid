@@ -23,9 +23,8 @@
         </script>
         <style>
         .bgimage-first {
-            background: url(/images/fotopled/fotopled-7.jpg) no-repeat bottom center;
+            background: url(/images/fotopled/fotopled-7.jpg) no-repeat center center;
             background-size: cover;
-            background-attachment: fixed;
             background-color: rgba(0, 0, 0, 0.5);
             background-blend-mode: overlay;
             color: white;
@@ -33,6 +32,19 @@
         .btn-circle {
             border-radius: 2rem !important;
         }
+
+        label > input{ /* HIDE RADIO */
+          visibility: hidden; /* Makes input not-clickable */
+          position: absolute; /* Remove input from document flow */
+        }
+        label > input + img{ /* IMAGE STYLES */
+          cursor:pointer;
+          border:2px solid transparent;
+        }
+        label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+          border:2px solid blue;
+        }
+
         </style>
     </head>
     <body>
@@ -50,7 +62,8 @@
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            8 800 777 18 09
+                            8 800 777 18 09<br>
+                            Бесплатный звонок по всей России
                         </div>
                     </div>
                 </div>
@@ -59,12 +72,12 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
                         <h1 class="h2 russo text-center pb-5 m-0">
-                            Фотопечать на пледе фотографий, картинок, логотипов и иллюстраций от 1995 рублей
+                            Фотопечать на пледе из флиса фотографий, рисунков, логотипов и иллюстраций за 1850 рублей
                         </h1>
                         <ul class="h5 russo">
-                            <li class="pb-1">Доставляем по всей России с 2009 года</li>
-                            <li class="py-1">Свое швейное производство и дизайн-студия</li>
-                            <li class="pt-1">Срок производства 4 дня</li>
+                            <li class="pb-1">Срок печати 2-4 дня</li>
+                            <li class="py-1">Доставляем по всей России</li>
+                            <li class="pt-1">Обработка края микрооверлоком в подарок</li>
                         </ul>
                     </div>
                 </div>
@@ -170,16 +183,123 @@
             </div>
         </div>
 
+        <div class="container pt-5 pb-5 my-0">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+                    <h2 class="russo text-center">
+                        Выберите шаблон для коллажа
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="4-foto">
+                        <img src="/images/fotopled/gallery/4-foto.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="6-foto-detstvo">
+                        <img src="/images/fotopled/gallery/6-foto-detstvo.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="6-foto-pryamougolnik">
+                        <img src="/images/fotopled/gallery/6-foto-pryamougolnik.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="6-foto-serdce">
+                        <img src="/images/fotopled/gallery/6-foto-serdce.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="6-foto-svadba">
+                        <img src="/images/fotopled/gallery/6-foto-svadba.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="7-foto-gusi">
+                        <img src="/images/fotopled/gallery/7-foto-gusi.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="7-foto-kosmos">
+                        <img src="/images/fotopled/gallery/7-foto-kosmos.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="7-foto-lebedi">
+                        <img src="/images/fotopled/gallery/7-foto-lebedi.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="8-foto-prikluchenie">
+                        <img src="/images/fotopled/gallery/8-foto-prikluchenie.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="8-foto-shar">
+                        <img src="/images/fotopled/gallery/8-foto-shar.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="8-foto-velosiped">
+                        <img src="/images/fotopled/gallery/8-foto-velosiped.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="9-foto-strelka">
+                        <img src="/images/fotopled/gallery/9-foto-strelka.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="8-foto-shastie">
+                        <img src="/images/fotopled/gallery/8-foto-shastie.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <label>
+                        <input type="radio" name="template" value="26-foto-siti">
+                        <img src="/images/fotopled/gallery/26-foto-siti.jpg" class="img-fluid d-block mx-auto">
+                    </label>
+                </div>
+            </div>
+        </div>
+
         <style>
         .bg-img-form {
             background: url(/images/fotopled/fotopled-6.jpg) no-repeat top center;
             background-size: cover;
-            background-attachment: fixed;
             background-color: rgba(0, 0, 0, 0.5);
             background-blend-mode: overlay;
             color: white;
         }
         </style>
+
+        <br>
+
         <div class="container-fluid py-5 bg-img-form" id="request">
             <div class="container">
                 <div class="row">
@@ -220,7 +340,7 @@
                         <div class="hidden-md-up">
                             <br>
                         </div>
-                        Телефон <a href="callto:8 812 956 50 24" class="a-f">8 (812) 956-50-24</a><br>
+                        Телефон <a href="callto:88007771809" class="a-f">8 800 777 18 09</a><br>
                         Email <a href="zakaz@kunjut.com" class="a-f">zakaz@kunjut.com</a><br>
                         Дата обновления сайта 05.03.2017<br>
                         Сайт разработал <a href="https://vk.com/id327409638" class="a-f" target="_blank">Pavel Nitrolovsky</a>
@@ -232,6 +352,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
         <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+
         <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42928359 = new Ya.Metrika({ id:42928359, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42928359" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     </body>
 </html>
