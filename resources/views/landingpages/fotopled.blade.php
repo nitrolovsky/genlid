@@ -185,8 +185,8 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 offset-xl-3 offset-lg-3 offset-md-2">
                         <div class="mb-0">
-                            <h4 class="pb-3 russo">
-                                Получите каталог с примерами красивых фотопледов и подробной информацией
+                            <h4 class="pb-3 russo text-center">
+                                Получите каталог с шаблонами красивых фотопледов и подробной информацией
                             </h4>
                             <form action="/orders" method="POST">
                                 {{ csrf_field() }}
