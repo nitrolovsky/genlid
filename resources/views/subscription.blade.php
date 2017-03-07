@@ -53,7 +53,7 @@
 
         <style>
         .bgimage-first {
-            background: url(/images/lendingi/lendingi-2.jpg) no-repeat center center;
+            background: url(/images/lendingi/lendingi-7.jpg) no-repeat center center;
             background-size: cover;
             background-color: rgba(0, 0, 0, 0.5);
             background-blend-mode: overlay;
@@ -87,13 +87,12 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
                         <h1 class="h2 russo text-center mb-0">
-                            Разрабатываем эффективные Landing Page, которые превращают посетителей в клиентов с гарантией результата
+                            В 2 раза больше продаж при той же рекламной кампании с помощью landing pages
                         </h1>
                         <ul class="h5 russo pt-5">
-                            <li class="py-1">От 15 000 рублей в течении 3 дней</li>
-                            <li class="py-1">A/B тестирование 3 вариантов до рентабельной конверсии</li>
+                            <li class="py-1">От 10 000 рублей в течении 3 дней</li>
                             <li class="py-1">Хорошо отображаются на мобильных устройствах</li>
-                            <li class="py-1">Контакты клиентов приходят на email и CRM</li>
+                            <li class="py-1">Контакты клиентов приходят на email</li>
                             <li class="py-1">Настроенная аналитика в Яндекс Метрики и Google Analytics</li>
                             <li class="py-1">Редактура текста в информационном стиле</li>
                         </ul>
@@ -105,7 +104,7 @@
                     <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/proposals" method="POST">
                         <div class="form-inline">
                             {{ csrf_field() }}
-                            <input type="hidden" name="product_url" value="videoroliki">
+                            <input type="hidden" name="product_url" value="lendingi">
                             <input type="hidden" name="type" value="Order from article">
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                 <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
@@ -130,7 +129,7 @@
 
         <div class="container py-5">
             <h1 class="h2 russo text-center">
-                Посмотрите примеры Landing pages
+                Посмотрите примеры Landing pages пуль на основе видео
             </h1>
         </div>
 
@@ -374,15 +373,66 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <hr>
-            <div class="row small">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    2017 genlid.com. Санкт-Петербург, метро Василеостровская. Телефон +7 929 116 85 65. Email nitrolovsky@gmail.com. <a href="https://vk.com/nitrolovsky"target="_blank">Павел Нитроловский</a>.
+
+        <style>
+        .bg-img-form {
+            background: url(/images/lendingi/lendingi-8.jpg) no-repeat top center;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: overlay;
+            color: white;
+        }
+        </style>
+        <div class="container-fluid py-5 bg-img-form" id="request">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 offset-xl-3 offset-lg-3 offset-md-2">
+                        <div class="mb-0">
+                            <h4 class="pb-3 russo text-center">
+                                Бесплатная консультация и прототип вашего лендинга
+                            </h4>
+                            <form action="/orders" method="POST">
+                                {{ csrf_field() }}
+                                <input type="hidden" name="product_url" value="lendingi">
+                                <input type="hidden" name="type" value="Order from article">
+                                <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
+                                    <input type="email" class="sw form-control btn-circle {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
+                                </div>
+                                <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
+                                    <input type="phone" class="sw form-control btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                                </div>
+                                <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('Proposal'); return true;">Отправить</button>
+                            </form>
+                            <div class="small pt-3">
+                                Ваши персональные данные защищены политикой конфиденциальности. На электронную почту отправляются письма с согласия пользователя. Телефон для технической поддержки и помощи.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
+            <div class="container pt-5">
+                <div class="row small">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        © 2017 genlid.com Все права защищены
+                        <br>
+                        <a href="/files/politika-confidencialnosti.pdf" target="_blank" class="a-f">Политика конфиденциальности</a>
+                        <br>
+                        Санкт-Петербург<br>
+                        метро Василеостровская
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-left">
+                        <div class="hidden-md-up">
+                            <br>
+                        </div>
+                        Телефон <a href="callto:++79291168565" class="a-f">+7 929 116 85 65</a><br>
+                        Email <a href="nitrolovsky@gmail.com" class="a-f">nitrolovsky@gmail.com</a><br>
+                        Дата обновления сайта 07.03.2017<br>
+                        Сайт разработал <a href="https://vk.com/id327409638" class="a-f" target="_blank">Pavel Nitrolovsky</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
         <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
