@@ -376,7 +376,7 @@
 
         <style>
         .bg-img-form {
-            background: url(/images/lendingi/lendingi-8.jpg) no-repeat top center;
+            background: url(/images/lendingi/lendingi-10.jpg) no-repeat top center;
             background-size: cover;
             background-color: rgba(0, 0, 0, 0.5);
             background-blend-mode: overlay;
