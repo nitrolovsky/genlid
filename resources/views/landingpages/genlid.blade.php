@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Play:400,700|Roboto+Slab:300,400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/2017-02-28.css">
+        <link rel="stylesheet" href="/css/genlid.css">
         <title>
             genlid.com Примеры сайтов
         </title>
@@ -68,7 +68,7 @@
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
                             <div class="row">
                                 <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                    <span class="russo">genlid.com</span><br>
+                                    <span class="h1 russo">GENLID</span><br>
                                     Создание продающих сайтов
                                 </div>
                             </div>
@@ -87,7 +87,7 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
                         <h1 class="h2 russo text-center mb-0">
-                            В 2 раза больше продаж при той же рекламной кампании с помощью landing pages
+                            В 2 раза больше клиентов при той же рекламной кампании с помощью landing pages
                         </h1>
                         <ul class="h5 russo pt-5">
                             <li class="py-1">От 10 000 рублей в течении 3 дней</li>
@@ -386,7 +386,7 @@
         <div class="container-fluid py-5 bg-img-form" id="request">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 offset-xl-3 offset-lg-3 offset-md-2">
+                    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 col-xs-12 offset-xl-4 offset-lg-3 offset-md-2">
                         <div class="mb-0">
                             <h4 class="pb-3 russo text-center">
                                 Бесплатная консультация и прототип вашего лендинга
@@ -403,8 +403,8 @@
                                 </div>
                                 <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('Proposal'); return true;">Отправить</button>
                             </form>
-                            <div class="small pt-3">
-                                Ваши персональные данные защищены политикой конфиденциальности. На электронную почту отправляются письма с согласия пользователя. Телефон для технической поддержки и помощи.
+                            <div class="small pt-3 px-3">
+                                Ваши персональные данные защищены политикой конфиденциальности.
                             </div>
                         </div>
                     </div>
