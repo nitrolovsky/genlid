@@ -18,10 +18,10 @@
 
 <div class="container-fluid p-0">
     <div class="container-fluid px-0">
-        <div class="container pt-4 pb-5">
+        <div class="container pt-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                    <span class="h1 russo py-0 my-0 text-uppercase">
+                    <span class="h1 russo text-uppercase">
                         {{ $page->company or "" }}
                     </span><br>
                     {{ $page->descriptor }}
@@ -36,16 +36,16 @@
             </div>
         </div>
     </div>
-    <div class="container pt-0 pb-2">
+    <div class="container pt-5">
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 ">
-                <h1 class="h2 russo text-center">
+                <h1 class="h2 russo text-center my-0">
                     {{ $page->offer }}
                 </h1>
             </div>
         </div>
     </div>
-    <div class="container pb-5">
+    <div class="container pt-5">
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
                 @php
@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container pt-5">
         <div class="row">
             <div class="col-xl-8 col-lg-8">
                 <div class="embed-responsive embed-responsive-16by9 sw " id="video">
