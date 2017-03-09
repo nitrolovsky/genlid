@@ -108,7 +108,7 @@
             </div>
         </div>
     </div>
-    <div class="container py-5 small">
+    <div class="container py-4 small">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12">
                 {{ $page->legal }}
