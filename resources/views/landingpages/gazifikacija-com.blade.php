@@ -6,36 +6,63 @@
 
 <link rel="stylesheet" href="/css/gazifikaciya-3.css">
 
-@component("components.firstbg")
-    @slot("bgimageid")
-        bgimage-first
-    @endslot
-    @slot("image")
-        /images/gazifikaciya-3/gazifikaciya-fotografiya-7.jpg
-    @endslot
-    @slot("domen")
-        ООО "Альтаир"
-    @endslot
-    @slot("descriptor")
-        Газификация домов и предприятий<br>в Санкт-Петербурге и Ленинградской области
-    @endslot
-    @slot("phone")
-        8 800 550 50 46<br>
-        8 812 245 17 35
-    @endslot
-    @slot("address")
-        Всеволожск, Всеволожский проспект дом 17 офис 434
-    @endslot
-    @slot("heading")
-        Поможем газифицироваться в любой ситуации
-    @endslot
-    @slot("subheading")
-        Оставьте заявку на бесплатный выезд инженера
-    @endslot
-    @slot("calltoaction")
-        Получить
-    @endslot
-@endcomponent
+<style>
+.bgimage-first {
+    background: url(/images/gazifikaciya-3/gazifikaciya-fotografiya-7.jpg) no-repeat bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+}
+.btn-circle {
+    border-radius: 2rem !important;
+}
+</style>
+<div class="container-fluid p-0 bgimage-first">
+    <div class="container-fluid px-0">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="/images/gazifikaciya-3/gazifikaciya-logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                            ООО "Альтаир"<br>
+                            Газификация домов и предприятий<br>в Санкт-Петербурге и Ленинградской области
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
+                    <div class="hidden-md-up">
+                        <br>
+                    </div>
+                    8 800 550 50 46<br>
+                    8 812 245 17 35<br>
+                    Всеволожск, Всеволожский проспект дом 17 офис 434
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <h1 class="h2 russo text-center">
+            Поможем газифицироваться в любой ситуации
+        </h1>
+    </div>
+    <div class="container pb-5">
+        <h2 class="h2 russo text-center">
+            Оставьте заявку на бесплатный выезд инженера
+        </h2>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
+                <a href="#request" class="btn btn-primary  btn-circle">Бесплатный расчет сметы</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid bg-faded pb-5">
     <div class="container">
@@ -50,7 +77,7 @@
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <ul class="nav nav-pills justify-content-center" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#truboprovod" role="tab">Трубопровод</a>
+                        <a class="nav-link active" data-toggle="pill" href="#truboprovod" role="tab">Природный газ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="pill" href="#gazgolder" role="tab">Газгольдер</a>
@@ -86,23 +113,59 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="form-check mb-0 bgimage-form-4 p-4">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
-                                        Требуется получить исполнительно-техническую документацию наружного газоснабжения
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <fieldset class="form-group mb-0 bgimage-form-8 p-4">
+                                    <label>
+                                        Количество и удаленность потребителей газа
                                     </label>
-                                </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="checked">
+                                            Один потребитель
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            Два потребителя через стену друг от друга меньше 2 метров
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label mb-0">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            Два потребителя на удалении больше 2 метров
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <fieldset class="form-group bgimage-form-9 p-4 mb-0">
+                                    <label class="">
+                                        Давление в системе газоснабжения
+                                    </label>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1" checked="checked">
+                                            Низкое
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+                                            Среднее-Высокое
+                                        </label>
+                                    </div>
+                                </fieldset>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="hidden-md-up">
-                                    <br>
-                                </div>
-                                <div class="form-check mb-0 bgimage-form-5 p-4">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
-                                        Требуется получить исполнительно-техническую документацию внутреннего газоснабжения
+                                <div class="form-group mb-0 bgimage-form-10 p-4">
+                                    <label for="formGroupExampleInput">
+                                        Длина от основной магистрали до места подключения в метрах
                                     </label>
+                                    <input type="number" class="form-control btn-circle" id="formGroupExampleInput" placeholder="1" value="1" min="0">
                                 </div>
                             </div>
                         </div>
@@ -125,70 +188,6 @@
                                         <input class="form-check-input" type="checkbox" value="">
                                         Требуется заключить договор на сервисное обслуживание котла
                                     </label>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <fieldset class="form-group mb-0 bgimage-form-8 p-4">
-                                    <label>
-                                        Количество и удаленность потребителей газа
-                                    </label>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="checked">
-                                            Один потребитель
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                            Два потребителя через стену друг от друга меньше 2 метров
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                            Три потребителя
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label mb-0">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                            Два потребителя на удалении больше 2 метров
-                                        </label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <fieldset class="form-group bgimage-form-9 p-4">
-                                    <label class="">
-                                        Давление в системе газоснабжения
-                                    </label>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1" checked="checked">
-                                            Низкое
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                                            Среднее
-                                        </label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="form-group mb-0 bgimage-form-10 p-4">
-                                    <label for="formGroupExampleInput">
-                                        Длина от основной магистрали до места подключения в метрах
-                                    </label>
-                                    <input type="number" class="form-control btn-circle" id="formGroupExampleInput" placeholder="1" value="1" min="0">
                                 </div>
                             </div>
                         </div>
@@ -426,7 +425,7 @@
             <img src="/images/gazifikaciya2/predpriyatie-2.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
-                Предприятия
+                Промышленность
             </h3>
             <div class="hidden-lg-up">
                 <br>
@@ -436,14 +435,23 @@
     </div>
 </div>
 
-@component("components.bgimage")
-    @slot("bgimageid")
-        bgimage-kredit
-    @endslot
-    @slot("image")
-        "/images/gazifikaciya-3/gazifikaciya-fotografiya-1.jpg"
-    @endslot
-    @slot("caption")
+<style>
+.bgimage-kredit {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-1.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+}
+</style>
+<div class="container-fluid p-0 bgimage-kredit">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <h2 class="russo text-center py-5 my-0">
             Возможна помощь от банков партнеров в предоставлении рассрочки<br>
         </h2>
@@ -458,8 +466,13 @@
                 <img src="/images/gazifikaciya-3/bank-3.png" class="img-fluid">
             </div>
         </div>
-    @endslot
-@endcomponent
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
 
 <div class="container pb-5">
     <div class="row">
@@ -556,21 +569,35 @@
     </div>
 </div>
 
-@component("components.bgimage")
-    @slot("bgimageid")
-        bgimage-stoimost
-    @endslot
-    @slot("image")
-        "/images/gazifikaciya-3/gazifikaciya-fotografiya-9.jpg"
-    @endslot
-    @slot("caption")
+<style>
+.bgimage-stoimost {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-9.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+}
+</style>
+<div class="container-fluid p-0 bgimage-stoimost">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <h2 class="russo text-center py-5 my-0">
             Стоимость работ фиксируется в смете и не может быть повышена
             <br>
             Никаких дополнительных расходов
         </h2>
-    @endslot
-@endcomponent
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
 
 <div class="container pb-5">
     <div class="row">
@@ -617,21 +644,35 @@
     </div>
 </div>
 
-@component("components.bgimage")
-    @slot("bgimageid")
-        bgimage-garantiya-srokov
-    @endslot
-    @slot("image")
-        "/images/gazifikaciya2/gazifikaciya-fotografiya-3.jpg"
-    @endslot
-    @slot("caption")
+<style>
+.bgimage-garantiya-srokov {
+    background: url("/images/gazifikaciya2/gazifikaciya-fotografiya-3.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+}
+</style>
+<div class="container-fluid p-0 bgimage-garantiya-srokov">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <h2 class="russo text-center py-5 my-0">
             Гарантия соблюдения сроков работ до 1 дня
             <br>
             Условия прописываются в договоре. В случае нарушения сроков, мы выплатим вам штраф.
         </h2>
-    @endslot
-@endcomponent
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
 
 <div class="container pb-5">
     <div class="row">
@@ -642,15 +683,16 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-1.jpg" alt="Card image cap">
                 <div class="card-block">
                     Экскаватор-погрузчик для общестроительных работ.
                 </div>
+                <br>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="hidden-lg-up">
                 <br>
             </div>
@@ -661,18 +703,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-            <div class="hidden-lg-up">
-                <br>
-            </div>
-            <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-3.jpg" alt="Card image cap">
-                <div class="card-block">
-                    Самоходный бетоносмесительный узел для изготовления бетона в недоступных местах
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="hidden-lg-up">
                 <br>
             </div>
@@ -681,6 +712,7 @@
                 <div class="card-block">
                     Мини-экскаватор применяется в условиях ограниченного маневра
                 </div>
+                <br>
             </div>
         </div>
     </div>
@@ -723,41 +755,63 @@
     </div>
 </div>
 
-@component("components.firstbg")
-    @slot("bgimageid")
-        bgimage-footer
-    @endslot
-    @slot("image")
-        /images/gazifikaciya2/gazifikaciya-fotografiya-4.jpg
-    @endslot
-    @slot("caption")
-        <h1>
-            Газификация
+<style>
+.bgimage-first {
+    background: url("/images/gazifikaciya2/gazifikaciya-fotografiya-4.jpg") no-repeat bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+}
+.btn-circle {
+    border-radius: 2rem !important;
+}
+</style>
+<div class="container-fluid p-0 bgimage-first">
+    <div class="container-fluid px-0">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="/images/gazifikaciya-3/gazifikaciya-logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                            ООО "Альтаир"<br>
+                            Газификация домов и предприятий<br>в Санкт-Петербурге и Ленинградской области
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
+                    <div class="hidden-md-up">
+                        <br>
+                    </div>
+                    8 800 550 50 46<br>
+                    8 812 245 17 35<br>
+                    Всеволожск, Всеволожский проспект дом 17 офис 434
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <h1 class="h2 russo text-center">
+            Поможем газифицироваться в любой ситуации
         </h1>
-    @endslot
-    @slot("domen")
-        ООО "Альтаир"
-    @endslot
-    @slot("descriptor")
-        Газификация домов и предприятий<br>в Санкт-Петербурге и Ленинградской области
-    @endslot
-    @slot("phone")
-        8 800 550 50 46<br>
-        8 812 245 17 35
-    @endslot
-    @slot("address")
-        Всеволожск, Всеволожский проспект дом 17 офис 434
-    @endslot
-    @slot("heading")
-        Поможем газифицироваться в любой ситуации
-    @endslot
-    @slot("subheading")
-        Оставьте заявку на бесплатный выезд инженера
-    @endslot
-    @slot("calltoaction")
-        Получить
-    @endslot
-@endcomponent
+    </div>
+    <div class="container pb-5">
+        <h2 class="h2 russo text-center">
+            Оставьте заявку на бесплатный выезд инженера
+        </h2>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
+                <a href="#request" class="btn btn-primary  btn-circle">Бесплатный расчет сметы</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 @component("components.js")
 @endcomponent
