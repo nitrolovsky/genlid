@@ -21,7 +21,7 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                    <span class="h1 russo text-uppercase">
+                    <span class="h3 russo text-uppercase">
                         {{ $page->company or "" }}
                     </span><br>
                     {{ $page->descriptor }}
@@ -73,9 +73,9 @@
                     <div class="hidden-xl-up">
                         <br>
                     </div>
-                    <h6 class="russo px-3 pb-3">
+                    <h5 class="russo px-3 pb-3">
                         {{ $page->form_title }}
-                    </h6>
+                    </h5>
                     <form action="/proposals" method="POST">
                         {{ csrf_field() }}
                         <input type="hidden" name="page_id" value="{{ $page->id }}">
