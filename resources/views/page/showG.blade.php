@@ -21,7 +21,7 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                    <span class="h3 russo text-uppercase">
+                    <span class="h2 russo text-uppercase">
                         {{ $page->company or "" }}
                     </span><br>
                     {{ $page->descriptor }}
