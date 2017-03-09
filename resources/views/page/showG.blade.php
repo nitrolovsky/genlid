@@ -108,12 +108,21 @@
             </div>
         </div>
     </div>
-    <div class="container py-4 small">
-        {{ $page->legal }}
-        Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a>.
-        Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a>.
-        Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}.
-        Сайт разработал <a href="http://genlid.com">genlid.com</a>.
+    <div class="container py-5 small">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12">
+                {{ $page->legal }}
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-right text-lg-right text-md-right">
+                <div class="hidden-md-up">
+                    <br>
+                </div>
+                Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a><br>
+                Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a><br>
+                Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}<br>
+                Сайт разработал <a href="http://genlid.com">genlid.com</a>
+            </div>
+        </div>
     </div>
 </div>
 
