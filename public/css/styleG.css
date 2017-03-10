@@ -60,3 +60,7 @@ a:hover {
 .sw {
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
+.logo {
+    font-family: SegoeUI;
+    font-weight: 300;
+}
