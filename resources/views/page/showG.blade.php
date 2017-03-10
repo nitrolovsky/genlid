@@ -73,7 +73,7 @@
                     <div class="hidden-xl-up">
                         <br>
                     </div>
-                    <h5 class="russo px-3 pb-3">
+                    <h5 class="russo px-3 pb-3 text-center">
                         {{ $page->form_title }}
                     </h5>
                     <form action="/proposals" method="POST">
