@@ -62,5 +62,5 @@ a:hover {
 }
 .logo {
     font-family: SegoeUI;
-    font-weight: 300;
+    font-weight: 300 !important;
 }
