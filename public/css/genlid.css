@@ -42,7 +42,7 @@ input, textarea {
 
 .russo {
     font-family: "SegoeUI", sans-serif !important;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .btn-circle {
@@ -63,4 +63,9 @@ input, textarea {
 
 .padding-top {
     padding-top: 56px;
+}
+
+.logo {
+    font-family: "SegoeUI";
+    font-weight: 300;
 }
