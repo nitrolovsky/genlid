@@ -183,111 +183,6 @@
             </div>
         </div>
 
-        <div class="container pt-5 pb-5 my-0">
-            <div class="row">
-                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                    <h2 class="russo text-center">
-                        Выберите шаблон для коллажа
-                    </h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="4-foto">
-                        <img src="/images/fotopled/gallery/4-foto.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="6-foto-detstvo">
-                        <img src="/images/fotopled/gallery/6-foto-detstvo.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="6-foto-pryamougolnik">
-                        <img src="/images/fotopled/gallery/6-foto-pryamougolnik.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="6-foto-serdce">
-                        <img src="/images/fotopled/gallery/6-foto-serdce.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="6-foto-svadba">
-                        <img src="/images/fotopled/gallery/6-foto-svadba.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="7-foto-gusi">
-                        <img src="/images/fotopled/gallery/7-foto-gusi.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="7-foto-kosmos">
-                        <img src="/images/fotopled/gallery/7-foto-kosmos.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="7-foto-lebedi">
-                        <img src="/images/fotopled/gallery/7-foto-lebedi.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="8-foto-prikluchenie">
-                        <img src="/images/fotopled/gallery/8-foto-prikluchenie.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="8-foto-shar">
-                        <img src="/images/fotopled/gallery/8-foto-shar.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="8-foto-velosiped">
-                        <img src="/images/fotopled/gallery/8-foto-velosiped.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="9-foto-strelka">
-                        <img src="/images/fotopled/gallery/9-foto-strelka.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="8-foto-shastie">
-                        <img src="/images/fotopled/gallery/8-foto-shastie.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <label>
-                        <input type="radio" name="template" value="26-foto-siti">
-                        <img src="/images/fotopled/gallery/26-foto-siti.jpg" class="img-fluid d-block mx-auto">
-                    </label>
-                </div>
-            </div>
-        </div>
-
         <style>
         .bg-img-form {
             background: url(/images/fotopled/fotopled-6.jpg) no-repeat top center;
@@ -298,15 +193,13 @@
         }
         </style>
 
-        <br>
-
         <div class="container-fluid py-5 bg-img-form" id="request">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 offset-xl-3 offset-lg-3 offset-md-2">
                         <div class="mb-0">
                             <h4 class="pb-3 russo text-center">
-                                Закажите теплый флисовый плед с фотографиями, которые вы нам пришлете
+                                Получите каталог красивых примеров фотопледов
                             </h4>
                             <form action="/orders" method="POST">
                                 {{ csrf_field() }}
@@ -343,7 +236,7 @@
                         Телефон <a href="callto:88007771809" class="a-f">8 800 777 18 09</a><br>
                         Email <a href="zakaz@kunjut.com" class="a-f">zakaz@kunjut.com</a><br>
                         Дата обновления сайта 05.03.2017<br>
-                        Сайт разработал <a href="https://vk.com/id327409638" class="a-f" target="_blank">Pavel Nitrolovsky</a>
+                        Сайт разработал <a href="http://genlid.com" class="a-f" target="_blank">GENLID</a>
                     </div>
                 </div>
             </div>
