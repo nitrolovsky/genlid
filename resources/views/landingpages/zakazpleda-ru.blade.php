@@ -84,7 +84,7 @@
             </div>
             <div class="container py-5">
                 <div class="row">
-                    <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/proposals" method="POST">
+                    <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/order" method="POST">
                         <div class="form-inline">
                             {{ csrf_field() }}
                             <input type="hidden" name="product_url" value="fotopled">
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                <button type="submit" class="sw btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;">
+                                <button type="submit" class="sw btn btn-primary btn-block btn-circle"  onclick="yaCounter43424674.reachGoal('ClickButton1'); return true;">
                                     Заказать
                                 </button>
                             </div>
@@ -139,7 +139,7 @@
                             Плед с корпоративным дизайном.
                         </div>
                         <div class="text-center pt-4">
-                            <a href="#request" class="btn btn-primary  btn-circle">
+                            <a href="#request" class="btn btn-primary btn-circle" onclick="yaCounter43424674.reachGoal('ClickButton2'); return true;">
                                 Заказать фотоплед
                             </a>
                         </div>
@@ -174,7 +174,7 @@
                             Сначала на специальной бумаге печатается картинка. Затем под воздействием температуры 210 градусов изображение переносится с бумаги на мягкий флис. Чернила глубоко проникают в структуру флиса, не ощущаются тактильно и не выстирываются. Печатать можно абсолютно любые изображения: фотографии, фотоколлажи, рисунки.
                         </div>
                         <div class="text-center pt-4">
-                            <a href="#request" class="btn btn-primary  btn-circle">
+                            <a href="#request" class="btn btn-primary btn-circle" onclick="yaCounter43424674.reachGoal('ClickButton3'); return true;">
                                 Заказать фотоплед
                             </a>
                         </div>
@@ -211,7 +211,7 @@
                                 <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
                                     <input type="phone" class="form-control btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;">Получить каталог</button>
+                                <button type="submit" class="btn btn-primary btn-block btn-circle" onclick="yaCounter43424674.reachGoal('ClickButton4'); return true;">Получить каталог</button>
                             </form>
                             <div class="small pt-3">
                                 Ваши персональные данные защищены политикой конфиденциальности. На электронную почту отправляются письма с согласия пользователя. Телефон для технической поддержки и помощи менеджером.
@@ -246,6 +246,35 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
         <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42928359 = new Ya.Metrika({ id:42928359, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42928359" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter43424674 = new Ya.Metrika({
+                            id:43424674,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true,
+                            trackHash:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/43424674" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
     </body>
 </html>
