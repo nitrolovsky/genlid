@@ -400,7 +400,7 @@
     </div>
     <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-            <img src="/images/gazifikaciya2/dom-2.jpg" class="img-fluid mx-auto d-block">
+            <img src="/images/gazifikaciya-3/gazifikaciya-dom.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 Частные дома
@@ -411,7 +411,7 @@
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-            <img src="/images/gazifikaciya2/mnogokvartirnie-doma.jpg" class="img-fluid mx-auto d-block">
+            <img src="/images/gazifikaciya-3/gazifikaciya-mnogokvartirnie.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
                 Многоквартирные дома
@@ -422,10 +422,35 @@
             </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-            <img src="/images/gazifikaciya2/predpriyatie-2.jpg" class="img-fluid mx-auto d-block">
+            <img src="/images/gazifikaciya-3/gazifikaciya-prom.jpg" class="img-fluid mx-auto d-block">
             <br>
             <h3 class="russo text-center pt-3">
-                Промышленность
+                Промышленные
+            </h3>
+            <div class="hidden-lg-up">
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-xl-2">
+            <img src="/images/gazifikaciya-3/gazifikaciya-commercheskie.jpg" class="img-fluid mx-auto d-block">
+            <br>
+            <h3 class="russo text-center pt-3">
+                Коммерческие
+            </h3>
+            <div class="hidden-lg-up">
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/gazifikaciya-poselki.jpg" class="img-fluid mx-auto d-block">
+            <br>
+            <h3 class="russo text-center pt-3">
+                Садоводства и поселки
             </h3>
             <div class="hidden-lg-up">
                 <br>
@@ -488,12 +513,13 @@
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-14.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
-                        Монтаж встроенной газовой котельной частного дома в поселке Лисий Нос.
+                        Строительство газовой котельной для Общественно-Делового Центра ювелирной сети «585» в д. Скотное
                     </h4>
                     <ul>
-                        <li>Площадь дома - 260 кв. м.
-                        <li>Мощность отопления - 26 кВт.
-                        <li>Срок выполнения работ - 21 день.
+                        <li>Мощность котельной - ...
+                        <li>Проектно-изыскательские работы, прохождение государственной экспертизы
+                        <li>Строительно-монтажные работы, сдача объекта в ГАСН и РТН
+                        <li>Техническое обслуживание и эксплуатация собственными мощностями
                     </ul>
                     <br>
                     <div class="text-center">
@@ -510,13 +536,18 @@
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-16.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
-                        Газификация коттеджного поселка в Ленинградской области
+                        Газификация д.Колясово и Общественно-Делового Центра ювелирной сети «585» в д.Скотное
                     </h4>
                     <ul>
-                        <li>Ежегодное потребление 9,5 млн. куб/год
-                        <li>Общая протяженность газопровода  3,6 км
-                        <li>Прокладка газопровода через лес и передача газопровода на баланс филиалу ОАО "Газпром"
+                        <li>Общая протяженность газопровода 1,8 км
+                        <li>Ежегодное потребление - ….
+                        <li>Работы по ННБ для перехода автомобильной трассы федерального назначения А 121 «Сортавала»
+                        <li>Газоснабжение частных домовладений д.Колясово
                     </ul>
+                    <br>
+                    <br>
+                    <br>
+
                     <div class="text-center">
                         <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
@@ -531,12 +562,16 @@
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-15.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
-                        Газификация производственно-складского комплекса со встроенной котельной
+                        Наружное и внутреннее газоснабжение, устройство котельной и индивидуальных тепловых пунктов Многоквартирного жилого комплекса  «Полар-Южный» в г. Всеволожске
                     </h4>
                     <ul>
-                        <li>Площадь - 1300 кв.м.
-                        <li>Мощность отопления 300 кВт
-                        <li>Мощность газовых генераторов 250 кВт
+                        <li>Мощность котельной - …
+                        <li>Проектно-изыскательские работы, прохождение государственной экспертизы
+                        <li>Строительно-монтажные работы, сдача объекта в ГАСН и РТН
+                        <li>Техническое обслуживание и эксплуатация собственными мощностями.
+                        <li>Высотные работы по прокладке фасадного газопровода
+                        <li>Газоснабжение квартир - ….
+
                     </ul>
                     <div class="text-center">
                         <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
@@ -552,14 +587,69 @@
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-17.jpg" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="russo">
-                        Комплексная газификация зданий и сооружений складского назначения
+                        Газификация муниципальных объектов Дубровского городского поселения в Ленинградской области
                     </h4>
                     <ul>
-                        <li>Прокладка газопровода высокого давления 1,8 км.
-                        <li>Строительство распределительного газопровода
-                        <li>Введение в эксплуатацию газовых потребителей
+                        <li>Общая протяженность газопровода - ….
+                        <li>Ежегодное потребление - …
+                        <li>Государственный заказ
+                        <li>Сроки ожидания газификации жильцами муниципальных квартир и домов – более 3 лет
+                        <li>Работы по ГНБ для сохранения муниципального имущества
+
                     </ul>
                     <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="text-center">
+                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card sw">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-15.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="russo">
+                        Реконструкция газопроводов в квартале, ограниченном ул. Ольги Берггольц, пр. Елизарова, ул. Седова и Старопутиловским валом для комитета по энергетике и инженерному обеспечению Правительства СПб
+                    </h4>
+                    <ul>
+                        <li>Общая протяженность газопровода - ….
+                        <li>Ежегодное потребление - …
+                        <li>Государственный заказ
+                        <li>Сроки ожидания газификации жильцами муниципальных квартир и домов – более 5 лет
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="hidden-xl-up">
+                <br>
+            </div>
+            <div class="card sw">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-17.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="russo">
+                        Комплексное газоснабжение и водоснабжение ДНТ «РОВАМ» массив Проба в Ленинградской Области
+                    </h4>
+                    <ul>
+                        <li>Общая протяженность газопровода и водопровода 7 км
+                        <li>Ежегодное потребление - ….
+                        <li>Строительство распределительной сети, насосной станции и резервуарной емкости
+                        <li>Газификация частных домовладений
+                    </ul>
+                    <br>
+                    <br>
+
                     <div class="text-center">
                         <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
@@ -685,9 +775,20 @@
     <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-1.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-11.jpg" alt="Card image cap">
                 <div class="card-block">
-                    Экскаватор-погрузчик для общестроительных работ.
+                    Установка горизонтально-направленного бурения для бестраншейной прокладки
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="hidden-lg-up">
+                <br>
+            </div>
+            <div class="card sw">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-12.jpg" alt="Card image cap">
+                <div class="card-block">
+                    Мини-экскаватор для работы в стесненных условиях
                 </div>
                 <br>
             </div>
@@ -697,9 +798,33 @@
                 <br>
             </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-2.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-13.jpg" alt="Card image cap">
                 <div class="card-block">
-                    Установка горизонтального бурения для прокладки газопровода без траншеи
+                    Авто-вышка для проведения высотных работ
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="card sw">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-14.jpg" alt="Card image cap">
+                <div class="card-block">
+                    Мини-погрузчик для работы в городских условиях
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="hidden-lg-up">
+                <br>
+            </div>
+            <div class="card sw">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-17.jpg" alt="Card image cap">
+                <div class="card-block">
+                    Экскаватор-погрузчик для обеспечения нужд при прокладке наружных сетей
                 </div>
             </div>
         </div>
@@ -708,9 +833,9 @@
                 <br>
             </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya2/tehnika-4.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-16.jpg" alt="Card image cap">
                 <div class="card-block">
-                    Мини-экскаватор применяется в условиях ограниченного маневра
+                    Буровая установка для проведения геологических изысканий
                 </div>
                 <br>
             </div>
