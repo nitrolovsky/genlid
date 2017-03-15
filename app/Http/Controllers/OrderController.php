@@ -221,6 +221,44 @@ class OrderController extends Controller
             return Redirect::action("OrderController@showThanksShop");
         }
 
+        if (Request::get("type") == "Order from promokod") {
+            $validator = Validator::make(Request::all(), [
+                "email" => "email|max:255"
+            ]);
+            if ($validator->fails()) {
+                Session::flash("danger", "Заполните форму.");
+                return Redirect::to("/lp/" . Request::get("product_url") . "#request")
+                    ->withErrors($validator, "orders")
+                    ->withInput();
+            }
+
+            $order = new Order;
+            $orderLastId = $order->create([
+                "email" => Request::get("email"),
+                "product_url" => Request::get("product_url"),
+                "status" => "Order by promokod"
+            ])->id;
+
+            Session::flash("success", "Заявка отправлена.");
+
+            $data = array(
+                "email" => Request::get("email"),
+                "product_url" => Request::get("product_url"),
+                "order_id" => $orderLastId,
+                "status" => "Order by promokod"
+            );
+
+            Mail::send("email.promokod", $data, function ($message) {
+                $message->from("genlid.proposals@gmail.com", "genlid.proposals");
+                $message->to("nitrolovsky@gmail.com");
+                $message->subject("Заявка № " . date ("Y.m.d H:m:s"));
+            });
+
+            Session::put("order_id", $orderLastId);
+
+            return Redirect::action("OrderController@showThanksPromokod");
+        }
+
     }
 
     /**
@@ -279,6 +317,13 @@ class OrderController extends Controller
         $order = Order::find(Session::get("order_id"));
 
         return View::make("order.thanksShop")
+            ->with("order", $order);
+    }
+
+    public function showThanksPromokod() {
+        $order = Order::find(Session::get("order_id"));
+
+        return View::make("order.thanksPromokod")
             ->with("order", $order);
     }
 }

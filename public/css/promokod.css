@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot');
+    src: url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot');
+    src: url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUIBold/SegoeUIBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot');
+    src: url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?iefix') format('eot'),
+        url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.woff') format('woff'),
+        url('/fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+a, a:hover, a:active, a:visited {
+    text-decoration:none !important;
+}
+
+input, button, textarea {
+      font-family: 'Verdana', sans-serif !important;
+}
+
+input, textarea {
+    color: black !important;
+}
+
+.russo {
+    font-family: "SegoeUI", sans-serif !important;
+    font-weight: 700;
+}
+
+.btn-circle {
+    border-radius: 2rem !important;
+}
+
+a, a:visited, a:active {
+    color: #ccd4ff !important;
+}
+
+a:hover {
+    color: #546fff !important;
+}
+
+.sw {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.logo {
+    font-family: SegoeUI;
+    font-weight: 300 !important;
+}

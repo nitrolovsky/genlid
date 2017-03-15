@@ -55,4 +55,5 @@ Route::get("lp/{name}", function($name) {
 
 Route::get("orders/thanks", "OrderController@showThanks");
 Route::get("orders/thanksfororder", "OrderController@showThanksShop");
+Route::get("orders/thanksforpromokod", "OrderController@showThanksPromokod");
 Route::resource("orders", "OrderController");
