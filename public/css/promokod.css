@@ -31,9 +31,11 @@
 a, a:hover, a:active, a:visited {
     text-decoration:none !important;
 }
-
+body {
+    font-family: "Roboto" !important;
+}
 input, button, textarea {
-      font-family: 'Verdana', sans-serif !important;
+      font-family: 'Roboto', sans-serif !important;
 }
 
 input, textarea {
@@ -41,7 +43,7 @@ input, textarea {
 }
 
 .russo {
-    font-family: "SegoeUI", sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
     font-weight: 700;
 }
 
@@ -61,6 +63,6 @@ a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 .logo {
-    font-family: SegoeUI;
-    font-weight: 300 !important;
+    font-family: "Roboto";
+    font-weight: 400 !important;
 }

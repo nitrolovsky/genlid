@@ -8,7 +8,10 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/fonts/museosanscyrl/museosanscyrl.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="/css/promokod.css">
+
         <title>
             Комплект женского белья Calvin Klein
         </title>
@@ -37,10 +40,10 @@
         <div>
             <div class="container-fluid p-0">
                 <div class="container-fluid px-0">
-                    <div class="container pt-5">
+                    <div class="container pt-4">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                                <span class="h2 russo text-uppercase">
+                                <span class="h2 logo">
                                     IGABUTIK
                                 </span><br>
                                 Интернет-магазин
@@ -107,14 +110,14 @@
                                         </div>
                                     </div>
                                 </form>
-                                <div class="px-3 small">
+                                <div class="px-3 ">
                                     Обработка персональных данных защищена политикой конфиденциальности
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container py-4 small">
+                <div class="container py-4">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12">
                             2017 IGABUTIK
