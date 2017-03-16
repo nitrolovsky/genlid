@@ -21,111 +21,113 @@
           ga('require', 'displayfeatures');
           ga('send', 'pageview');
         </script>
-    </head>
-    <body class="bgimg-1">
         <style>
             .bgimg-1 {
-                background: url("/images/sportivnoebelio/bg.jpg") no-repeat center center;
+                background: url("/images/sportivnoebelio/bg2.jpg") no-repeat center center;
                 background-size: cover;
-                background-color: rgba(0, 0, 0, 0.5);
-                background-blend-mode: overlay;
                 color: white;
                 height: 100%;
+                width: 100%;
                 min-height: 100%;
+                min-width: 100%;
             }
         </style>
-        <div class="container-fluid p-0 bgimg-1">
-            <div class="container-fluid px-0">
+    </head>
+    <body class="bgimg-1">
+        <div>
+            <div class="container-fluid p-0">
+                <div class="container-fluid px-0">
+                    <div class="container pt-5">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
+                                <span class="h2 russo text-uppercase">
+                                    IGABUTIK
+                                </span><br>
+                                Интернет-магазин
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
+                                <div class="hidden-md-up">
+                                    <br>
+                                </div>
+                                +7 929 116 85 65<br>
+                                sportivnoebelio@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="container pt-5">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                            <span class="h2 russo text-uppercase">
-                                IGABUTIK
-                            </span><br>
-                            Интернет-магазин
+                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 ">
+                            <h1 class="h2 russo text-center my-0">
+                                Комплект женского белья Calvin Klein 2500 рублей
+                            </h1>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
+                    </div>
+                </div>
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+                            <div class="h5 russo">
+                                <ul class="">
+                                    <li class="pb-1">Состоит из эко хлопка и резинка из эластана
+                                    <li class="py-1">Сохраняет внешний вид после 100 стирок
+                                    <li class="pt-1">Бесплатная доставка курьером по Москве и СПб
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="embed-responsive embed-responsive-16by9 sw " id="video">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ppYGJTWINDU" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="container">
+                                <div class="hidden-xl-up">
+                                    <br>
+                                </div>
+                                <h5 class="russo px-3 pb-3 text-center">
+                                    Получите промокод -40% на белье Calvin Klein
+                                </h5>
+                                <form action="/orders" method="POST">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="type" value="Order from promokod">
+                                    <input type="hidden" name="product_url" value="belio">
+                                    <div class="form-group {{ !empty($errors->proposal->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
+                                        <div class="">
+                                            <input type="email" class="sw btn-circle form-control {{ !empty($errors->proposal->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="">
+                                            <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;">Получить</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="px-3 small">
+                                    Обработка персональных данных защищена политикой конфиденциальности
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-4 small">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12">
+                            2017 IGABUTIK
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-right text-lg-right text-md-right">
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            +7 929 116 85 65<br>
-                            sportivnoebelio@gmail.com
+                            Телефон <a href="callto:+79291168565">+7 929 116 85 65</a><br>
+                            Email <a href="mailto:sportivnoebelio@gmail.com">sportivnoebelio@gmail.com</a><br>
+                            Дата обновления сайта 15.03.2017<br>
+                            Сайт разработал <a href="http://genlid.com">genlid.com</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 ">
-                        <h1 class="h2 russo text-center my-0">
-                            Комплект женского белья Calvin Klein 2500 рублей
-                        </h1>
-                    </div>
-                </div>
-            </div>
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                        <div class="h5 russo">
-                            <ul class="">
-                                <li class="pb-1">Состоит из эко хлопка и резинка из эластана
-                                <li class="py-1">Сохраняет внешний вид после 100 стирок
-                                <li class="pt-1">Бесплатная доставка курьером по Москве и СПб
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-8">
-                        <div class="embed-responsive embed-responsive-16by9 sw " id="video">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ppYGJTWINDU" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="container">
-                            <div class="hidden-xl-up">
-                                <br>
-                            </div>
-                            <h5 class="russo px-3 pb-3 text-center">
-                                Получите промокод -40% на белье Calvin Klein
-                            </h5>
-                            <form action="/orders" method="POST">
-                                {{ csrf_field() }}
-                                <input type="hidden" name="type" value="Order from promokod">
-                                <input type="hidden" name="product_url" value="belio">
-                                <div class="form-group {{ !empty($errors->proposal->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
-                                    <div class="">
-                                        <input type="email" class="sw btn-circle form-control {{ !empty($errors->proposal->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="">
-                                        <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;">Получить</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="px-3 small">
-                                Обработка персональных данных защищена политикой конфиденциальности
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container py-4 small">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12">
-                        2017 IGABUTIK
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-right text-lg-right text-md-right">
-                        <div class="hidden-md-up">
-                            <br>
-                        </div>
-                        Телефон <a href="callto:+79291168565">+7 929 116 85 65</a><br>
-                        Email <a href="mailto:sportivnoebelio@gmail.com">sportivnoebelio@gmail.com</a><br>
-                        Дата обновления сайта 15.03.2017<br>
-                        Сайт разработал <a href="http://genlid.com">genlid.com</a>
                     </div>
                 </div>
             </div>
