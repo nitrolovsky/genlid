@@ -1,0 +1,108 @@
+.bgimage-form-1 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-18.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+
+}
+
+.bgimage-form-2 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-19.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-3 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-20.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-4 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-21.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-5 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-22.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-6 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-23.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-7 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-24.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-8 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-25.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-9 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-26.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-10 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-27.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.bgimage-form-11 {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-28.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+body {
+    font-family: "Verdana" !important;
+}
+
+.russo {
+    font-family: "Verdana" !important;
+}
+
+input, button, textarea {
+      font-family: "Verdana" !important;
+}
+
+.offer {
+    font-weight: 700;
+}
+
+button {
+
+}

@@ -1,10 +1,33 @@
-@component("components.head")
-    @slot("title")
-        Газификация частного дома в Санкт-Петербурге и Ленинградской области
-    @endslot
-@endcomponent
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Scada:400,700" rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/article.css">
+        <link rel="stylesheet" href="/css/gazifikacija-com.css">
+        <title>
+            Газификация частного дома в Санкт-Петербурге и Ленинградской области
+        </title>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-89666787-1', 'auto');
+          ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
 
-<link rel="stylesheet" href="/css/gazifikaciya-3.css">
+
+
 
 <style>
 .bgimage-first {
@@ -45,20 +68,19 @@
             </div>
         </div>
     </div>
-    <div class="container pt-5">
-        <h1 class="h2 russo text-center">
-            Поможем газифицироваться в любой ситуации
-        </h1>
-    </div>
-    <div class="container pb-5">
-        <h2 class="h2 russo text-center">
-            Оставьте заявку на бесплатный выезд инженера
-        </h2>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 offset-xl-1 offset-lg-1">
+                <h1 class="h2 russo text-center offer">
+                    Мы экономим порядка 58% ваших средств за счет комплексной газификации уже через 50 дней
+                </h1>
+            </div>
+        </div>
     </div>
     <div class="container py-5">
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
-                <a href="#request" class="btn btn-primary  btn-circle">Бесплатный расчет сметы</a>
+                <a href="#request" class="btn btn-primary  btn-circle">Заказ звонка специалиста</a>
             </div>
         </div>
     </div>
@@ -77,10 +99,10 @@
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <ul class="nav nav-pills justify-content-center" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#truboprovod" role="tab">Природный газ</a>
+                        <a class="nav-link active" data-toggle="pill" href="#truboprovod" role="tab">Природный магистральный газ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#gazgolder" role="tab">Газгольдер</a>
+                        <a class="nav-link" data-toggle="pill" href="#gazgolder" role="tab">Газгольдер - сжиженный газ</a>
                     </li>
                 </ul>
             </div>
@@ -401,7 +423,6 @@
     <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/gazifikaciya-dom.jpg" class="img-fluid mx-auto d-block">
-            <br>
             <h3 class="russo text-center pt-3">
                 Частные дома
             </h3>
@@ -412,7 +433,6 @@
         </div>
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/gazifikaciya-mnogokvartirnie.jpg" class="img-fluid mx-auto d-block">
-            <br>
             <h3 class="russo text-center pt-3">
                 Многоквартирные дома
             </h3>
@@ -423,9 +443,8 @@
         </div>
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/gazifikaciya-prom.jpg" class="img-fluid mx-auto d-block">
-            <br>
             <h3 class="russo text-center pt-3">
-                Промышленные
+                Промышленные объекты
             </h3>
             <div class="hidden-lg-up">
                 <br>
@@ -434,12 +453,12 @@
         </div>
     </div>
     <br>
+    <br>
     <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-xl-2">
             <img src="/images/gazifikaciya-3/gazifikaciya-commercheskie.jpg" class="img-fluid mx-auto d-block">
-            <br>
             <h3 class="russo text-center pt-3">
-                Коммерческие
+                Коммерческие объекты
             </h3>
             <div class="hidden-lg-up">
                 <br>
@@ -448,7 +467,6 @@
         </div>
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/gazifikaciya-poselki.jpg" class="img-fluid mx-auto d-block">
-            <br>
             <h3 class="russo text-center pt-3">
                 Садоводства и поселки
             </h3>
@@ -489,6 +507,17 @@
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                 <img src="/images/gazifikaciya-3/bank-3.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                <img src="/images/gazifikaciya-3/bank-2.png" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                <img src="/images/gazifikaciya-3/bank-4.png" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                <img src="/images/gazifikaciya-3/bank-5.png" class="img-fluid">
             </div>
         </div>
         <br>
