@@ -87,35 +87,35 @@
 </div>
 
 <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-          <h5 class="russo text-center pt-2 pb-3">
-              Заказ звонка специалиста
-          </h5>
-          <form action="/proposals" method="POST">
-              {{ csrf_field() }}
-              <input type="hidden" name="page_id" value="1">
-              <input type="hidden" name="template" value="g">
-              <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
-                  <div class="">
-                      <input type="text" class=" btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
-                  </div>
-              </div>
-              <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                  <div class="">
-                      <input type="phone" class=" btn-circle form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
-                  </div>
-              </div>
-              <div class="form-group">
-                  <div class="">
-                      <button type="submit" class=" btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;" role="button">Заказать</button>
-                  </div>
-              </div>
-          </form>
-      </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="russo text-center pt-2 pb-3">
+                    Заказ звонка специалиста
+                </h5>
+                <form action="/proposals" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="page_id" value="1">
+                    <input type="hidden" name="template" value="g">
+                    <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
+                        <div class="">
+                            <input type="text" class=" btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
+                        </div>
+                    </div>
+                    <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
+                        <div class="">
+                            <input type="phone" class=" btn-circle form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="submit" class=" btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;" role="button">Заказать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="container-fluid bg-faded pb-5">
@@ -584,7 +584,7 @@
                     </ul>
                     <br>
                     <div class="text-center">
-                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#zakazIngenerModal" role="button">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -611,7 +611,7 @@
                     <br>
 
                     <div class="text-center">
-                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#zakazIngenerModal" role="button">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -636,7 +636,7 @@
                     </ul>
                     <br>
                     <div class="text-center">
-                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#zakazIngenerModal" role="button">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -664,7 +664,7 @@
 
 
                     <div class="text-center">
-                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#zakazIngenerModal" role="button">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -688,7 +688,7 @@
                     <br>
                     <br>
                     <div class="text-center">
-                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#zakazIngenerModal" role="button">Заказать выезд инженера</a>
                     </div>
                 </div>
             </div>
@@ -714,9 +714,41 @@
 
 
                     <div class="text-center">
-                        <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
+                        <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#zakazIngenerModal" role="button">Заказать выезд инженера</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="zakazIngenerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="russo text-center pt-2 pb-3">
+                    Заказать выезд инженера
+                </h5>
+                <form action="/proposals" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="page_id" value="1">
+                    <input type="hidden" name="template" value="g">
+                    <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
+                        <div class="">
+                            <input type="text" class=" btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
+                        </div>
+                    </div>
+                    <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
+                        <div class="">
+                            <input type="phone" class=" btn-circle form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="submit" class=" btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;" role="button">Заказать</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -904,6 +936,14 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="container-fluid bg-faded">
+    <a href="/images/gazifikaciya-3/dopusk.pdf" target="_blank">
+        <h2 class="text-center py-5">
+            Свидетельство о допуске к определенным видам работ
+        </h2>
+    </a>
 </div>
 
 <div class="container pb-5">
