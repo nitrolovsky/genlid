@@ -934,12 +934,37 @@
     </div>
 </div>
 
-<div class="container-fluid bg-faded">
-    <a href="/images/gazifikaciya-3/dopusk.pdf" target="_blank">
-        <h2 class="text-center py-5">
-            Свидетельство о допуске к определенным видам работ
-        </h2>
-    </a>
+<style>
+.bgimage-garantiya-dopusk {
+    background: url("/images/gazifikaciya-3/gazifikaciya-fotografiya-12.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+}
+.bgimage-garantiya-dopusk a {
+    color: #c5d4f7;
+}
+</style>
+<div class="container-fluid p-0 bgimage-garantiya-dopusk">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="/images/gazifikaciya-3/dopusk.pdf" target="_blank">
+            <h2 class="russo text-center py-5 my-0">
+                Свидетельство о допуске к определенным видам работ
+            </h2>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
 </div>
 
 <div class="container pb-5">
@@ -961,13 +986,13 @@
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h2 class="russo text-center py-5">
-                Этапы работ
+                Этапы взаимодействия
             </h2>
         </div>
     </div>
     <div class="row">
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/etap-1.png" class="img-fluid d-block mx-auto">
+            <img src="/images/gazifikaciya-3/e-1.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
                 ~1 день
                 <br>
@@ -976,7 +1001,7 @@
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/etap-2.png" class="img-fluid d-block mx-auto">
+            <img src="/images/gazifikaciya-3/e-2.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
                 ~14 день
                 <br>
@@ -985,7 +1010,7 @@
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/etap-3.png" class="img-fluid d-block mx-auto">
+            <img src="/images/gazifikaciya-3/e-3.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
                 ~14 день
                 <br>
@@ -994,7 +1019,7 @@
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/etap-4.png" class="img-fluid d-block mx-auto">
+            <img src="/images/gazifikaciya-3/e-4.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
                 ~x день
                 <br>
@@ -1003,7 +1028,7 @@
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/etap-5.png" class="img-fluid d-block mx-auto">
+            <img src="/images/gazifikaciya-3/e-5.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
                 ~x день
                 <br>
@@ -1012,7 +1037,7 @@
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/etap-6.png" class="img-fluid d-block mx-auto">
+            <img src="/images/gazifikaciya-3/e-6.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
                 ~1 день
                 <br>
