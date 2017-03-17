@@ -933,40 +933,54 @@
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/etap-1.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
-                Расчет сметы и заключение договора
-                <br>
                 ~1 день
+                <br>
+                <br>
+                Расчет сметы и заключение договора
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/etap-2.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
-                Получение технических условий
+                ~14 день
                 <br>
-                ~1 день
+                <br>
+                Получение технических условий
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/etap-3.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
+                ~14 день
+                <br>
+                <br>
                 Составление проекта газификации
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/etap-4.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
+                ~x день
+                <br>
+                <br>
                 Подсоединение и прокладка распределительной трубы
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/etap-5.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
+                ~x день
+                <br>
+                <br>
                 Монтажно-строительные работы на объекте
             </div>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/etap-6.png" class="img-fluid d-block mx-auto">
             <div class="text-center pt-3">
+                ~1 день
+                <br>
+                <br>
                 Подключение газа к объекту и опломбировка счетчика
             </div>
         </div>
