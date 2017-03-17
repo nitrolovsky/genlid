@@ -539,16 +539,16 @@
     <div class="row">
         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-14.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-primer-1.jpg" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="russo">
-                        Строительство газовой котельной для Общественно-Делового Центра ювелирной сети «585» в д. Скотное
-                    </h4>
+                    <h5 class="russo pb-3 text-center">
+                        Строительство газовой котельной для Общественно-Делового Центра ювелирной сети «585/Золотой» в д. Скотное
+                    </h5>
                     <ul>
-                        <li>Мощность котельной - ...
+                        <li>Мощность котельной – 2,24 мВт
                         <li>Проектно-изыскательские работы, прохождение государственной экспертизы
-                        <li>Строительно-монтажные работы, сдача объекта в ГАСН и РТН
-                        <li>Техническое обслуживание и эксплуатация собственными мощностями
+                        <li>Общестроительные работы и монтаж оборудования котельной
+                        <li>Сдача результатов работ в Государственный Архитектурно-Строительный Надзор и РосТехНадзор
                     </ul>
                     <br>
                     <div class="text-center">
@@ -562,16 +562,17 @@
                 <br>
             </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-16.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-primer-2.jpg" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="russo">
-                        Газификация д.Колясово и Общественно-Делового Центра ювелирной сети «585» в д.Скотное
-                    </h4>
+                    <h5 class="russo pb-3 text-center">
+                        Газификация д.Колясово и Общественно-Делового Центра ювелирной сети «585/Золотой» в д. Скотное
+                    </h5>
                     <ul>
                         <li>Общая протяженность газопровода 1,8 км
-                        <li>Ежегодное потребление - ….
-                        <li>Работы по ННБ для перехода автомобильной трассы федерального назначения А 121 «Сортавала»
-                        <li>Газоснабжение частных домовладений д.Колясово
+                        <li>Ежегодное потребление – 600 м3/ч
+                        <li>Выполнение Работ ННБ для перехода автомобильной трассы федерального назначения А 121 «Сортавала»
+                        <li>Газоснабжение частных домовладений д. Колясово
+
                     </ul>
                     <br>
                     <br>
@@ -588,20 +589,20 @@
     <div class="row">
         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-15.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-primer-3.jpg" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="russo">
-                        Наружное и внутреннее газоснабжение, устройство котельной и индивидуальных тепловых пунктов Многоквартирного жилого комплекса  «Полар-Южный» в г. Всеволожске
-                    </h4>
+                    <h5 class="russo pb-3 text-center">
+                        Наружное и внутреннее газоснабжение, устройство котельной и индивидуальных тепловых пунктов Многоквартирного жилого комплекса «Полар-Южный» в г. Всеволожске
+                    </h5>
                     <ul>
-                        <li>Мощность котельной - …
-                        <li>Проектно-изыскательские работы, прохождение государственной экспертизы
-                        <li>Строительно-монтажные работы, сдача объекта в ГАСН и РТН
-                        <li>Техническое обслуживание и эксплуатация собственными мощностями.
+                        <li>Мощность котельной – 1,62 мВт
                         <li>Высотные работы по прокладке фасадного газопровода
-                        <li>Газоснабжение квартир - ….
+                        <li>Сдача результатов работ в Государственный Архитектурно-Строительный Надзор и РосТехНадзор
+                        <li>Газоснабжение квартир в соответствии с проектом
+
 
                     </ul>
+                    <br>
                     <div class="text-center">
                         <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
@@ -613,24 +614,23 @@
                 <br>
             </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-17.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-primer-4.jpg" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="russo">
+                    <h5 class="russo pb-3 text-center">
                         Газификация муниципальных объектов Дубровского городского поселения в Ленинградской области
-                    </h4>
+                    </h5>
                     <ul>
-                        <li>Общая протяженность газопровода - ….
-                        <li>Ежегодное потребление - …
-                        <li>Государственный заказ
+                        <li>Общая протяженность газопровода – 0,8 км
+                        <li>Государственный контракт
                         <li>Сроки ожидания газификации жильцами муниципальных квартир и домов – более 3 лет
                         <li>Работы по ГНБ для сохранения муниципального имущества
 
+
                     </ul>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
+
+
                     <div class="text-center">
                         <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
@@ -642,18 +642,19 @@
     <div class="row">
         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-15.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-primer-5.jpg" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="russo">
+                    <h5 class="russo pb-3 text-center">
                         Реконструкция газопроводов в квартале, ограниченном ул. Ольги Берггольц, пр. Елизарова, ул. Седова и Старопутиловским валом для комитета по энергетике и инженерному обеспечению Правительства СПб
-                    </h4>
+                    </h5>
                     <ul>
-                        <li>Общая протяженность газопровода - ….
-                        <li>Ежегодное потребление - …
-                        <li>Государственный заказ
-                        <li>Сроки ожидания газификации жильцами муниципальных квартир и домов – более 5 лет
-                    </ul>
+                        <li>Общая протяженность газопровода – 2,4 км
+                        <li>Государственный контракт
+                        <li>Организация работ в стесненных городских условиях
 
+                    </ul>
+                    <br>
+                    <br>
                     <div class="text-center">
                         <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
                     </div>
@@ -665,19 +666,20 @@
                 <br>
             </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-fotografiya-17.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/gazifikaciya-primer-6.jpg" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="russo">
+                    <h5 class="russo pb-3 text-center">
                         Комплексное газоснабжение и водоснабжение ДНТ «РОВАМ» массив Проба в Ленинградской Области
-                    </h4>
+                    </h5>
                     <ul>
                         <li>Общая протяженность газопровода и водопровода 7 км
-                        <li>Ежегодное потребление - ….
-                        <li>Строительство распределительной сети, насосной станции и резервуарной емкости
+                        <li>Строительство распределительной сети, насосной станции и резервуара чистой воды
+                        <li>Работа в условиях крайне высокого уровня грунтовых вод
                         <li>Газификация частных домовладений
+
                     </ul>
-                    <br>
-                    <br>
+
+
 
                     <div class="text-center">
                         <a href="#request" class="btn btn-primary btn-circle">Заказать выезд инженера</a>
@@ -871,7 +873,22 @@
         </div>
     </div>
 </div>
-<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+
+<div class="container pb-5">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2 class="russo text-center py-5">
+                Наши партнеры
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/gazifikaciya-partner.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+
 
 <div class="container-fluid bg-faded pb-5">
     <div class="container">
