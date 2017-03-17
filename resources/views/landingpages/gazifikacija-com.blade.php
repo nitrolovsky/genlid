@@ -80,10 +80,42 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
-                <a href="#request" class="btn btn-primary  btn-circle">Заказ звонка специалиста</a>
+                <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#formModal" role="button">Заказ звонка специалиста</a>
             </div>
         </div>
     </div>
+</div>
+
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+          <h5 class="russo text-center pt-2 pb-3">
+              Заказ звонка специалиста
+          </h5>
+          <form action="/proposals" method="POST">
+              {{ csrf_field() }}
+              <input type="hidden" name="page_id" value="1">
+              <input type="hidden" name="template" value="g">
+              <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
+                  <div class="">
+                      <input type="text" class=" btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
+                  </div>
+              </div>
+              <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
+                  <div class="">
+                      <input type="phone" class=" btn-circle form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="">
+                      <button type="submit" class=" btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;" role="button">Заказать</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid bg-faded pb-5">
@@ -889,6 +921,57 @@
     </div>
 </div>
 
+<div class="container pb-5">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2 class="russo text-center py-5">
+                Этапы работ
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/etap-1.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                Расчет сметы и заключение договора
+                <br>
+                ~1 день
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/etap-2.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                Получение технических условий
+                <br>
+                ~1 день
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/etap-3.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                Составление проекта газификации
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/etap-4.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                Подсоединение и прокладка распределительной трубы
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/etap-5.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                Монтажно-строительные работы на объекте
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/etap-6.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                Подключение газа к объекту и опломбировка счетчика
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid bg-faded pb-5">
     <div class="container">
@@ -965,20 +1048,19 @@
             </div>
         </div>
     </div>
-    <div class="container pt-5">
-        <h1 class="h2 russo text-center">
-            Поможем газифицироваться в любой ситуации
-        </h1>
-    </div>
-    <div class="container pb-5">
-        <h2 class="h2 russo text-center">
-            Оставьте заявку на бесплатный выезд инженера
-        </h2>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 offset-xl-1 offset-lg-1">
+                <h1 class="h2 russo text-center offer">
+                    Мы экономим порядка 58% ваших средств за счет комплексной газификации уже через 50 дней
+                </h1>
+            </div>
+        </div>
     </div>
     <div class="container py-5">
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 text-center">
-                <a href="#request" class="btn btn-primary  btn-circle">Бесплатный расчет сметы</a>
+                <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#formModal" role="button">Заказ звонка специалиста</a>
             </div>
         </div>
     </div>
