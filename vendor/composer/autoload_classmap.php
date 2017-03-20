@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddCompanyToPagesTable' => $baseDir . '/database/migrations/2017_02_27_081838_add_company_to_pages_table.php',
+    'CreateLeadsTable' => $baseDir . '/database/migrations/2017_03_20_130546_create_leads_table.php',
     'CreateOrdersTable' => $baseDir . '/database/migrations/2016_12_30_073545_create_orders_table.php',
     'CreatePagesTable' => $baseDir . '/database/migrations/2016_11_08_123708_create_pages_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

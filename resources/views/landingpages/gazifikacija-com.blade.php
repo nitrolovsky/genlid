@@ -93,23 +93,22 @@
                 <h5 class="russo text-center pt-2 pb-3">
                     Заказ звонка специалиста
                 </h5>
-                <form action="/proposals" method="POST">
+                <form action="/lead" method="POST">
                     {{ csrf_field() }}
-                    <input type="hidden" name="page_id" value="1">
-                    <input type="hidden" name="template" value="g">
-                    <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
+                    <input type="hidden" name="source" value="gazifikacija.com Заказ звонка специалиста">
+                    <div class="form-group">
                         <div class="">
-                            <input type="text" class=" btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
-                        </div>
-                    </div>
-                    <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                        <div class="">
-                            <input type="phone" class=" btn-circle form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                            <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="">
-                            <button type="submit" class=" btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;" role="button">Заказать</button>
+                            <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="submit" class=" btn-circle btn btn-primary btn-block" role="button">Заказать</button>
                         </div>
                     </div>
                 </form>
@@ -141,7 +140,7 @@
         </div>
         <br>
         <div class="row">
-            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12">
+            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/lead" method="POST">
                 <div class="tab-content">
                     <div class="tab-pane active" id="truboprovod" role="tabpanel">
                         <div class="row">
@@ -417,26 +416,25 @@
 
                 <div class="form-inline">
                     {{ csrf_field() }}
-                    <input type="hidden" name="product_url" value="gazifikaciya2">
-                    <input type="hidden" name="type" value="Order from landing page">
+                    <input type="hidden" name="source" value="gazifikacija.com Получить расчет">
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
-                            <input type="email" class="form-control col-12 btn-circle {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
+                        <div class="form-group">
+                            <input type="email" class="form-control col-12 btn-circle" id="email" placeholder="Email" name="email" value="">
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="hidden-lg-up">
                             <br>
                         </div>
-                        <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                            <input type="phone" class="form-control col-12 btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                        <div class="form-group ">
+                            <input type="phone" class="form-control col-12 btn-circle " id="phone" placeholder="Телефон" name="phone" value="">
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="hidden-lg-up">
                             <br>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>&nbsp;Получить расчет</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-circle"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>&nbsp;Получить расчет</button>
                     </div>
                 </div>
             </form>
@@ -554,7 +552,7 @@
         </div>
         <div class="row pt-5">
             <div class="col-12 text-center">
-                    <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#formModal" role="button">Получить рассрочку</a>
+                    <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#bankModal" role="button">Получить рассрочку</a>
             </div>
         </div>
         <br>
@@ -562,6 +560,37 @@
         <br>
         <br>
         <br>
+    </div>
+</div>
+
+<div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="russo text-center pt-2 pb-3">
+                    Заказ звонка специалиста банка
+                </h5>
+                <form action="/lead" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="source" value="gazifikacija.com Получить рассрочку">
+                    <div class="form-group">
+                        <div class="">
+                            <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="submit" class=" btn-circle btn btn-primary btn-block" role="button">Заказать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -734,23 +763,22 @@
                 <h5 class="russo text-center pt-2 pb-3">
                     Заказать выезд инженера
                 </h5>
-                <form action="/proposals" method="POST">
+                <form action="/lead" method="POST">
                     {{ csrf_field() }}
-                    <input type="hidden" name="page_id" value="1">
-                    <input type="hidden" name="template" value="g">
-                    <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
+                    <input type="hidden" name="source" value="gazifikacija.com Заказать выезд инженера">
+                    <div class="form-group">
                         <div class="">
-                            <input type="text" class=" btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
-                        </div>
-                    </div>
-                    <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                        <div class="">
-                            <input type="phone" class=" btn-circle form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                            <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name" value="">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="">
-                            <button type="submit" class=" btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;" role="button">Заказать</button>
+                            <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="submit" class=" btn-circle btn btn-primary btn-block" role="button">Заказать</button>
                         </div>
                     </div>
                 </form>
@@ -1194,32 +1222,31 @@
 <div class="container-fluid bg-faded pb-5">
     <div class="container">
         <div class="row">
-            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/orders" method="POST">
+            <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/lead" method="POST">
                 <h4 class="russo pt-5 pb-4 text-center" id="request2">
                     Оставьте заявку на бесплатный выезд инженера <br>и помощь в расчете сметы
                 </h4>
                 <div class="form-inline">
                     {{ csrf_field() }}
-                    <input type="hidden" name="product_url" value="gazifikaciya-3">
-                    <input type="hidden" name="type" value="Order from landing page">
+                    <input type="hidden" name="source" value="gazifikacija.com Получить расчет Низ">
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="form-group {{ !empty($errors->orders->first('email')) ? 'has-danger' : ''}} {{ !empty(old('email')) ? 'has-success' : ''}}">
-                            <input type="email" class="form-control col-12 btn-circle {{ !empty($errors->orders->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
+                        <div class="form-group">
+                            <input type="email" class="form-control col-12 btn-circle" id="email" placeholder="Email" name="email" value="">
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="hidden-lg-up">
                             <br>
                         </div>
-                        <div class="form-group {{ !empty($errors->orders->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                            <input type="phone" class="form-control col-12 btn-circle {{ !empty($errors->orders->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                        <div class="form-group">
+                            <input type="phone" class="form-control col-12 btn-circle" id="phone" placeholder="Телефон" name="phone" value="">
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="hidden-lg-up">
                             <br>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-circle" onclick="yaCounter42033909.reachGoal('OrderByPhone'); return true;"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>&nbsp;Получить расчет</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-circle"><span class="fa fa-fw fa-calculator" aria-hidden="true" role="button"></span>&nbsp;Получить расчет</button>
                     </div>
                 </div>
             </form>
