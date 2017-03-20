@@ -71,7 +71,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 offset-xl-1 offset-lg-1">
-                <h1 class="h2 russo text-center offer">
+                <h1 class="h2 russo text-center offer text-uppercase">
                     Мы экономим порядка 58% ваших средств за счет комплексной газификации уже через 50 дней
                 </h1>
             </div>
@@ -552,6 +552,11 @@
                 <img src="/images/gazifikaciya-3/bank-5.png" class="img-fluid">
             </div>
         </div>
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                    <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#formModal" role="button">Получить рассрочку</a>
+            </div>
+        </div>
         <br>
         <br>
         <br>
@@ -867,7 +872,7 @@
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-11.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-block text-center">
                     Установка горизонтально-направленного бурения для бестраншейной прокладки
                 </div>
             </div>
@@ -878,7 +883,7 @@
             </div>
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-12.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-block text-center">
                     Мини-экскаватор для работы в стесненных условиях
                 </div>
                 <br>
@@ -890,7 +895,7 @@
             </div>
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-13.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-block text-center">
                     Авто-вышка для проведения высотных работ
                 </div>
                 <br>
@@ -902,7 +907,7 @@
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-14.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-block text-center">
                     Мини-погрузчик для работы в городских условиях
                 </div>
                 <br>
@@ -914,7 +919,7 @@
             </div>
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-17.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-block text-center">
                     Экскаватор-погрузчик для обеспечения нужд при прокладке наружных сетей
                 </div>
             </div>
@@ -925,7 +930,7 @@
             </div>
             <div class="card sw">
                 <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-16.jpg" alt="Card image cap">
-                <div class="card-block">
+                <div class="card-block text-center">
                     Буровая установка для проведения геологических изысканий
                 </div>
                 <br>
@@ -991,58 +996,53 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/e-1.png" class="img-fluid d-block mx-auto">
-            <div class="text-center pt-3">
-                ~1 день
-                <br>
-                <br>
-                Расчет сметы и заключение договора
-            </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/e-2.png" class="img-fluid d-block mx-auto">
-            <div class="text-center pt-3">
-                ~14 день
-                <br>
-                <br>
-                Получение технических условий
-            </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/e-3.png" class="img-fluid d-block mx-auto">
-            <div class="text-center pt-3">
-                ~14 день
-                <br>
-                <br>
-                Составление проекта газификации
-            </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/e-4.png" class="img-fluid d-block mx-auto">
-            <div class="text-center pt-3">
-                ~x день
-                <br>
-                <br>
-                Подсоединение и прокладка распределительной трубы
-            </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/e-5.png" class="img-fluid d-block mx-auto">
-            <div class="text-center pt-3">
-                ~x день
-                <br>
-                <br>
-                Монтажно-строительные работы на объекте
-            </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-            <img src="/images/gazifikaciya-3/e-6.png" class="img-fluid d-block mx-auto">
-            <div class="text-center pt-3">
-                ~1 день
-                <br>
-                <br>
-                Подключение газа к объекту и опломбировка счетчика
+        <div class="col-12 offset-1">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <img src="/images/gazifikaciya-3/e-1.png" class="img-fluid d-block mx-auto">
+                    <div class="text-center pt-3">
+                        ~1 день
+                        <br>
+                        <br>
+                        Расчет сметы и заключение договора
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <img src="/images/gazifikaciya-3/e-2.png" class="img-fluid d-block mx-auto">
+                    <div class="text-center pt-3">
+                        ~16 дней
+                        <br>
+                        <br>
+                        Получение Технических Условий
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <img src="/images/gazifikaciya-3/e-3.png" class="img-fluid d-block mx-auto">
+                    <div class="text-center pt-3">
+                        ~14 дней
+                        <br>
+                        <br>
+                        Разработка проекта ГСН и ГСВ. Согласование.
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <img src="/images/gazifikaciya-3/e-5.png" class="img-fluid d-block mx-auto">
+                    <div class="text-center pt-3">
+                        ~12 дней
+                        <br>
+                        <br>
+                        Строительно-монтажные работы
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <img src="/images/gazifikaciya-3/e-6.png" class="img-fluid d-block mx-auto">
+                    <div class="text-center pt-3">
+                        ~18 день
+                        <br>
+                        <br>
+                        Оформление инженерно-технической документации. Подписание акта госкомиссии.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1126,7 +1126,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 offset-xl-1 offset-lg-1">
-                <h1 class="h2 russo text-center offer">
+                <h1 class="h2 russo text-center offer text-uppercase">
                     Мы экономим порядка 58% ваших средств за счет комплексной газификации уже через 50 дней
                 </h1>
             </div>
