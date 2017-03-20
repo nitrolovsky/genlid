@@ -64,6 +64,12 @@ class LeadController extends Controller
             $message->subject("Заявка № " . date ("Y.m.d H:m:s"));
         });
 
+        Mail::send("email.lead", $email, function ($message) {
+            $message->from("genlid.proposals@gmail.com", "genlid.proposals");
+            $message->to("domshowaltair@gmail.com");
+            $message->subject("Заявка № " . date ("Y.m.d H:m:s"));
+        });
+
         return Redirect::to("/thanks");
     }
 
