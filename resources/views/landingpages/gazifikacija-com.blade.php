@@ -959,11 +959,33 @@
         <br>
         <br>
         <br>
-        <a href="/images/gazifikaciya-3/dopusk.pdf" target="_blank">
-            <h2 class="russo text-center py-5 my-0">
-                Свидетельство о допуске к определенным видам работ
-            </h2>
-        </a>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 offset-xl-2 offset-lg-2 offset-md-2 col-sm-12 col-12">
+                <a href="/images/gazifikaciya-3/dopusk.pdf" target="_blank">
+                    <img src="/images/gazifikaciya-3/dopusk.jpg" class="img-fluid mx-auto d-block">
+                    <h5 class="russo text-center pt-3 my-0">
+                        Свидетельство о допуске к определенным видам работ Серия ЛО № 0991
+                    </h5>
+                    <div class="hidden-xl-up">
+                        <br>
+                        <br>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <a href="/images/gazifikaciya-3/sro.pdf" target="_blank">
+                    <img src="/images/gazifikaciya-3/sro.jpg" class="img-fluid mx-auto d-block">
+                    <h5 class="russo text-center pt-3 my-0">
+                        Свидетельство о допуске № СРОСП-П-05542.1-18102016
+                    </h5>
+                    <div class="hidden-xl-up">
+                        <br>
+                        <br>
+                    </div>
+                </a>
+            </div>
+        </div>
+
         <br>
         <br>
         <br>
@@ -983,6 +1005,127 @@
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <img src="/images/gazifikaciya-3/gazifikaciya-partner.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-faded">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 class="russo text-center py-5">
+                    Команда ООО "Альтаир"
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/2.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Главный бухгалтер<br>
+                    Лебедева Светлана Владимировна
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/1.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Директор<br>
+                    Жучков Филипп Германович
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/3.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Технический директор<br>
+                    Шаповалов Дмитрий Александрович
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/5.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Руководитель отдела продаж<br>
+                    Романова Юлия Александрова
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/4.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Производитель работ<br>
+                    Хитаришвили Арчил Гурамович
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/6.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Производитель работ<br>
+                    Крымов Михаил Сергеевич
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/9.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Специалист отдела маркетинга<br>
+                    Родионов Роман Владимирович
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/7.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Специалист отдела снабжения<br>
+                    Михайлов Денис Александрович
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <img src="/images/gazifikaciya-3/komanda/8.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                <p class="text-center pt-3">
+                    Юрисконсульт<br>
+                    Аракейлян Вазген Ванушевич
+                </p>
+                <div class="hidden-lg-up">
+                    <br>
+                    <br>
+                </div>
+            </div>
         </div>
     </div>
 </div>
