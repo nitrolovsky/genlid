@@ -1185,53 +1185,49 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12 offset-1">
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                    <img src="/images/gazifikaciya-3/e-1.png" class="img-fluid d-block mx-auto">
-                    <div class="text-center pt-3">
-                        ~1 день
-                        <br>
-                        <br>
-                        Расчет сметы и заключение договора
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                    <img src="/images/gazifikaciya-3/e-2.png" class="img-fluid d-block mx-auto">
-                    <div class="text-center pt-3">
-                        ~16 дней
-                        <br>
-                        <br>
-                        Получение Технических Условий
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                    <img src="/images/gazifikaciya-3/e-3.png" class="img-fluid d-block mx-auto">
-                    <div class="text-center pt-3">
-                        ~14 дней
-                        <br>
-                        <br>
-                        Разработка проекта ГСН и ГСВ. Согласование.
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                    <img src="/images/gazifikaciya-3/e-5.png" class="img-fluid d-block mx-auto">
-                    <div class="text-center pt-3">
-                        ~12 дней
-                        <br>
-                        <br>
-                        Строительно-монтажные работы
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                    <img src="/images/gazifikaciya-3/e-6.png" class="img-fluid d-block mx-auto">
-                    <div class="text-center pt-3">
-                        ~18 день
-                        <br>
-                        <br>
-                        Оформление инженерно-технической документации. Подписание акта госкомиссии.
-                    </div>
-                </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 offset-xl-1 offset-lg-1 offset-md-1">
+            <img src="/images/gazifikaciya-3/e-1.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                ~1 день
+                <br>
+                <br>
+                Расчет сметы и заключение договора
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/e-2.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                ~16 дней
+                <br>
+                <br>
+                Получение Технических Условий
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/e-3.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                ~14 дней
+                <br>
+                <br>
+                Разработка проекта ГСН и ГСВ. Согласование.
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/e-5.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                ~12 дней
+                <br>
+                <br>
+                Строительно-монтажные работы
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+            <img src="/images/gazifikaciya-3/e-6.png" class="img-fluid d-block mx-auto">
+            <div class="text-center pt-3">
+                ~18 день
+                <br>
+                <br>
+                Оформление инженерно-технической документации. Подписание акта госкомиссии.
             </div>
         </div>
     </div>
