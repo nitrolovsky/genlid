@@ -88,15 +88,15 @@
 }
 
 body {
-    font-family: "Verdana" !important;
+    font-family: "DejaVu Sans", "Verdana" !important;
 }
 
 .russo {
-    font-family: "Verdana" !important;
+    font-family: "DejaVu Sans", "Verdana" !important;
 }
 
 input, button, textarea {
-      font-family: "Verdana" !important;
+      font-family: "DejaVu Sans", "Verdana" !important;
 }
 
 .offer {

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/article.css">
+        <link rel="stylesheet" href="/fonts/djsans/djsans.css">
         <link rel="stylesheet" href="/css/gazifikacija-com.css">
         <title>
             Газификация частного дома в Санкт-Петербурге и Ленинградской области
@@ -143,11 +144,12 @@
             <form class="col-xl-10 offset-xl-1 col-lg-12 col-md-12 col-sm-12 col-12" action="/lead" method="POST">
                 <div class="tab-content">
                     <div class="tab-pane active" id="truboprovod" role="tabpanel">
+                        <input type="hidden" name="calc" value="Природный магистральный газ">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="form-check mb-0 bgimage-form-1 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="nar" value="Требуется разработка проекта наружного газопровода">
                                         Требуется разработка проекта наружного газопровода
                                     </label>
                                 </div>
@@ -158,7 +160,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-2 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="vn" value="Требуется разработка проекта внутреннего газопровода">
                                         Требуется разработка проекта внутреннего газопровода
                                     </label>
                                 </div>
@@ -173,19 +175,19 @@
                                     </label>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="checked">
+                                            <input class="form-check-input" type="radio" name="kol" id="gridRadios1" value="Количество и удаленность потребителей газа - Один потребитель" checked="checked">
                                             Один потребитель
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <input class="form-check-input" type="radio" name="kol" id="gridRadios2" value="Количество и удаленность потребителей газа - Два потребителя через стену друг от друга меньше 2 метров">
                                             Два потребителя через стену друг от друга меньше 2 метров
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label mb-0">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <input class="form-check-input" type="radio" name="kol" id="gridRadios2" value="Количество и удаленность потребителей газа - Два потребителя на удалении больше 2 метров">
                                             Два потребителя на удалении больше 2 метров
                                         </label>
                                     </div>
@@ -201,13 +203,13 @@
                                     </label>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1" checked="checked">
+                                            <input class="form-check-input" type="radio" name="davl" id="gridRadios1" value="Давление в системе газоснабжения - Низкое" checked="checked">
                                             Низкое
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+                                            <input class="form-check-input" type="radio" name="davl" id="gridRadios2" value="Давление в системе газоснабжения - Среднее-Высокое">
                                             Среднее-Высокое
                                         </label>
                                     </div>
@@ -218,7 +220,7 @@
                                     <label for="formGroupExampleInput">
                                         Длина от основной магистрали до места подключения в метрах
                                     </label>
-                                    <input type="number" class="form-control btn-circle" id="formGroupExampleInput" placeholder="1" value="1" min="0">
+                                    <input type="number" class="form-control btn-circle" id="formGroupExampleInput" name="dlina" placeholder="1" min="0">
                                 </div>
                             </div>
                         </div>
@@ -227,7 +229,7 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="form-check mb-0 bgimage-form-6 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" value="Требуется получить акт обследования дымоходов" name="dym">
                                         Требуется получить акт обследования дымоходов
                                     </label>
                                 </div>
@@ -238,7 +240,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-7 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" value="Требуется заключить договор на сервисное обслуживание котла" name="kotel">
                                         Требуется заключить договор на сервисное обслуживание котла
                                     </label>
                                 </div>
@@ -744,7 +746,8 @@
                         <li>Газификация частных домовладений
 
                     </ul>
-
+                    <br>
+                    <br>
 
 
                     <div class="text-center">

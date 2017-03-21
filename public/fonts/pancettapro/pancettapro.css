@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Pancetta Pro';
+    src: local('Pancetta Pro Regular'), local('PancettaPro-Regular'), url('Pancettaproregular.woff2') format('woff2'), url('Pancettaproregular.woff') format('woff'), url('Pancettaproregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pancetta Pro';
+    src: local('Pancetta Pro Italic'), local('PancettaPro-Italic'), url('Pancettaproitalic.woff2') format('woff2'), url('Pancettaproitalic.woff') format('woff'), url('Pancettaproitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}

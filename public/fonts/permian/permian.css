@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Permian Sans';
+    src: local('PermianSansTypeface'), url('permiansanstypeface.woff2') format('woff2'), url('permiansanstypeface.woff') format('woff'), url('permiansanstypeface.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Permian Sans';
+    src: local('PermianSansTypeface Italic'), local('PermianSansTypeface-Italic'), url('permiansanstypefaceitalic.woff2') format('woff2'), url('permiansanstypefaceitalic.woff') format('woff'), url('permiansanstypefaceitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Permian Sans';
+    src: local('PermianSansTypeface Bold'), local('PermianSansTypeface-Bold'), url('permiansanstypefacebold.woff2') format('woff2'), url('permiansanstypefacebold.woff') format('woff'), url('permiansanstypefacebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -20,6 +20,14 @@ class CreateLeadsTable extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('source')->nullable();
+
+            $table->string('nar')->nullable();
+            $table->string('vn')->nullable();
+            $table->string('kol')->nullable();
+            $table->string('davl')->nullable();
+            $table->string('dlina')->nullable();
+            $table->string('dym')->nullable();
+            $table->string('dlina')->nullable();
         });
     }
 

@@ -47,7 +47,13 @@ class LeadController extends Controller
             "email" => Request::get("email"),
             "phone" => Request::get("phone"),
             "source" => Request::get("source")
-
+            "nar" => Request::get("nar");
+            "vn" => Request::get("vn");
+            "kol" => Request::get("kol");
+            "davl" => Request::get("davl");
+            "dlina" => Request::get("dlina");
+            "dym" => Request::get("dym");
+            "kotel" => Request::get("kotel");
         ])->id;
 
         $email = array(
@@ -55,6 +61,13 @@ class LeadController extends Controller
             "email" => Request::get("email"),
             "phone" => Request::get("phone"),
             "source" => Request::get("source"),
+            "nar" => Request::get("nar");
+            "vn" => Request::get("vn");
+            "kol" => Request::get("kol");
+            "davl" => Request::get("davl");
+            "dlina" => Request::get("dlina");
+            "dym" => Request::get("dym");
+            "kotel" => Request::get("kotel");
             "lead_id" => $leadLastId
         );
 
@@ -63,13 +76,13 @@ class LeadController extends Controller
             $message->to("nitrolovsky@gmail.com");
             $message->subject("Заявка № " . date ("Y.m.d H:m:s"));
         });
-
+        /*
         Mail::send("email.lead", $email, function ($message) {
             $message->from("genlid.proposals@gmail.com", "genlid.proposals");
             $message->to("domshowaltair@gmail.com");
             $message->subject("Заявка № " . date ("Y.m.d H:m:s"));
         });
-
+*/
         return Redirect::to("/thanks");
     }
 
