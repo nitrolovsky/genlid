@@ -825,37 +825,43 @@
     </div>
     <div class="row">
         <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-            <img src="/images/gazifikaciya2/ets.jpg" class="img-fluid mx-auto d-block">
-            <br>
-            <h3 class="russo text-center pt-3">
-                ООО СК "ЭТС"
-            </h3>
-            <div class="hidden-xl-up">
+            <a href="/images/gazifikaciya-3/blago-1.pdf" target="_blank">
+                <img src="/images/gazifikaciya-3/blago-1.jpg" class="img-fluid mx-auto d-block">
                 <br>
-                <br>
-            </div>
+                <h5 class="russo text-center pt-3">
+                    ООО "ДиДиСи индор энд аутдор"
+                </h5>
+                <div class="hidden-xl-up">
+                    <br>
+                    <br>
+                </div>
+            </a>
         </div>
         <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-            <img src="/images/gazifikaciya2/polar.jpg" class="img-fluid mx-auto d-block">
-            <br>
-            <h3 class="russo text-center pt-3">
-                ЗАО "Полар"
-            </h3>
-            <div class="hidden-xl-up">
+            <a href="/images/gazifikaciya-3/blago-2.pdf" target="_blank">
+                <img src="/images/gazifikaciya-3/blago-2.jpg" class="img-fluid mx-auto d-block">
                 <br>
-                <br>
-            </div>
+                <h5 class="russo text-center pt-3">
+                    ООО "ДиДиСи индор энд аутдор"
+                </h5>
+                <div class="hidden-xl-up">
+                    <br>
+                    <br>
+                </div>
+            </a>
         </div>
         <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-            <img src="/images/gazifikaciya2/prommonolit.jpg" class="img-fluid mx-auto d-block">
-            <br>
-            <h3 class="russo text-center pt-3">
-                АО "ПРОММОНОЛИТ"
-            </h3>
-            <div class="hidden-xl-up">
+            <a href="/images/gazifikaciya-3/blago-3.pdf" target="_blank">
+                <img src="/images/gazifikaciya-3/blago-3.jpg" class="img-fluid mx-auto d-block">
                 <br>
-                <br>
-            </div>
+                <h5 class="russo text-center pt-3">
+                    СПб ГКУ "Управление заказчика"
+                </h5>
+                <div class="hidden-xl-up">
+                    <br>
+                    <br>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -980,15 +986,17 @@
     color: #c5d4f7;
 }
 </style>
-<div class="container-fluid p-0 bgimage-garantiya-dopusk">
+<div class="container-fluid">
     <div class="container">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4 offset-xl-2 offset-lg-2 offset-md-2 col-sm-12 col-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 class="russo text-center py-5">
+                    Все необходимые документы для выполнения работ
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                 <a href="/images/gazifikaciya-3/dopusk.pdf" target="_blank">
                     <img src="/images/gazifikaciya-3/dopusk.jpg" class="img-fluid mx-auto d-block">
                     <h5 class="russo text-center pt-3 my-0">
@@ -1012,17 +1020,23 @@
                     </div>
                 </a>
             </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <a href="/images/gazifikaciya-3/iso.pdf" target="_blank">
+                    <img src="/images/gazifikaciya-3/iso.jpg" class="img-fluid mx-auto d-block">
+                    <h5 class="russo text-center pt-3 my-0">
+                        Сертификат соответствия № СДС.РТС.РФ.4203
+                    </h5>
+                    <div class="hidden-xl-up">
+                        <br>
+                        <br>
+                    </div>
+                </a>
+            </div>
         </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
 </div>
 
-<div class="container pb-5">
+<div class="container pt-5 pb-5">
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h2 class="russo text-center py-5">
