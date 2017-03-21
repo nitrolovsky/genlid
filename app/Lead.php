@@ -11,12 +11,13 @@ class Lead extends Model
         'email',
         'phone',
         'source',
+        "calc",
         "nar",
         "vn",
         "kol",
         "davl",
         "dlina",
         "dym",
-        "kotel
+        "kotel"
     ];
 }

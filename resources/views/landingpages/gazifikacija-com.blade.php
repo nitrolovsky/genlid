@@ -175,7 +175,7 @@
                                     </label>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="kol" id="gridRadios1" value="Количество и удаленность потребителей газа - Один потребитель" checked="checked">
+                                            <input class="form-check-input" type="radio" name="kol" id="gridRadios1" value="Количество и удаленность потребителей газа - Один потребитель">
                                             Один потребитель
                                         </label>
                                     </div>
@@ -203,7 +203,7 @@
                                     </label>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="davl" id="gridRadios1" value="Давление в системе газоснабжения - Низкое" checked="checked">
+                                            <input class="form-check-input" type="radio" name="davl" id="gridRadios1" value="Давление в системе газоснабжения - Низкое">
                                             Низкое
                                         </label>
                                     </div>
@@ -248,6 +248,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="gazgolder" role="tabpanel">
+                        <input type="hidden" name="calc" value="Газгольдер - сжиженный газ">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <fieldset class="form-group mb-0 bgimage-form-1 p-4">
@@ -256,31 +257,31 @@
                                     </label>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="checked">
+                                            <input class="form-check-input" type="radio" name="ob" id="gridRadios1" value="Объем газгольдера - 2 400 л">
                                             2 400 л
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <input class="form-check-input" type="radio" name="ob" id="gridRadios2" value="Объем газгольдера - 4 300 л">
                                             4 300 л
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <input class="form-check-input" type="radio" name="ob" id="gridRadios2" value="Объем газгольдера - 6 200 л">
                                             6 200 л
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label mb-0">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <input class="form-check-input" type="radio" name="ob" id="gridRadios2" value="Объем газгольдера - 8 100 л">
                                             8 100 л
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label mb-0">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <input class="form-check-input" type="radio" name="ob" id="gridRadios2" value="Объем газгольдера - 10 000 л">
                                             10 000 л
                                         </label>
                                     </div>
@@ -292,7 +293,7 @@
                             <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="form-check mb-0 bgimage-form-2 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op1" value="Анодно-катодная защита">
                                         Анодно-катодная <br>защита
                                     </label>
                                 </div>
@@ -304,7 +305,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-3 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op2" value="Конденсатосборник 10 л">
                                         Конденсатосборник<br>10 л
                                     </label>
                                 </div>
@@ -316,7 +317,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-4 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op3" value="Молниеотвод трубчатый 4 м">
                                         Молниеотвод трубчатый <br>4 м
                                     </label>
                                 </div>
@@ -327,7 +328,7 @@
                             <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="form-check mb-0 bgimage-form-5 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op4" value="Cпецотвод изолированный">
                                         Cпецотвод изолированный
                                     </label>
                                 </div>
@@ -339,7 +340,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-6 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op5" value="Установка сигнализатора загазованности">
                                         Установка сигнализатора загазованности
                                     </label>
                                 </div>
@@ -351,7 +352,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-7 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op6" value="Земельные работы с техникой">
                                         Земельные работы с техникой
                                     </label>
                                 </div>
@@ -362,7 +363,7 @@
                             <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="form-check mb-0 bgimage-form-8 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op7" value="Ввод газопровода в дом">
                                         Ввод газопровода <br>в дом
                                     </label>
                                 </div>
@@ -374,7 +375,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-9 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op8" value="Подведение внутреннего газопровода">
                                         Подведение внутреннего газопровода
                                     </label>
                                 </div>
@@ -386,7 +387,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-10 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op9" value="Газгольдер с высокой горловиной">
                                         Газгольдер с высокой горловиной
                                     </label>
                                 </div>
@@ -400,7 +401,7 @@
                                 </div>
                                 <div class="form-check mb-0 bgimage-form-11 p-4">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="">
+                                        <input class="form-check-input" type="checkbox" name="op10" value="Первичная заправка ёмкости">
                                         Первичная заправка ёмкости
                                     </label>
                                 </div>
@@ -436,7 +437,7 @@
                         <div class="hidden-lg-up">
                             <br>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-circle"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>&nbsp;Получить расчет</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-circle" role="button"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>&nbsp;Получить расчет</button>
                     </div>
                 </div>
             </form>
