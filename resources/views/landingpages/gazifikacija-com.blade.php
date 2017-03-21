@@ -952,7 +952,7 @@
                 <br>
             </div>
             <div class="card sw">
-                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-17.jpg" alt="Card image cap">
+                <img class="card-img-top img-fluid mx-auto d-block" src="/images/gazifikaciya-3/tehnika-19.jpg" alt="Card image cap">
                 <div class="card-block text-center">
                     Экскаватор-погрузчик для обеспечения нужд при прокладке наружных сетей
                 </div>
