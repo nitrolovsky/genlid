@@ -216,6 +216,9 @@
                                 </fieldset>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hidden-md-up">
+                                    <br>
+                                </div>
                                 <div class="form-group mb-0 bgimage-form-10 p-4">
                                     <label for="formGroupExampleInput">
                                         Длина от основной магистрали до места подключения в метрах
@@ -396,9 +399,7 @@
                         <br>
                         <div class="row">
                             <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div class="hidden-xl-up">
-                                    <br>
-                                </div>
+
                                 <div class="form-check mb-0 bgimage-form-11 p-4">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" name="op10" value="Первичная заправка ёмкости">
@@ -426,17 +427,11 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="hidden-lg-up">
-                            <br>
-                        </div>
                         <div class="form-group ">
                             <input type="phone" class="form-control col-12 btn-circle " id="phone" placeholder="Телефон" name="phone" value="">
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="hidden-lg-up">
-                            <br>
-                        </div>
                         <button type="submit" class="btn btn-primary btn-block btn-circle" role="button"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>&nbsp;Получить расчет</button>
                     </div>
                 </div>
@@ -1249,17 +1244,11 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="hidden-lg-up">
-                            <br>
-                        </div>
                         <div class="form-group">
                             <input type="phone" class="form-control col-12 btn-circle" id="phone" placeholder="Телефон" name="phone" value="">
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <div class="hidden-lg-up">
-                            <br>
-                        </div>
                         <button type="submit" class="btn btn-primary btn-block btn-circle"><span class="fa fa-fw fa-calculator" aria-hidden="true" role="button"></span>&nbsp;Получить расчет</button>
                     </div>
                 </div>
