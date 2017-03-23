@@ -8,9 +8,12 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/fonts/djsans/djsans.css">
+        <link rel="stylesheet" href="/fonts/intro/intro.css">
         <link rel="stylesheet" href="/css/styleG.css">
+        <link rel="stylesheet" href="/css/detox.css">
         <title>
-            Детокс
+            Комплексные on-line программы сбалансированного питания, женских практик и физических упражнений для естественного очищения души и тела
         </title>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,7 +28,7 @@
     <body class="bgimg-1">
         <style>
             .bgimg-1 {
-                background: url("/upload/images/{{ $page->bg }}") no-repeat center center;
+                background: url("/images/detox/bg.jpg") no-repeat top center;
                 background-size: cover;
                 background-color: rgba(0, 0, 0, 0.5);
                 background-blend-mode: overlay;
@@ -40,16 +43,15 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
                             <span class="h2 russo text-uppercase">
-                                {{ $page->company or "" }}
+                                 #детокс_ya_krivtsova
                             </span><br>
-                            {{ $page->descriptor }}
+                             Комплексные on-line программы сбалансированного питания, женских практик и физических упражнений для естественного очищения души и тела
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            {{ $page->phone }}<br>
-                            {{ $page->email or "" }}
+                            krivtsova01@ya.ru
                         </div>
                     </div>
                 </div>
@@ -57,24 +59,50 @@
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2 ">
-                        <h1 class="h2 russo text-center my-0">
-                            {{ $page->offer }}
+                        <h1 class="h2 russo text-center my-0 intro">
+                            5 натуральных детокс рецептов для очищения и улучшения самочувствия
                         </h1>
                     </div>
                 </div>
             </div>
             <div class="container pt-5">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                        @php
-                            $bullets = explode(";", $page->details);
-                        @endphp
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="h5 russo my-0">
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Бодрящий смузи киви-мята
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Легкий чудо-оливье
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Пикантный тайский суп
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Необычная паста из моркови
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Сладкие ореховые шарики
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div class="h5 russo">
-                            <ul class="">
-                                @foreach($bullets as $bullet)
-                                    <li class="py-1">{{ $bullet }}</li>
-                                @endforeach
-                            </ul>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Меня зовут Евгения Кривцова
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;4 года я приверженец здорового образа жизни
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Я изучила сотни книг по питанию и очищению
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Победила в фитнес-марафоне Веры Брежневой
+                            </div>
+                            <div class="py-1">
+                                <span class="fa fa-fw fa-check"></span>&nbsp;Кулинария нового тысячилетия &quot;Живая Кухня&quot;
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +111,7 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-8">
                         <div class="embed-responsive embed-responsive-16by9 sw " id="video">
-                            <iframe class="embed-responsive-item" src="{{ $page->video }}" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P7ObsjI8dBA" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4">
@@ -91,13 +119,12 @@
                             <div class="hidden-xl-up">
                                 <br>
                             </div>
-                            <h5 class="russo px-3 pb-3">
-                                {{ $page->form_title }}
+                            <h5 class="russo px-3 pb-3 text-center intro">
+                                Заполни форму и получи 5 рецептов программы детокс
                             </h5>
                             <form action="/proposals" method="POST">
                                 {{ csrf_field() }}
-                                <input type="hidden" name="page_id" value="{{ $page->id }}">
-                                <input type="hidden" name="template" value="g">
+                                <input type="hidden" name="source" value="detox">
                                 <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">
                                     <div class="">
                                         <input type="text" class="sw btn-circle form-control {{ !empty($errors->proposal->first('name')) ? 'form-control-danger' : ''}} {{ !empty(old('name')) ? 'form-control-success' : ''}}" id="name" placeholder="Имя" name="name" value="{{ old('name') }}">
@@ -108,37 +135,30 @@
                                         <input type="email" class="sw btn-circle form-control {{ !empty($errors->proposal->first('email')) ? 'form-control-danger' : ''}} {{ !empty(old('email')) ? 'form-control-success' : ''}}" id="email" placeholder="Email" name="email" value="{{ old('email') }}">
                                     </div>
                                 </div>
-                                <div class="form-group {{ !empty($errors->proposal->first('phone')) ? 'has-danger' : ''}} {{ !empty(old('phone')) ? 'has-success' : ''}}">
-                                    <div class="">
-                                        <input type="phone" class="sw btn-circle form-control {{ !empty($errors->proposal->first('phone')) ? 'form-control-danger' : ''}} {{ !empty(old('phone')) ? 'form-control-success' : ''}}" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
-                                    </div>
-                                </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;">{{ $page->call_to_action }}</button>
+                                        <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;">Получить бесплатно</button>
                                     </div>
                                 </div>
                             </form>
-                            <div class="px-3 small">
-                                Обработка персональных данных защищена политикой конфиденциальности
+                            <div class="px-3 intro text-center">
+                                И еще 2 секретных бонуса..
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container py-4 small">
+            <div class="container py-5">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12">
-                        {{ $page->legal }}
+                         2017 Инстаграмм #детокс_ya_krivtsova. YouTube канал Ya_Krivtsova.
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-right text-lg-right text-md-right">
                         <div class="hidden-md-up">
                             <br>
                         </div>
-                        Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a><br>
-                        Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a><br>
-                        Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}<br>
-                        Сайт разработал <a href="http://genlid.com">genlid.com</a>
+                        Email <a href="mailto:krivtsova01@ya.ru">krivtsova01@ya.ru</a><br>
+                        Дата обновления сайта 23.03.2017<br>
                     </div>
                 </div>
             </div>
