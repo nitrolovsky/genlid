@@ -1055,7 +1055,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/2.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/2.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Главный бухгалтер<br>
                             Лебедева Светлана Владимировна
@@ -1066,7 +1066,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/1.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/1.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Директор<br>
                             Жучков Филипп Германович
@@ -1077,7 +1077,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/3.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/3.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Технический директор<br>
                             Шаповалов Дмитрий Александрович
@@ -1092,7 +1092,7 @@
                 <br>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/5.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/5.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Руководитель отдела продаж<br>
                             Романова Юлия Александрова
@@ -1103,7 +1103,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/4.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/4.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Производитель работ<br>
                             Хитаришвили Арчил Гурамович
@@ -1114,7 +1114,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/6.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/6.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Производитель работ<br>
                             Крымов Михаил Сергеевич
@@ -1129,7 +1129,7 @@
                 <br>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/9.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/9.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Специалист отдела маркетинга<br>
                             Родионов Роман Владимирович
@@ -1140,7 +1140,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/7.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/7.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Специалист отдела снабжения<br>
                             Михайлов Денис Александрович
@@ -1151,7 +1151,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                        <img src="/images/gazifikaciya-3/komanda/8.jpg" class="img-fluid mx-auto d-block rounded-circle">
+                        <img src="/images/gazifikaciya-3/8.jpg" class="img-fluid mx-auto d-block rounded-circle">
                         <p class="text-center pt-3">
                             Юрисконсульт<br>
                             Аракейлян Вазген Ванушевич
