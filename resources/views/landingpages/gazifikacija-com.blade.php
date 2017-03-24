@@ -4,14 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Scada:400,700" rel="stylesheet">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/article.css">
         <link rel="stylesheet" href="/fonts/djsans/djsans.css">
-        <link rel="stylesheet" href="/fonts/intro/intro.css">
         <link rel="stylesheet" href="/css/gazifikacija-com.css">
         <title>
             Газификация частного дома в Санкт-Петербурге и Ленинградской области
@@ -1255,7 +1252,7 @@
         </div>
 
         <style>
-        .bgimage-first {
+        .bgimage-footer {
             background: url("/images/gazifikaciya2/gazifikaciya-fotografiya-4.jpg") no-repeat bottom center;
             background-size: cover;
             background-attachment: fixed;
@@ -1267,7 +1264,7 @@
             border-radius: 2rem !important;
         }
         </style>
-        <div class="container-fluid p-0 bgimage-first">
+        <div class="container-fluid p-0 bgimage-footer">
             <div class="container-fluid px-0">
                 <div class="container py-5">
                     <div class="row">
