@@ -93,12 +93,12 @@
                             <input type="hidden" name="source" value="gazifikacija.com Заказ звонка специалиста">
                             <div class="form-group">
                                 <div class="">
-                                    <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name">
+                                    <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="">
-                                    <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone">
+                                    <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -417,12 +417,12 @@
                             <input type="hidden" name="source" value="gazifikacija.com Получить расчет">
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                 <div class="form-group">
-                                    <input type="email" class="form-control col-12 btn-circle" id="email" placeholder="Email" name="email" value="">
+                                    <input type="email" class="form-control col-12 btn-circle" id="email" placeholder="Email" name="email" value="" required>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                 <div class="form-group ">
-                                    <input type="phone" class="form-control col-12 btn-circle " id="phone" placeholder="Телефон" name="phone" value="">
+                                    <input type="phone" class="form-control col-12 btn-circle " id="phone" placeholder="Телефон" name="phone" value="" required>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -567,12 +567,12 @@
                             <input type="hidden" name="source" value="gazifikacija.com Получить рассрочку">
                             <div class="form-group">
                                 <div class="">
-                                    <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name">
+                                    <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="">
-                                    <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone">
+                                    <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -761,12 +761,12 @@
                             <input type="hidden" name="source" value="gazifikacija.com Заказать выезд инженера">
                             <div class="form-group">
                                 <div class="">
-                                    <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name" value="">
+                                    <input type="text" class=" btn-circle form-control" id="name" placeholder="Имя" name="name" value="" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="">
-                                    <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone" value="{{ old('phone') }}">
+                                    <input type="phone" class=" btn-circle form-control" id="phone" placeholder="Телефон" name="phone" value="" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -1234,12 +1234,12 @@
                             <input type="hidden" name="source" value="gazifikacija.com Получить расчет Низ">
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                 <div class="form-group">
-                                    <input type="email" class="form-control col-12 btn-circle" id="email" placeholder="Email" name="email" value="">
+                                    <input type="email" class="form-control col-12 btn-circle" id="email" placeholder="Email" name="email" value="" required>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                 <div class="form-group">
-                                    <input type="phone" class="form-control col-12 btn-circle" id="phone" placeholder="Телефон" name="phone" value="">
+                                    <input type="phone" class="form-control col-12 btn-circle" id="phone" placeholder="Телефон" name="phone" value="" required>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
