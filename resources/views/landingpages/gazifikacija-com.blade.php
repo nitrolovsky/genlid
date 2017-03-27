@@ -818,7 +818,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <a href="/images/gazifikaciya-3/blago-1.pdf" target="_blank">
+                    <a href="/images/gazifikaciya-3/blago-polar.jpg" target="_blank">
                         <img src="/images/gazifikaciya-3/blago-polar.jpg" class="img-fluid mx-auto d-block">
                         <br>
                         <h5 class="russo text-center pt-3">
