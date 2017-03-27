@@ -1311,6 +1311,22 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
         <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $("form").submit(function(e) {
+                var ref = $(this).find("[required]");
+                $(ref).each(function(){
+                    if ( $(this).val() == '' )
+                    {
+                        alert("Заполните поля контактных данных");
+
+                        $(this).focus();
+
+                        e.preventDefault();
+                        return false;
+                    }
+                });  return true;
+            });
+        </script>
         <!-- Yandex.Metrika counter -->
         <script type="text/javascript">
             (function (d, w, c) {
