@@ -26,7 +26,7 @@
     <body>
         <style>
         .bgimage-first {
-            background: url(/images/gazifikaciya-3/gazifikaciya-fotografiya-7.jpg) no-repeat bottom center;
+            background: url(/images/gazifikaciya-3/gazifikaciya-fotografiya-4.jpg) no-repeat bottom center;
             background-size: cover;
             background-attachment: fixed;
             background-color: rgba(0, 0, 0, 0.5);
@@ -57,7 +57,7 @@
                                 <br>
                             </div>
                             8 800 550 50 46<br>
-                            8 812 245 17 35<br>
+                            <span class="lptracker_phone">8 921 858 76 73</span><br>
                             Всеволожск, Всеволожский проспект дом 17 офис 434
                         </div>
                     </div>
@@ -819,10 +819,10 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
                     <a href="/images/gazifikaciya-3/blago-1.pdf" target="_blank">
-                        <img src="/images/gazifikaciya-3/blago-1.jpg" class="img-fluid mx-auto d-block">
+                        <img src="/images/gazifikaciya-3/blago-polar.jpg" class="img-fluid mx-auto d-block">
                         <br>
                         <h5 class="russo text-center pt-3">
-                            ООО "ДиДиСи индор энд аутдор"
+                            ЗАО "Полар"
                         </h5>
                         <div class="hidden-xl-up">
                             <br>
@@ -844,8 +844,8 @@
                     </a>
                 </div>
                 <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <a href="/images/gazifikaciya-3/blago-3.pdf" target="_blank">
-                        <img src="/images/gazifikaciya-3/blago-3.jpg" class="img-fluid mx-auto d-block">
+                    <a href="/images/gazifikaciya-3/blago-5.pdf" target="_blank">
+                        <img src="/images/gazifikaciya-3/blago-5.jpg" class="img-fluid mx-auto d-block">
                         <br>
                         <h5 class="russo text-center pt-3">
                             СПб ГКУ "Управление заказчика"
@@ -1284,7 +1284,7 @@
                                 <br>
                             </div>
                             8 800 550 50 46<br>
-                            8 812 245 17 35<br>
+                            <span class="lptracker_phone">8 921 858 76 73</span><br>
                             Всеволожск, Всеволожский проспект дом 17 офис 434
                         </div>
                     </div>
@@ -1356,5 +1356,6 @@
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/43487934" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
+        <script async type="text/javascript">function loadscript(e,t){var n=document.createElement("script");n.src="//lptracker.net.ru/"+e;n.onreadystatechange=t;n.onload=t;document.head.appendChild(n);return 1}var init_lstats=function(){lstats.site_id=34901;lstats.referer()};var jquery_lstats=function(){jQstat.noConflict();loadscript("stats_auto.js",init_lstats)};loadscript("jquery-1.10.2.min.js",jquery_lstats);</script>
     </body>
 </html>
