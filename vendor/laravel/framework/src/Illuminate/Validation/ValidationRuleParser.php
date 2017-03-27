@@ -4,8 +4,6 @@ namespace Illuminate\Validation;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Illuminate\Validation\Rules\Exists;
-use Illuminate\Validation\Rules\Unique;
 
 class ValidationRuleParser
 {
@@ -84,27 +82,10 @@ class ValidationRuleParser
         if (is_string($rule)) {
             return explode('|', $rule);
         } elseif (is_object($rule)) {
-            return [$this->prepareRule($rule)];
+            return [$rule];
         } else {
-            return array_map([$this, 'prepareRule'], $rule);
-        }
-    }
-
-    /**
-     * Prepare the given rule for the Validator.
-     *
-     * @param  mixed  $rule
-     * @return mixed
-     */
-    protected function prepareRule($rule)
-    {
-        if (! is_object($rule) ||
-            ($rule instanceof Exists && $rule->queryCallbacks()) ||
-            ($rule instanceof Unique && $rule->queryCallbacks())) {
             return $rule;
         }
-
-        return strval($rule);
     }
 
     /**

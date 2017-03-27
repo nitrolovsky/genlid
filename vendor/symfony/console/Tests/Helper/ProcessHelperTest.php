@@ -11,7 +11,6 @@
 
 namespace Symfony\Component\Console\Tests\Helper;
 
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Helper\DebugFormatterHelper;
 use Symfony\Component\Console\Helper\HelperSet;
 use Symfony\Component\Console\Output\StreamOutput;
@@ -19,7 +18,7 @@ use Symfony\Component\Console\Helper\ProcessHelper;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\ProcessBuilder;
 
-class ProcessHelperTest extends TestCase
+class ProcessHelperTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider provideCommandsAndOutput

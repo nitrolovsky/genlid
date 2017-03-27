@@ -94,18 +94,15 @@ if (! function_exists('app')) {
      * Get the available container instance.
      *
      * @param  string  $abstract
-     * @param  array   $parameters
      * @return mixed|\Illuminate\Foundation\Application
      */
-    function app($abstract = null, array $parameters = [])
+    function app($abstract = null)
     {
         if (is_null($abstract)) {
             return Container::getInstance();
         }
 
-        return empty($parameters)
-            ? Container::getInstance()->make($abstract)
-            : Container::getInstance()->makeWith($abstract, $parameters);
+        return Container::getInstance()->make($abstract);
     }
 }
 
@@ -556,33 +553,25 @@ if (! function_exists('mix')) {
      * Get the path to a versioned Mix file.
      *
      * @param  string  $path
-     * @param  string  $manifestDirectory
      * @return \Illuminate\Support\HtmlString
      *
      * @throws \Exception
      */
-    function mix($path, $manifestDirectory = '')
+    function mix($path)
     {
         static $manifest;
-
-        if (! starts_with($path, '/')) {
-            $path = "/{$path}";
-        }
-
-        if ($manifestDirectory && ! starts_with($manifestDirectory, '/')) {
-            $manifestDirectory = "/{$manifestDirectory}";
-        }
-
-        if (file_exists(public_path($manifestDirectory.'/hot'))) {
-            return new HtmlString("http://localhost:8080{$path}");
-        }
+        static $shouldHotReload;
 
         if (! $manifest) {
-            if (! file_exists($manifestPath = public_path($manifestDirectory.'/mix-manifest.json'))) {
+            if (! file_exists($manifestPath = public_path('mix-manifest.json'))) {
                 throw new Exception('The Mix manifest does not exist.');
             }
 
             $manifest = json_decode(file_get_contents($manifestPath), true);
+        }
+
+        if (! starts_with($path, '/')) {
+            $path = "/{$path}";
         }
 
         if (! array_key_exists($path, $manifest)) {
@@ -592,7 +581,9 @@ if (! function_exists('mix')) {
             );
         }
 
-        return new HtmlString($manifestDirectory.$manifest[$path]);
+        return $shouldHotReload = file_exists(public_path('hot'))
+                    ? new HtmlString("http://localhost:8080{$manifest[$path]}")
+                    : new HtmlString($manifest[$path]);
     }
 }
 
@@ -676,7 +667,7 @@ if (! function_exists('request')) {
             return app('request')->only($key);
         }
 
-        return data_get(app('request')->all(), $key, $default);
+        return app('request')->input($key, $default);
     }
 }
 

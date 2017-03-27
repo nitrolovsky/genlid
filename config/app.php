@@ -178,8 +178,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Skovmand\Mailchimp\MailchimpServiceProvider::class,
-        
     ],
 
     /*

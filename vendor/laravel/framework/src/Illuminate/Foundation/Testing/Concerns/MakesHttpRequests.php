@@ -304,10 +304,6 @@ trait MakesHttpRequests
 
                 unset($data[$key]);
             }
-
-            if (is_array($value)) {
-                $files[$key] = $this->extractFilesFromDataArray($value);
-            }
         }
 
         return $files;

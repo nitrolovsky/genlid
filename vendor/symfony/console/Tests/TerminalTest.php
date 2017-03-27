@@ -11,10 +11,9 @@
 
 namespace Symfony\Component\Console\Tests;
 
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Terminal;
 
-class TerminalTest extends TestCase
+class TerminalTest extends \PHPUnit_Framework_TestCase
 {
     public function test()
     {

@@ -66,9 +66,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function loadRoutes()
     {
-        if (method_exists($this, 'map')) {
-            $this->app->call([$this, 'map']);
-        }
+        $this->app->call([$this, 'map']);
     }
 
     /**

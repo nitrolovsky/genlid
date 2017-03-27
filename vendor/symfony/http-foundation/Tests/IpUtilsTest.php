@@ -11,10 +11,9 @@
 
 namespace Symfony\Component\HttpFoundation\Tests;
 
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\IpUtils;
 
-class IpUtilsTest extends TestCase
+class IpUtilsTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider testIpv4Provider

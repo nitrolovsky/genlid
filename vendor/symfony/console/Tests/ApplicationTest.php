@@ -11,7 +11,6 @@
 
 namespace Symfony\Component\Console\Tests;
 
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Helper\HelperSet;
 use Symfony\Component\Console\Helper\FormatterHelper;
@@ -31,7 +30,7 @@ use Symfony\Component\Console\Event\ConsoleExceptionEvent;
 use Symfony\Component\Console\Event\ConsoleTerminateEvent;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
-class ApplicationTest extends TestCase
+class ApplicationTest extends \PHPUnit_Framework_TestCase
 {
     protected static $fixturesPath;
 
@@ -266,12 +265,7 @@ class ApplicationTest extends TestCase
      */
     public function testFindWithAmbiguousAbbreviations($abbreviation, $expectedExceptionMessage)
     {
-        if (method_exists($this, 'expectException')) {
-            $this->expectException('Symfony\Component\Console\Exception\CommandNotFoundException');
-            $this->expectExceptionMessage($expectedExceptionMessage);
-        } else {
-            $this->setExpectedException('Symfony\Component\Console\Exception\CommandNotFoundException', $expectedExceptionMessage);
-        }
+        $this->setExpectedException('Symfony\Component\Console\Exception\CommandNotFoundException', $expectedExceptionMessage);
 
         $application = new Application();
         $application->add(new \FooCommand());
@@ -952,12 +946,7 @@ class ApplicationTest extends TestCase
 
     public function testRunWithError()
     {
-        if (method_exists($this, 'expectException')) {
-            $this->expectException('Exception');
-            $this->expectExceptionMessage('dymerr');
-        } else {
-            $this->setExpectedException('Exception', 'dymerr');
-        }
+        $this->setExpectedException('Exception', 'dymerr');
 
         $application = new Application();
         $application->setAutoExit(false);
@@ -1100,31 +1089,6 @@ class ApplicationTest extends TestCase
         $tester->run(array('command' => 'foo', '--extra' => 'some test value'));
 
         $this->assertEquals('some test value', $extraValue);
-    }
-
-    public function testUpdateInputFromConsoleCommandEvent()
-    {
-        $dispatcher = $this->getDispatcher();
-        $dispatcher->addListener('console.command', function (ConsoleCommandEvent $event) {
-            $event->getInput()->setOption('extra', 'overriden');
-        });
-
-        $application = new Application();
-        $application->setDispatcher($dispatcher);
-        $application->setAutoExit(false);
-
-        $application
-            ->register('foo')
-            ->addOption('extra', null, InputOption::VALUE_REQUIRED)
-            ->setCode(function (InputInterface $input, OutputInterface $output) {
-                $output->write('foo.');
-            })
-        ;
-
-        $tester = new ApplicationTester($application);
-        $tester->run(array('command' => 'foo', '--extra' => 'original'));
-
-        $this->assertEquals('overriden', $tester->getInput()->getOption('extra'));
     }
 
     /**

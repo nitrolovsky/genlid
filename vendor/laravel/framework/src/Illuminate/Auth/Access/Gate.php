@@ -348,10 +348,6 @@ class Gate implements GateContract
             $class = get_class($class);
         }
 
-        if (! is_string($class)) {
-            return null;
-        }
-
         if (isset($this->policies[$class])) {
             return $this->resolvePolicy($this->policies[$class]);
         }

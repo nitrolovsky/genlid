@@ -11,7 +11,6 @@
 
 namespace Symfony\Component\HttpKernel\Tests\Fragment;
 
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\Controller\ArgumentResolver;
 use Symfony\Component\HttpKernel\Controller\ControllerResolverInterface;
@@ -23,7 +22,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
-class InlineFragmentRendererTest extends TestCase
+class InlineFragmentRendererTest extends \PHPUnit_Framework_TestCase
 {
     public function testRender()
     {

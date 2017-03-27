@@ -28,7 +28,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
      *
      * @var string
      */
-    const VERSION = '5.4.16';
+    const VERSION = '5.4.9';
 
     /**
      * The base path for the Laravel installation.
@@ -519,7 +519,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
      */
     public function runningInConsole()
     {
-        return php_sapi_name() == 'cli' || php_sapi_name() == 'phpdbg';
+        return php_sapi_name() == 'cli';
     }
 
     /**

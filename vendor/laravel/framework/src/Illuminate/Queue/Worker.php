@@ -44,14 +44,14 @@ class Worker
      *
      * @var bool
      */
-    public $shouldQuit = false;
+    protected $shouldQuit = false;
 
     /**
      * Indicates if the worker is paused.
      *
      * @var bool
      */
-    public $paused = false;
+    protected $paused = false;
 
     /**
      * Create a new queue worker.
@@ -264,7 +264,7 @@ class Worker
     }
 
     /**
-     * Process the given job from the queue.
+     * Process a given job from the queue.
      *
      * @param  string  $connectionName
      * @param  \Illuminate\Contracts\Queue\Job  $job

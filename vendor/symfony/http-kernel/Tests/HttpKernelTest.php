@@ -11,7 +11,6 @@
 
 namespace Symfony\Component\HttpKernel\Tests;
 
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\Controller\ArgumentResolverInterface;
@@ -27,7 +26,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
-class HttpKernelTest extends TestCase
+class HttpKernelTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @expectedException \RuntimeException

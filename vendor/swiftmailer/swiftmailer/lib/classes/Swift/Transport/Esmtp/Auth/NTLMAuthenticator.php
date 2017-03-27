@@ -296,14 +296,9 @@ class Swift_Transport_Esmtp_Auth_NTLMAuthenticator implements Swift_Transport_Es
             return explode('\\', $name);
         }
 
-        if (false !== strpos($name, '@')) {
-            list($user, $domain) = explode('@', $name);
+        list($user, $domain) = explode('@', $name);
 
-            return array($domain, $user);
-        }
-
-        // no domain passed
-        return array('', $name);
+        return array($domain, $user);
     }
 
     /**
@@ -464,7 +459,6 @@ class Swift_Transport_Esmtp_Auth_NTLMAuthenticator implements Swift_Transport_Es
     }
 
     /** HELPER FUNCTIONS */
-
     /**
      * Create our security buffer depending on length and offset.
      *
@@ -567,7 +561,6 @@ class Swift_Transport_Esmtp_Auth_NTLMAuthenticator implements Swift_Transport_Es
     }
 
     /** ENCRYPTION ALGORITHMS */
-
     /**
      * DES Encryption.
      *

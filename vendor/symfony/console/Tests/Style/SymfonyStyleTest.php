@@ -11,11 +11,11 @@
 
 namespace Symfony\Component\Console\Tests\Style;
 
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Tester\CommandTester;
 
-class SymfonyStyleTest extends TestCase
+class SymfonyStyleTest extends PHPUnit_Framework_TestCase
 {
     /** @var Command */
     protected $command;
