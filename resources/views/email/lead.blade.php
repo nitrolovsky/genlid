@@ -24,7 +24,7 @@
         {{ $davl or "" }}<br>
     @endif
     @if ($dlina)
-        {{ $dlina or "" }}<br>
+        Длина от магистрали - {{ $dlina or "" }}<br>
     @endif
     @if ($dym)
         {{ $dym or "" }}<br>
