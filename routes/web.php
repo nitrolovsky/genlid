@@ -6,7 +6,7 @@ Route::get('/', function () {
     if (file_exists("../resources/views/landingpages/$file.blade.php") == true) {
         return View("landingpages.$file");
     } else {
-        return View('landingpages.genlid');
+        echo Request::server("HTTP_HOST");
     }
     //$json = file_get_contents("../database/data/2016-11-03-10-12-pilka.json");
     //$data = json_decode($json, true);
