@@ -6,7 +6,10 @@ Route::get('/', function () {
     if (file_exists("../resources/views/landingpages/$file.blade.php") == true) {
         return View("landingpages.$file");
     } else {
-        echo Request::server("HTTP_HOST");
+        $subdomain = array_shift(explode(".", Request::server("HTTP_HOST")));
+        if (file_exists("../resources/views/landingpages/$subdomain.blade.php") == true) {
+            return View("landingpages.$subdomain");
+        }
     }
     //$json = file_get_contents("../database/data/2016-11-03-10-12-pilka.json");
     //$data = json_decode($json, true);
