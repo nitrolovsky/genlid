@@ -6,7 +6,8 @@ Route::get('/', function () {
     if (file_exists("../resources/views/landingpages/$file.blade.php") == true) {
         return View("landingpages.$file");
     } else {
-        $subdomain = array_shift(explode(".", Request::server("HTTP_HOST")));
+        $env = explode(".", Request::server("HTTP_HOST"));
+        $subdomain = array_shift($env);
         if (file_exists("../resources/views/landingpages/$subdomain.blade.php") == true) {
             return View("landingpages.$subdomain");
         }
