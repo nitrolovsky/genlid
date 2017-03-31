@@ -63,7 +63,6 @@
                 width: 100%;
                 background: rgba(0,0,0,0.3);
                 color: #fff;
-                padding: 1rem;
             }
 
             .vid-info a {
@@ -89,7 +88,7 @@
             }
             @media all and (max-width: 600px) {
             .vid-info {
-                width: 100%; padding: .5rem; 
+                width: 100%; padding: .5rem;
             }
             .vid-info h1 {
                 margin-bottom: .2rem;
