@@ -87,15 +87,15 @@
               }
             }
             @media all and (max-width: 600px) {
-            .vid-info {
-                width: 100%; padding: .5rem;
-            }
-            .vid-info h1 {
-                margin-bottom: .2rem;
-            }
+                .vid-info {
+                    width: 100%; padding: .5rem;
+                }
+                .vid-info h1 {
+                    margin-bottom: .2rem;
+                }
             }
             @media all and (max-width: 500px) {
-            .vid-info .acronym { display: none; }
+                .vid-info .acronym { display: none; }
             }
 
         </style>
