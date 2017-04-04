@@ -1,15 +1,17 @@
 <?php
 
+use Illuminate\Http\Request;
+
 Route::get('/', function () {
     $name = Request::server("HTTP_HOST");
     $file = str_replace(".", "-", $name);
-    if (file_exists("../resources/views/landingpages/$file.blade.php") == true) {
-        return View("landingpages.$file");
+    if (file_exists("../resources/views/lp/$file.blade.php") == true) {
+        return View("lp.$file");
     } else {
         $env = explode(".", Request::server("HTTP_HOST"));
         $subdomain = array_shift($env);
-        if (file_exists("../resources/views/landingpages/$subdomain.blade.php") == true) {
-            return view("landingpages.$subdomain");
+        if (file_exists("../resources/views/lp/$subdomain.blade.php") == true) {
+            return view("lp.$subdomain");
         }
     }
 });
@@ -46,8 +48,8 @@ Route::get("articles/{name}", function($name) {
 Route::resource("articles", "ArticleController");
 
 Route::get("lp/{name}", function($name) {
-    if (file_exists("../resources/views/landingpages/$name.blade.php") == true) {
-        return View("landingpages.$name");
+    if (file_exists("../resources/views/lp/$name.blade.php") == true) {
+        return View("lp.$name");
     } else {
         return Redirect::to("/");
     }
@@ -62,4 +64,23 @@ Route::resource("lead", "LeadController");
 
 Route::get("thanks", function () {
     return View("thanks");
+});
+
+Route::post("beautykitchen", function (Request $request) {
+    $data = array(
+        "name" => $request->input("name"),
+        "email" => $request->input("email"),
+        "phone" => $request->input("phone"),
+        "source" => $request->fullUrl()
+    );
+    $lead_last_id = DB::table("beautykitchen_leads")->insertGetId($data);
+    $data["lead_id"] = $lead_last_id;
+
+    Mail::send("email", $data, function ($message) use ($data) {
+        $message->from("genlid.proposals@gmail.com", "genlid.proposals");
+        $message->to("nitrolovsky@gmail.com");
+        $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
+    });
+
+    redirect("genlid.com/lp/beautykitchen2");
 });
