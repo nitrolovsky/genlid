@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 Route::get('/', function () {
     $name = Request::server("HTTP_HOST");
     $file = str_replace(".", "-", $name);
