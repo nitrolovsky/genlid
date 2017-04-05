@@ -9,7 +9,7 @@ use Redirect;
 use View;
 use Mail;
 use DB;
-
+use Mailchimp;
 use App\Lead;
 
 class LeadController extends Controller
