@@ -122,7 +122,7 @@
                             <h5 class="russo px-3 pb-3 text-center intro">
                                 Заполни форму и получи 5 рецептов программы детокс
                             </h5>
-                            <form action="/proposals" method="POST">
+                            <form action="/leads/detoxya" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="source" value="detox">
                                 <div class="form-group {{ !empty($errors->proposal->first('name')) ? 'has-danger' : ''}} {{ !empty(old('name')) ? 'has-success' : ''}}">

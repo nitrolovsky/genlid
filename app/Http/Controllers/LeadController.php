@@ -174,4 +174,65 @@ class LeadController extends Controller
 
         redirect("genlid.com/lp/beautykitchen2");
     }
+
+    public function storeBelio(Request $request) {
+        $data = array(
+            "email" => Request::get("email"),
+            "source" => Request::server("HTTP_REFERER")
+        );
+        $lead_last_id = DB::table("belio_leads")->insertGetId($data);
+        $data["lead_id"] = $lead_last_id;
+
+        Mail::send("email", $data, function ($message) use ($data) {
+            $message->from("info@genlid.com", "genlid.com");
+            $message->to("nitrolovsky@gmail.com");
+            $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
+        });
+
+        redirect("genlid.com/lp/belio2");
+    }
+
+    public function storeKrossovkiopt(Request $request) {
+        $data = array(
+            "name" => Request::get("name"),
+            "email" => Request::get("email"),
+            "phone" => Request::get("phone"),
+            "source" => Request::server("HTTP_REFERER")
+        );
+        $lead_last_id = DB::table("krossovkiopt_leads")->insertGetId($data);
+        $data["lead_id"] = $lead_last_id;
+/*
+        Mail::send("email", $data, function ($message) use ($data) {
+            $message->from("info@genlid.com", "genlid.com");
+            $message->to("nitrolovsky@gmail.com");
+            $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
+        });
+
+        Mail::send("email", $data, function ($message) use ($data) {
+            $message->from("info@genlid.com", "genlid.com");
+            $message->to($data["email"]);
+            $message->subject("Прайс кроссовки");
+        });
+        */
+        return Redirect::to("http://genlid.com");
+    }
+
+    public function storeDetoxya(Request $request) {
+        $data = array(
+            "name" => Request::get("name"),
+            "email" => Request::get("email"),
+            "phone" => Request::get("phone"),
+            "source" => Request::server("HTTP_REFERER")
+        );
+        $lead_last_id = DB::table("detoxya_leads")->insertGetId($data);
+        $data["lead_id"] = $lead_last_id;
+
+        $list_id = "f315a1ed5c";
+        $mailchimp = new Mailchimp("aeb1391031954768639c82b75a9fdc30-us11");
+        $mailchimp->lists->subscribe(
+            $list_id,
+            ["email" => Request::get("email")]
+        );
+        return Redirect::to("http://detoxya.ru/");
+    }
 }

@@ -66,3 +66,5 @@ Route::get("thanks", function () {
 });
 
 Route::post("leads/beautykitchen", "LeadController@storeBeautykitchen");
+Route::post("leads/krossovkiopt", "LeadController@storeKrossovkiopt");
+Route::post("leads/detoxya", "LeadController@storeDetoxya");
