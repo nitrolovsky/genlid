@@ -26,6 +26,7 @@ Route::get('pages/{id}/d', 'PageController@showD');
 Route::get('pages/{id}/e', 'PageController@showE');
 Route::get('pages/{id}/f', 'PageController@showF');
 Route::get('pages/{id}/g', 'PageController@showG');
+Route::get('pages/{id}/h', 'PageController@showH');
 Route::get('pages/{id}/thanks', 'PageController@showThanks');
 Route::get('pages/all', 'PageController@showAll');
 Route::resource('pages', 'PageController');
