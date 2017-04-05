@@ -8,6 +8,7 @@ use Session;
 use Redirect;
 use View;
 use Mail;
+use DB;
 
 use App\Lead;
 
@@ -153,5 +154,24 @@ class LeadController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function storeBeautykitchen(Request $request) {
+        $data = array(
+            "name" => Request::get("name"),
+            "email" => Request::get("email"),
+            "phone" => Request::get("phone"),
+            "source" => Request::server("HTTP_REFERER")
+        );
+        $lead_last_id = DB::table("beautykitchen_leads")->insertGetId($data);
+        $data["lead_id"] = $lead_last_id;
+
+        Mail::send("email", $data, function ($message) use ($data) {
+            $message->from("genlid.proposals@gmail.com", "genlid.proposals");
+            $message->to("nitrolovsky@gmail.com");
+            $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
+        });
+
+        redirect("genlid.com/lp/beautykitchen2");
     }
 }

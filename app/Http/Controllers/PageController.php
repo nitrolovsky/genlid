@@ -115,7 +115,7 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        return View('page.showF')
+        return View('page.showH')
             ->with('page', Page::find($id));
     }
 

@@ -61,7 +61,7 @@
                             <h3 class="px-3 pb-3 text-center weight-700">
                                 Узнай как сэкономить 300 рублей
                             </h3>
-                            <form action="/beautykitchen" method="POST">
+                            <form action="/leads/beautykitchen" method="POST">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <div class="">

@@ -16,7 +16,7 @@
                                 <img src="/upload/images/{{ $page->bg }}" class="img-fluid">
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6">
-                                № {{ $page->id }}
+                                <a href="/pages/{{ $page->id }}/h">№ {{ $page->id }}</a>
                                 <br>
                                 {{ $page->updated_at }}
                                 <br>
@@ -51,6 +51,10 @@
                                 <br>
                                 <a href="/pages/{{ $page->id }}/g">
                                     G - F+
+                                </a>
+                                <br>
+                                <a href="/pages/{{ $page->id }}/h">
+                                    H - G+ лучше типографика
                                 </a>
                             </div>
                             <div class="col-xl-2 col-lg-2 col-md-2">

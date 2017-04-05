@@ -18,7 +18,7 @@
                                 {{ $page->updated_at }} # {{ $page->id }}
                                 <br>
                                 <br>
-                                <a href="/pages/{{ $page->id }}/g">{{ $page->offer }}</a>
+                                <a href="/pages/{{ $page->id }}/h">{{ $page->offer }}</a>
                                 <br>
                                 {{ $page->details }}
                             </div>
