@@ -8,8 +8,21 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/lp.css">
         <title>
-            Студия маникюра и педикюра Beauty Kitchen
+            {{ $page->descriptor }}
         </title>
+        <style>
+            .bg-img {
+                background: url("/upload/images/{{ $page->bg }}") no-repeat top center;
+                background-size: cover;
+            }
+
+            .bg-overlay {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                height: 100%;
+                min-height: 100%;
+            }
+        </style>
     </head>
     <body>
         <div class="bg-img">
@@ -18,22 +31,23 @@
                     <div class="row pt-4">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
                             <span class="h2 text-uppercase font">
-                                 Beauty Kitchen
+                                 {{ $page->company or "" }}
                             </span><br>
-                            <span class="descriptor">Студия маникюра и педикюра</span>
+                            <span class="descriptor">{{ $page->descriptor or "" }}</span>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            <span class="phone">+7 952 288 71 13</span><br>
-                            <span class="address">СПБ, Загородный проспект 16</span>
+                            <br>
+                            <span class="phone">{{ $page->phone }}</span><br>
+                            <span class="address">{{ $page->email or "" }}</span>
                         </div>
                     </div>
                     <div class="row pt-5">
                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 offset-xl-1">
                             <h1 class="text-center my-0 weight-700">
-                                Сделай маникюр с покрытием гель-лак и получи три супер гарантии
+                                {{ $page->offer }}
                             </h1>
                         </div>
                     </div>
@@ -41,9 +55,7 @@
                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 offset-xl-1">
                             <div class="my-0 text-center">
                                 <p class="font bullets">
-                                    Гарантия качества. Если вам не понравится результат - вернем вам деньги.<br>
-                                    Любые проблемы с покрытием устраним в течении двух недель бесплатно.<br>
-                                    Гарантия выгодной цены.
+                                    {{ $page->details }}
                                 </p>
                             </div>
                         </div>
@@ -51,7 +63,7 @@
                     <div class="row pt-5">
                         <div class="col-xl-8 col-lg-8">
                             <div class="embed-responsive embed-responsive-16by9 sw" id="video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Mg9aSVFVNMo?rel=0&showinfo=0" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="{{ $page->video }}?rel=0&showinfo=0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 offset-xl-0 offset-lg-0 offset-md-3">
@@ -59,10 +71,12 @@
                                 <br>
                             </div>
                             <h3 class="px-3 pb-3 text-center weight-700">
-                                Узнай как сэкономить 300 рублей
+                                {{ $page->form_title }}
                             </h3>
-                            <form action="/beautykitchen" method="POST">
+                            <form action="/proposals" method="POST">
                                 {{ csrf_field() }}
+                                <input type="hidden" name="page_id" value="{{ $page->id }}">
+                                <input type="hidden" name="template" value="h">
                                 <div class="form-group">
                                     <div class="">
                                         <input type="text" class="font black sw btn-circle form-control" id="name" placeholder="Имя" name="name">
@@ -80,7 +94,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <button type="submit" class="font sw btn-circle btn btn-primary btn-block" role="button">Узнать</button>
+                                        <button type="submit" class="font sw btn-circle btn btn-primary btn-block" role="button">{{ $page->call_to_action }</button>
                                     </div>
                                 </div>
                             </form>
@@ -88,14 +102,16 @@
                     </div>
                     <div class="row pt-5 pb-4">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                             © 2017 Студия маникюра и педикюра "Beauty Kitchen"
+                             {{ $page->legal }}
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            +7 952 288 71 13<br>
-                            СПБ, Загородный проспект 16
+                            Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a><br>
+                            Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a><br>
+                            Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}<br>
+                            Сайт разработал <a href="http://genlid.com">genlid.com</a>
                         </div>
                     </div>
                 </div>
