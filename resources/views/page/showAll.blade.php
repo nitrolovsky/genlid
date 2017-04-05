@@ -20,7 +20,7 @@
                                 <br>
                                 <a href="/pages/{{ $page->id }}/h">{{ $page->offer }}</a>
                                 <br>
-                                {{ $page->details }}
+                                @php echo html_entity_decode($page->details); @endphp
                             </div>
                         </div>
                         <br>
