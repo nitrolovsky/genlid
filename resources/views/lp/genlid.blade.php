@@ -12,6 +12,7 @@
         <title>
             genlid.com Примеры сайтов
         </title>
+        <meta name="google-site-verification" content="3CsAIYTeBAJV19YePsvg-G1vCO8onV57WjmYJ_RVVvM" />
     </head>
     <body>
         <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse sw">
