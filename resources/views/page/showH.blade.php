@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <button type="submit" class="font sw btn-circle btn btn-primary btn-block" role="button">{{ $page->call_to_action }</button>
+                                        <button type="submit" class="font sw btn-circle btn btn-primary btn-block" role="button">{{ $page->call_to_action }}</button>
                                     </div>
                                 </div>
                             </form>
