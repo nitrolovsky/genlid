@@ -137,7 +137,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter42928359.reachGoal('Proposal'); return true;">Получить бесплатно</button>
+                                        <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter43848769.reachGoal('zakaz'); return true;">Получить бесплатно</button>
                                     </div>
                                 </div>
                             </form>
@@ -192,8 +192,8 @@
                     d.addEventListener("DOMContentLoaded", f, false);
                 } else { f(); }
             })(document, window, "yandex_metrika_callbacks");
-            </script>
-            <noscript><div><img src="https://mc.yandex.ru/watch/43848769" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-            <!-- /Yandex.Metrika counter -->
-        </body>
-    </html>
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/43848769" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    </body>
+</html>
