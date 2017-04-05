@@ -15,7 +15,6 @@
                 background: url("/upload/images/{{ $page->bg }}") no-repeat top center;
                 background-size: cover;
             }
-
             .bg-overlay {
                 background-color: rgba(0, 0, 0, 0.5);
                 color: white;
@@ -40,8 +39,8 @@
                                 <br>
                             </div>
                             <br>
-                            <span class="phone">{{ $page->phone }}</span><br>
-                            <span class="address">{{ $page->email or "" }}</span>
+                            <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone or "" }}</a><br>
+                            <a href="mailto:{{ $page->email or "" }}" class="text-info a">{{ $page->email or "" }}</a>
                         </div>
                     </div>
                     <div class="row pt-5">
@@ -108,10 +107,10 @@
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            Телефон <a href="callto:{{ $page->phone }}">{{ $page->phone }}</a><br>
-                            Email <a href="mailto:{{ $page->email }}">{{ $page->email }}</a><br>
+                            <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone or "" }}</a><br>
+                            <a href="mailto:{{ $page->email or "" }}" class="text-info a">{{ $page->email or "" }}</a><br>
                             Дата обновления сайта {{ date_format($page->updated_at, 'd.m.Y') }}<br>
-                            Сайт разработал <a href="http://genlid.com">genlid.com</a>
+                            Сайт разработал <a href="http://genlid.com" class="text-info a" target="_blank">genlid.com</a>
                         </div>
                     </div>
                 </div>
