@@ -201,19 +201,20 @@ class LeadController extends Controller
         );
         $lead_last_id = DB::table("krossovkiopt_leads")->insertGetId($data);
         $data["lead_id"] = $lead_last_id;
-/*
+
         Mail::send("email", $data, function ($message) use ($data) {
             $message->from("info@genlid.com", "genlid.com");
             $message->to("nitrolovsky@gmail.com");
             $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
         });
 
-        Mail::send("email", $data, function ($message) use ($data) {
+        Mail::send("emails.krossovkiopt1", $data, function ($message) use ($data) {
             $message->from("info@genlid.com", "genlid.com");
             $message->to($data["email"]);
             $message->subject("Прайс кроссовки");
+            $message->attach('files/documents/krossovki-opt-price.xlsx');
         });
-        */
+
         return Redirect::to("http://genlid.com");
     }
 

@@ -137,7 +137,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter43848769.reachGoal('zakaz'); return true;">Получить бесплатно</button>
+                                        <button type="submit" class="sw btn-circle btn btn-primary btn-block" onclick="yaCounter43848769.reachGoal('zakaz'); return true;" role="button">Получить бесплатно</button>
                                     </div>
                                 </div>
                             </form>
