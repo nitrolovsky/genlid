@@ -28,7 +28,7 @@
     <body class="bgimg-1">
         <style>
             .bgimg-1 {
-                background: url("/images/detox/bg.jpg") no-repeat top center;
+                background: url("/files/images/detoxya/bg.jpg") no-repeat top center;
                 background-size: cover;
                 background-color: rgba(0, 0, 0, 0.5);
                 background-blend-mode: overlay;
