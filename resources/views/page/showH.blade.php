@@ -38,7 +38,6 @@
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            <br>
                             <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone or "" }}</a><br>
                             <a href="mailto:{{ $page->email or "" }}" class="text-info a">{{ $page->email or "" }}</a>
                         </div>
