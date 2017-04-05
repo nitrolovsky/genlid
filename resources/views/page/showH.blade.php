@@ -54,7 +54,7 @@
                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 offset-xl-1">
                             <div class="my-0 text-center">
                                 <p class="font bullets">
-                                    {{ $page->details }}
+                                    @php echo html_entity_decode($page->details); @endphp
                                 </p>
                             </div>
                         </div>
