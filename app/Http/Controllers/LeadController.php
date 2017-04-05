@@ -167,7 +167,7 @@ class LeadController extends Controller
         $data["lead_id"] = $lead_last_id;
 
         Mail::send("email", $data, function ($message) use ($data) {
-            $message->from("genlid.proposals@gmail.com", "genlid.proposals");
+            $message->from("info@genlid.com", "genlid.com");
             $message->to("nitrolovsky@gmail.com");
             $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
         });
