@@ -212,7 +212,8 @@ class LeadController extends Controller
             $message->from("info@genlid.com", "genlid.com");
             $message->to($data["email"]);
             $message->subject("Прайс кроссовки");
-            $message->attach('files/documents/krossovki-opt-price.xlsx');
+            $message->attach("files/krossovkiopt/krossovki-opt-price.xlsx");
+            $message->attach("files/krossovkiopt/krossovki-opt-price.pdf");
         });
 
         return Redirect::to("http://genlid.com");

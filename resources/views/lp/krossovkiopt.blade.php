@@ -12,7 +12,7 @@
         </title>
         <style>
             .bg-img {
-                background: url("/files/images/krossovkiopt/bg.jpg") no-repeat top center;
+                background: url("/files/krossovkiopt/bg.jpg") no-repeat top center;
                 background-size: cover;
             }
             .bg-overlay {
