@@ -12,10 +12,9 @@
         </title>
         <style>
             .bg-img {
-                background: url("/images/sportivnoebelio/bg.jpg") no-repeat top center;
+                background: url("/files/belio/bg.jpg") no-repeat top center;
                 background-size: cover;
             }
-
             .bg-overlay {
                 background-color: rgba(0, 0, 0, 0.5);
                 color: white;
@@ -40,7 +39,7 @@
                                 <br>
                             </div>
                             <a href="tel:+79291168565" class="text-info a">+7 929 116 85 65</a><br>
-                            <a href="mailto:sportivnoebelio@gmail.com" class="text-info a">sportivnoebelio@gmail.com</a>
+                            <a href="mailto:info@genlid.com" class="text-info a">info@genlid.com</a>
                         </div>
                     </div>
                     <div class="row pt-5">
@@ -100,7 +99,7 @@
                                 <br>
                             </div>
                             <a href="tel:+79291168565" class="text-info a">+7 929 116 85 65</a><br>
-                            <a href="mailto:sportivnoebelio@gmail.com" class="text-info a">sportivnoebelio@gmail.com</a>
+                            <a href="mailto:info@genlid.com" class="text-info a">info@genlid.com</a>
                         </div>
                     </div>
                 </div>
