@@ -10,7 +10,9 @@ use View;
 use Mail;
 use DB;
 use Mailchimp;
+
 use App\Lead;
+use App\KrossovkioptLead;
 
 class LeadController extends Controller
 {
@@ -199,16 +201,17 @@ class LeadController extends Controller
             "phone" => Request::get("phone"),
             "source" => Request::server("HTTP_REFERER")
         );
-        $lead_last_id = DB::table("krossovkiopt_leads")->insertGetId($data);
+        $lead = new KrossovkioptLead;
+        $lead_last_id = $lead->create($data)->id;
         $data["lead_id"] = $lead_last_id;
 
-        Mail::send("email", $data, function ($message) use ($data) {
+        Mail::send("emails.lead", $data, function ($message) use ($data) {
             $message->from("info@genlid.com", "genlid.com");
             $message->to("nitrolovsky@gmail.com");
-            $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
+            $message->subject("Заявка от " . $data["source"] . " в " . date ("Y.m.d H:m:s"));
         });
 
-        Mail::send("emails.krossovkiopt1", $data, function ($message) use ($data) {
+        Mail::send("emails.krossovkiopt", $data, function ($message) use ($data) {
             $message->from("info@genlid.com", "genlid.com");
             $message->to($data["email"]);
             $message->subject("Прайс кроссовки");
