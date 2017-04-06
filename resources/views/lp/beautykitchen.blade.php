@@ -58,7 +58,7 @@
                             <div class="hidden-lg-up">
                                 <br>
                             </div>
-                            <h3 class="px-3 pb-3 text-center weight-700">
+                            <h3 class="px-2 pb-3 text-center weight-700">
                                 Узнай как сэкономить 300 рублей
                             </h3>
                             <form action="/leads/beautykitchen" method="POST">
