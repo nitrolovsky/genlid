@@ -216,7 +216,7 @@ class LeadController extends Controller
             $message->attach("files/krossovkiopt/krossovki-opt-price.pdf");
         });
 
-        return Redirect::to("http://genlid.com");
+        return Redirect::to("/files/krossovkiopt/krossovki-opt-price.pdf");
     }
 
     public function storeDetoxya(Request $request) {
