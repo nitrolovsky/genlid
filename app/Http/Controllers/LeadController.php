@@ -174,7 +174,7 @@ class LeadController extends Controller
             $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
         });
 
-        redirect("genlid.com/lp/beautykitchen2");
+        redirect("http://beautykitchen-thanks.genlid.com");
     }
 
     public function storeBelio(Request $request) {
