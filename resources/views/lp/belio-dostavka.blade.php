@@ -12,10 +12,9 @@
         </title>
         <style>
             .bg-img {
-                background: url("/images/sportivnoebelio/bg.jpg") no-repeat top center;
+                background: url("/files/belio/bg.jpg") no-repeat;
                 background-size: cover;
             }
-
             .bg-overlay {
                 background-color: rgba(0, 0, 0, 0.5);
                 color: white;
@@ -40,13 +39,13 @@
                                 <br>
                             </div>
                             <a href="tel:+79291168565" class="text-info a">+7 929 116 85 65</a><br>
-                            <a href="mailto:sportivnoebelio@gmail.com" class="text-info a">sportivnoebelio@gmail.com</a>
+                            <a href="mailto:info@genlid.com" class="text-info a">info@genlid.com</a>
                         </div>
                     </div>
                     <div class="row pt-5">
                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 offset-xl-1">
                             <h1 class="text-center my-0 weight-700">
-                                Комплект женского белья Calvin Klein 2500 рублей
+                                Комплект женского белья Calvin Klein <del>2500</del> 1500 рублей по промокоду KELVIN17
                             </h1>
                         </div>
                     </div>
@@ -72,22 +71,46 @@
                                 <div class="hidden-lg-up">
                                     <br>
                                 </div>
-                                <h3 class="px-3 pb-3 text-center weight-700">
-                                    Получите промокод -40% на белье Calvin Klein
+                                <h3 class="px-2 pb-3 text-center weight-700">
+                                    Оформите заказ сейчас по супер цене
                                 </h3>
-                                <form action="/leads/belio" method="POST">
+                                <form action="/leads/belio-dostavka" method="POST">
                                     {{ csrf_field() }}
                                     <div class="form-group">
                                         <div class="">
-                                            <input type="text" class="font black sw btn-circle form-control" id="email" placeholder="Email" name="email" required>
+                                            <input type="text" class="font black sw btn-circle form-control" id="promo"  name="promo" value="KELVIN17">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="">
-                                            <button type="submit" class="font sw btn-circle btn btn-primary btn-block" role="button">Получить</button>
+                                            <input type="text" class="font black sw btn-circle form-control" id="name" placeholder="Имя" name="name" required>
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <div class="">
+                                            <input type="text" class="font black sw btn-circle form-control" id="phone" placeholder="Телефон" name="phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control font black sw btn-circle" id="size" name="size">
+                                            <option>S 42 (76-84 и 80-88)</option>
+                                            <option>M 44 (84-90 и 90-96)</option>
+                                            <option>L 46 (92-98 и 98-106)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control font black sw btn-circle" id="size" name="color">
+                                            <option>Черные (Топ и Слипы)</option>
+                                            <option>Белые (Топ и Слипы)</option>
+                                            <option>Зеленый хаки (Топ и Слипы)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410013952996574&quickpay=small&any-card-payment-type=on&button-text=02&button-size=m&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%B1%D0%B5%D0%BB%D1%8C%D1%8F&default-sum=1500&successURL=http%3A%2F%2Fbelio-thanks.genlid.com" width="154" height="36"></iframe>
+                                    </div>
                                 </form>
+
+                                <script src="http://megatimer.ru/s/0ab6a2f5adbf92840bdc80df8d8393bd.js"></script>
                             </div>
                         </div>
                     </div>
@@ -100,7 +123,7 @@
                                 <br>
                             </div>
                             <a href="tel:+79291168565" class="text-info a">+7 929 116 85 65</a><br>
-                            <a href="mailto:sportivnoebelio@gmail.com" class="text-info a">sportivnoebelio@gmail.com</a>
+                            <a href="mailto:info@genlid.com" class="text-info a">info@genlid.com</a>
                         </div>
                     </div>
                 </div>
@@ -109,5 +132,10 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script>
+            $(".form_js_inited").click(function() {
+                alert(1);
+            });
+        </script>
     </body>
 </html>

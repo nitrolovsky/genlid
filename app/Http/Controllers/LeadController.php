@@ -187,13 +187,13 @@ class LeadController extends Controller
         $lead_last_id = DB::table("belio_leads")->insertGetId($data);
         $data["lead_id"] = $lead_last_id;
 
-        Mail::send("email", $data, function ($message) use ($data) {
+        Mail::send("emails.lead", $data, function ($message) use ($data) {
             $message->from("info@genlid.com", "genlid.com");
             $message->to("nitrolovsky@gmail.com");
             $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
         });
 
-        return Redirect::to("genlid.com/lp/belio2");
+        return Redirect::to("http://belio-dostavka.genlid.com");
     }
 
     public function storeKrossovkiopt(Request $request) {
