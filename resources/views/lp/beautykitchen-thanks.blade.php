@@ -12,7 +12,7 @@
         </title>
         <style>
             .html {
-                background: url(/files/beautykitchen/bg.jpg) no-repeat center center;
+                background: url(/files/beautykitchen/bg-thanks.jpg) no-repeat center center;
                 background-size: cover;
                 background-color: rgba(0, 0, 0, 0.5);
                 background-blend-mode: multiply;
