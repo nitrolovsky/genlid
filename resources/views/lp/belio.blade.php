@@ -12,7 +12,7 @@
         </title>
         <style>
             .bg-img {
-                background: url("/files/belio/bg.jpg") no-repeat top center;
+                background: url("/files/belio/bg.jpg") no-repeat;
                 background-size: cover;
             }
             .bg-overlay {
