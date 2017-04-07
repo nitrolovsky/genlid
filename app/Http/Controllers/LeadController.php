@@ -13,6 +13,7 @@ use Mailchimp;
 
 use App\Lead;
 use App\KrossovkioptLead;
+use App\BeautykitchenLead;
 
 class LeadController extends Controller
 {
@@ -165,7 +166,8 @@ class LeadController extends Controller
             "phone" => Request::get("phone"),
             "source" => Request::server("HTTP_REFERER")
         );
-        $lead_last_id = DB::table("beautykitchen_leads")->insertGetId($data);
+        $lead = new BeautykitchenLead;
+        $lead_last_id = $lead->create($data)->id;
         $data["lead_id"] = $lead_last_id;
 
         Mail::send("email", $data, function ($message) use ($data) {

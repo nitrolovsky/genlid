@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <input type="text" class="font black sw btn-circle form-control" id="email" placeholder="Телефон" name="phone" required>
+                                        <input type="text" class="font black sw btn-circle form-control" id="phone" placeholder="Телефон" name="phone" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
