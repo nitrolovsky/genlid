@@ -70,11 +70,6 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="">
-                                        <input type="text" class="font black sw btn-circle form-control" id="email" placeholder="Email" name="email" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="">
                                         <input type="text" class="font black sw btn-circle form-control" id="email" placeholder="Телефон" name="phone" required>
                                     </div>
                                 </div>
@@ -103,58 +98,58 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-1.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-2.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-3.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-4.jpg" class="img-fluid">
                 </div>
             </div>
             <div class="row">
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-5.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-6.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-7.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-8.jpg" class="img-fluid">
                 </div>
             </div>
             <div class="row">
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-9.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-10.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-11.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-12.jpg" class="img-fluid">
                 </div>
             </div>
             <div class="row">
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-20.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-21.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-22.jpg" class="img-fluid">
                 </div>
-                <div class="p-0 col-xl-3">
+                <div class="p-0 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                     <img src="/files/beautykitchen/sert-23.jpg" class="img-fluid">
                 </div>
             </div>
