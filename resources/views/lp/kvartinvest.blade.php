@@ -65,7 +65,7 @@
                                 <br>
                             </div>
                             <h3 class="px-2 pb-3 text-center weight-700">
-                                Зарегистрируйтесь на семинар
+                                Зарегистрируйтесь на семинар и получи книгу "10 ошибок при покупке квартиры"
                             </h3>
                             <form action="/leads/beautykitchen" method="POST">
                                 {{ csrf_field() }}
