@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/lp.css">
@@ -71,19 +72,14 @@
                                 <div class="hidden-lg-up">
                                     <br>
                                 </div>
-                                <h3 class="px-2 pb-3 text-center weight-700">
-                                    Оформите заказ сейчас по супер цене
+                                <h3 class="px-0 pb-3 text-center weight-700">
+                                    Промокод действует 1 час, оформите заказ сейчас
                                 </h3>
                                 <form action="/leads/belio-dostavka" method="POST">
                                     {{ csrf_field() }}
                                     <div class="form-group">
                                         <div class="">
-                                            <input type="text" class="font black sw btn-circle form-control" id="promo"  name="promo" value="KELVIN17">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="">
-                                            <input type="text" class="font black sw btn-circle form-control" id="name" placeholder="Имя" name="name" required>
+                                            <input type="text" class="font black sw btn-circle form-control" id="address" placeholder="Адрес доставки" name="address" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -93,6 +89,7 @@
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control font black sw btn-circle" id="size" name="size">
+                                            <option>Размер</option>
                                             <option>S 42 (76-84 и 80-88)</option>
                                             <option>M 44 (84-90 и 90-96)</option>
                                             <option>L 46 (92-98 и 98-106)</option>
@@ -100,8 +97,9 @@
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control font black sw btn-circle" id="size" name="color">
+                                            <option>Цвет</option>
                                             <option>Черные (Топ и Слипы)</option>
-                                            <option>Белые (Топ и Слипы)</option>
+                                            <option>Серые (Топ и Слипы)</option>
                                             <option>Зеленый хаки (Топ и Слипы)</option>
                                         </select>
                                     </div>
@@ -129,12 +127,41 @@
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script>
-            $(".form_js_inited").click(function() {
-                alert(1);
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $("input").on("input", function () {
+                var valueAttr = $(this).val();
+                var nameAttr = $(this).attr("name");
+                $.ajax({
+                    type: "POST",
+                    url: "/lead/input",
+                    data: {namei: nameAttr, valuei: valueAttr, },
+                    success: function(res) {
+                        console.log(res);
+                    }
+                });
+            });
+            $("select").on("input", function () {
+                var valueAttr = $(this).val();
+                var nameAttr = $(this).attr("name");
+                $.ajax({
+                    type: "POST",
+                    url: "/lead/input",
+                    data: {namei: nameAttr, valuei: valueAttr, },
+                    success: function(res) {
+                        console.log(res);
+                    }
+                });
             });
         </script>
     </body>

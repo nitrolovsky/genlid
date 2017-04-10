@@ -14,6 +14,7 @@ use Mailchimp;
 use App\Lead;
 use App\KrossovkioptLead;
 use App\BeautykitchenLead;
+use App\BelioLead;
 
 class LeadController extends Controller
 {
@@ -187,6 +188,8 @@ class LeadController extends Controller
         $lead_last_id = DB::table("belio_leads")->insertGetId($data);
         $data["lead_id"] = $lead_last_id;
 
+        Session::put("lead_id", $lead_last_id);
+
         Mail::send("emails.lead", $data, function ($message) use ($data) {
             $message->from("info@genlid.com", "genlid.com");
             $message->to("nitrolovsky@gmail.com");
@@ -194,6 +197,14 @@ class LeadController extends Controller
         });
 
         return Redirect::to("http://belio-dostavka.genlid.com");
+    }
+
+    public function input(Request $request) {
+        $lead = BelioLead::find(Session::get("lead_id"));
+        $lead->update([
+            Request::get("namei") => Request::get("valuei")
+        ]);
+        return Request::get("valuei");
     }
 
     public function storeKrossovkiopt(Request $request) {

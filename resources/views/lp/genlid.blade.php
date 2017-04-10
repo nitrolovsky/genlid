@@ -5,10 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css?family=Play:400,700|Roboto+Slab:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/genlid.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/lp.css">
         <title>
             genlid.com Примеры сайтов
         </title>
@@ -69,12 +67,12 @@
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
                             <div class="row">
                                 <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                                    <span class="h1 logo">GENLID</span><br>
+                                    <span class="h1 font">GENLID</span><br>
                                     Маркетинговое агентство
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-right text-lg-right text-md-right text-sm-center text-center font">
                             <div class="hidden-md-up">
                                 <br>
                             </div>
@@ -87,16 +85,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 col-md-12 col-sm-12 col-12">
-                        <h1 class="h2 russo text-center mb-0">
+                        <h1 class="h2 font text-center mb-0">
                             В 2 раза больше клиентов при той же рекламной кампании с помощью landing pages
                         </h1>
-                        <ul class="h5 russo pt-5">
-                            <li class="py-1">От 5 000 рублей в течении 3 дней</li>
-                            <li class="py-1">Хорошо отображаются на мобильных устройствах</li>
-                            <li class="py-1">Контакты клиентов приходят на email</li>
-                            <li class="py-1">Настроенная аналитика в Яндекс Метрики и Google Analytics</li>
-                            <li class="py-1">Редактура текста в информационном стиле</li>
-                        </ul>
+                        <div class="text-center font pt-5 bullets">
+                            От 5 000 рублей в течении 3 дней<br>
+                            Хорошо отображаются на мобильных устройствах<br>
+                            Контакты клиентов приходят на email<br>
+                            Настроенная аналитика в Яндекс Метрики и Google Analytics<br>
+                            Редактура текста в информационном стиле
+                        </div>
                     </div>
                 </div>
             </div>

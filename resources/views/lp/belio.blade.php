@@ -74,7 +74,7 @@
                                 <h3 class="px-3 pb-3 text-center weight-700">
                                     Получите промокод -40% на белье Calvin Klein
                                 </h3>
-                                <form action="/leads/belio" method="POST">
+                                <form action="/lead/belio" method="POST">
                                     {{ csrf_field() }}
                                     <div class="form-group">
                                         <div class="">

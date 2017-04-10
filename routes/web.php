@@ -59,6 +59,8 @@ Route::get("orders/thanksfororder", "OrderController@showThanksShop");
 Route::get("orders/thanksforpromokod", "OrderController@showThanksPromokod");
 Route::resource("orders", "OrderController");
 
+Route::post("lead/belio", "LeadController@storeBelio");
+Route::post("lead/input", "LeadController@input");
 Route::resource("lead", "LeadController");
 
 Route::get("thanks", function () {
