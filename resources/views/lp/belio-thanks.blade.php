@@ -80,7 +80,7 @@
                     <div class="block">
                         <div class="container">
                             <h1 class=" text-white in-center">
-                                Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.
+                                Спасибо. Ваш заказ в обработке.
                             </h1>
                         </div>
                     </div>
