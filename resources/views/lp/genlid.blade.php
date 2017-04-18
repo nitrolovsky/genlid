@@ -347,16 +347,7 @@
                     </a>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                    <div class="hidden-sm-up">
-                        <br>
-                        <br>
-                    </div>
-                    <a href="http://genlid.com/pages/6/h" target="_blank">
-                        <img src="/images/portfolio/genlid-primeri-rabot-6.jpg" class="img-fluid mx-auto d-block" alt="Примеры работ genlid.com генератор видео лендингов">
-                        <div class="py-4">
-                            Хотите стать мастером татуажа?
-                        </div>
-                    </a>
+
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                     <div class="hidden-sm-up">
